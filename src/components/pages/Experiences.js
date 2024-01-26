@@ -9,6 +9,9 @@ import "react-vertical-timeline-component/style.min.css";
 import SchoolIcon from "@mui/icons-material/School";
 import WorkIcon from "@mui/icons-material/Work";
 
+//source: https://www.youtube.com/watch?v=x7mwVn2z3Sk&t=334s
+// https://github.com/machadop1407/react-personal-portfolio-website
+
 function Experience() {
   const location = useLocation();
 

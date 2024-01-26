@@ -17,13 +17,13 @@ function Cards() {
         <div className="cards__wrapper">
           <ul className="cards__items">
             <CardItem
-              src="images/MoneyOnTrack.jpg"
+              src="images/money-on-track.jpg"
               text="Personal Finance App built with Swift"
               label="Mobile App"
               path="/projects"
             />
             <CardItem
-              src="images/Robber.jpg"
+              src="images/robber.jpg"
               text="2D Video Game Built with Java"
               label="Game"
               path="/experiences"
