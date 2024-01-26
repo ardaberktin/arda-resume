@@ -17,16 +17,16 @@ function Cards() {
         <div className="cards__wrapper">
           <ul className="cards__items">
             <CardItem
-              src="images/money-on-track.jpg"
+              src="images/MoneyOnTrack.jpg"
               text="Personal Finance App built with Swift"
               label="Mobile App"
               path="/projects"
             />
             <CardItem
-              src="images/robber.jpg"
+              src="images/Robber.jpg"
               text="2D Video Game Built with Java"
               label="Game"
-              path="/experiences"
+              path="/projects"
             />
           </ul>
           <ul className="cards__items">
@@ -34,19 +34,19 @@ function Cards() {
               src="images/img-3.jpg"
               text="Set Sail in the Atlantic Ocean visiting Uncharted Waters"
               label="Mystery"
-              path="/experiences"
+              path="/projects"
             />
             <CardItem
               src="images/img-4.jpg"
               text="Experience Football on Top of the Himilayan Mountains"
               label="Adventure"
-              path="/experiences"
+              path="/projects"
             />
             <CardItem
               src="images/img-8.jpg"
               text="Ride through the Sahara Desert on a guided camel tour"
               label="Adrenaline"
-              path="/experiences"
+              path="/projects"
             />
           </ul>
         </div>
