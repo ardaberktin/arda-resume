@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/arda-resume/static/css/main.808677d0.css",
-    "main.js": "/arda-resume/static/js/main.0d94dc12.js",
+    "main.css": "/arda-resume/static/css/main.a7310e8e.css",
+    "main.js": "/arda-resume/static/js/main.2e88396a.js",
     "static/media/img-2.jpg": "/arda-resume/static/media/img-2.bb238fc1bea8ae2474d2.jpg",
     "static/media/img-home.jpg": "/arda-resume/static/media/img-home.c034239ee9a63564602b.jpg",
     "static/media/img-8.jpg": "/arda-resume/static/media/img-8.fabdf94dc5be2d3dc707.jpg",
     "index.html": "/arda-resume/index.html",
-    "main.808677d0.css.map": "/arda-resume/static/css/main.808677d0.css.map",
-    "main.0d94dc12.js.map": "/arda-resume/static/js/main.0d94dc12.js.map"
+    "main.a7310e8e.css.map": "/arda-resume/static/css/main.a7310e8e.css.map",
+    "main.2e88396a.js.map": "/arda-resume/static/js/main.2e88396a.js.map"
   },
   "entrypoints": [
-    "static/css/main.808677d0.css",
-    "static/js/main.0d94dc12.js"
+    "static/css/main.a7310e8e.css",
+    "static/js/main.2e88396a.js"
   ]
 }
