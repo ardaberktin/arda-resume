@@ -29,7 +29,7 @@ function Navbar() {
       <nav className="navbar">
         <div className="navbar-container">
           <Link
-            to="/arda-resume"
+            to="/arda-resume/"
             className="navbar-logo"
             onClick={closeMobileMenu}
           >
@@ -41,7 +41,7 @@ function Navbar() {
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
               <Link
-                to="/arda-resume"
+                to="/arda-resume/"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >

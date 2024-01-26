@@ -31,22 +31,22 @@ function Cards() {
           </ul>
           <ul className="cards__items">
             <CardItem
-              src="images/img-3.jpg"
-              text="Set Sail in the Atlantic Ocean visiting Uncharted Waters"
-              label="Mystery"
+              src="images/Jastagram.jpg"
+              text="Social Media Website built with HTML, CSS, JavaScript and PHP"
+              label="Website"
               path="/projects"
             />
             <CardItem
-              src="images/img-4.jpg"
-              text="Experience Football on Top of the Himilayan Mountains"
-              label="Adventure"
+              src="images/MountDougMaps-iOS.jpg"
+              text="Maps of for Mount Douglas Secondary built with Swift"
+              label="Mobile App"
               path="/projects"
             />
             <CardItem
-              src="images/img-8.jpg"
-              text="Ride through the Sahara Desert on a guided camel tour"
-              label="Adrenaline"
-              path="/projects"
+              src="images/MountDougMaps-Android.jpg"
+              text="Maps of for Mount Douglas Secondary built with Java"
+              label="Mobile App"
+              path="/experiences"
             />
           </ul>
         </div>

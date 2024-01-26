@@ -1,0 +1,24 @@
+/* Skills.css */
+
+.skill-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  object-fit: contain;
+}
+
+.skill-category {
+  margin-bottom: 20px;
+  text-align: center; /* Center the text */
+}
+
+.skill-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* You can add more styling as needed */

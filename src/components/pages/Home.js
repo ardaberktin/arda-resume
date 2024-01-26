@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import "../../App.css";
 import Cards from "../Cards";
 import HeroSection from "../HeroSection";
+import Skills from "../Skills";
 
 function Home() {
   const location = useLocation();
@@ -15,6 +16,7 @@ function Home() {
     <>
       <HeroSection />
       <Cards />
+      <Skills />
     </>
   );
 }
