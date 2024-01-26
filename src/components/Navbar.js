@@ -33,7 +33,7 @@ function Navbar() {
             className="navbar-logo"
             onClick={closeMobileMenu}
           >
-            Arda Berktin
+            ARDA BERKTIN
           </Link>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
