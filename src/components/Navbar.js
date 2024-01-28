@@ -33,6 +33,7 @@ function Navbar() {
             className="navbar-logo"
             onClick={closeMobileMenu}
           >
+            <img className="arda-icon" src="images/Ardamoji.png" alt="Arda" />
             ARDA BERKTIN
           </Link>
           <div className="menu-icon" onClick={handleClick}>
@@ -50,7 +51,7 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <Link
-                to="/experiences"
+                to="/arda-resume/experiences"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
@@ -59,7 +60,7 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <Link
-                to="/projects"
+                to="/arda-resume/projects"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
@@ -69,7 +70,7 @@ function Navbar() {
 
             <li>
               <Link
-                to="/contact-me"
+                to="/arda-resume/contact-me"
                 className="nav-links-mobile"
                 onClick={closeMobileMenu}
               >
@@ -78,7 +79,7 @@ function Navbar() {
             </li>
           </ul>
           {button && (
-            <Button buttonStyle="btn--outline" to={"/contact-me"}>
+            <Button buttonStyle="btn--outline" to={"/arda-resume/contact-me"}>
               Contact Me
             </Button>
           )}

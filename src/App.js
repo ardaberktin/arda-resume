@@ -9,7 +9,7 @@ import ContactMe from "./components/pages/ContactMe";
 import Footer from "./components/Footer";
 
 // source: https://www.youtube.com/watch?v=I2UBjN5ER4s&t=4427s
-// https://github.com/briancodex/react-website-v1/tree/starter
+// https://github.com/briancodex/react-website-v1
 
 function App() {
   return (
@@ -18,9 +18,9 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/arda-resume/" element={<Home />} />
-          <Route path="/experiences" element={<Experiences />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact-me" element={<ContactMe />} />
+          <Route path="/arda-resume/experiences" element={<Experiences />} />
+          <Route path="/arda-resume/projects" element={<Projects />} />
+          <Route path="/arda-resume/contact-me" element={<ContactMe />} />
         </Routes>
         <Footer />
       </Router>

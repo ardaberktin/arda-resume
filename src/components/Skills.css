@@ -7,9 +7,15 @@
 
   width: 100%;
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 800px) {
   .skill-container {
     height: 200vh;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 926px) {
+  .skill-container {
+    height: 300vh;
   }
 }
 

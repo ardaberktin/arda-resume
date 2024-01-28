@@ -20,13 +20,13 @@ function Cards() {
               src="images/MoneyOnTrack.jpg"
               text="Personal Finance App built with Swift"
               label="Mobile App"
-              path="/projects"
+              path="/arda-resume/projects"
             />
             <CardItem
               src="images/Robber.jpg"
               text="2D Video Game Built with Java"
               label="Game"
-              path="/projects"
+              path="/arda-resume/projects"
             />
           </ul>
           <ul className="cards__items">
@@ -34,19 +34,19 @@ function Cards() {
               src="images/Jastagram.jpg"
               text="Social Media Website built with HTML, CSS, JavaScript and PHP"
               label="Website"
-              path="/projects"
+              path="/arda-resume/projects"
             />
             <CardItem
               src="images/MountDougMaps-iOS.jpg"
               text="Maps of for Mount Douglas Secondary built with Swift"
               label="Mobile App"
-              path="/projects"
+              path="/arda-resume/projects"
             />
             <CardItem
               src="images/MountDougMaps-Android.jpg"
               text="Maps of for Mount Douglas Secondary built with Java"
               label="Mobile App"
-              path="/experiences"
+              path="/arda-resume/projects"
             />
           </ul>
         </div>

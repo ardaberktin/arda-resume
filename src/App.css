@@ -16,13 +16,8 @@
   font-size: 3rem;
 }
 
-.experiences {
-  background-image: url("../public/images/img-2.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
+.experience {
+  background-color: rgb(231, 229, 229);
 }
 
 .projects {
