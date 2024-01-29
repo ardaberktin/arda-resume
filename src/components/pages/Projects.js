@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import "../../App.css";
+import IphoneApps from "../IphoneApps";
 
 function Projects() {
   const location = useLocation();
@@ -9,7 +10,11 @@ function Projects() {
     window.scrollTo(0, 0); // Scroll to the top when the route changes
   }, [location.pathname]);
 
-  return <h1 className="projects">Projects</h1>;
+  return (
+    <>
+      <IphoneApps />
+    </>
+  );
 }
 
 export default Projects;

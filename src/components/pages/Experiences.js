@@ -6,9 +6,13 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+
 import SchoolIcon from "@mui/icons-material/School";
 import WorkIcon from "@mui/icons-material/Work";
 import ProjectIcon from "@mui/icons-material/Build";
+import Launch from "@mui/icons-material/Launch";
+
+import { Link } from "react-router-dom";
 
 //source: https://www.youtube.com/watch?v=x7mwVn2z3Sk&t=334s
 // https://github.com/machadop1407/react-personal-portfolio-website
@@ -29,11 +33,16 @@ function Experience() {
           iconStyle={{ background: "#2444b5", color: "#fff" }}
           icon={<ProjectIcon />}
         >
-          <h3 className="vertical-timeline-element-title">Money On Track</h3>
+          <h3 className="vertical-timeline-element-title">
+            Money On Track
+            <Link className="project-link" to="/arda-resume/projects">
+              <Launch />
+            </Link>
+          </h3>
+
           <h4 className="vertical-timeline-element-subtitle">
             Personal Project
           </h4>
-          <p></p>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
@@ -62,7 +71,10 @@ function Experience() {
           icon={<ProjectIcon />}
         >
           <h3 className="vertical-timeline-element-title">
-            Mount Doug Maps - iOS
+            Mount Doug Maps - iOS{" "}
+            <Link className="project-link" to="/arda-resume/projects">
+              <Launch />
+            </Link>
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
             Personal Project
@@ -122,7 +134,12 @@ function Experience() {
           iconStyle={{ background: "#2444b5", color: "#fff" }}
           icon={<ProjectIcon />}
         >
-          <h3 className="vertical-timeline-element-title">Jastagram</h3>
+          <h3 className="vertical-timeline-element-title">
+            Jastagram{" "}
+            <Link className="project-link" to="/arda-resume/projects">
+              <Launch />
+            </Link>
+          </h3>
           <h4 className="vertical-timeline-element-subtitle">Group Project</h4>
           <p></p>
         </VerticalTimelineElement>
@@ -134,7 +151,10 @@ function Experience() {
           icon={<ProjectIcon />}
         >
           <h3 className="vertical-timeline-element-title">
-            Mount Doug Maps - Android
+            Mount Doug Maps - Android{" "}
+            <Link className="project-link" to="/arda-resume/projects">
+              <Launch />
+            </Link>
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
             Personal Project
@@ -148,7 +168,12 @@ function Experience() {
           iconStyle={{ background: "#2444b5", color: "#fff" }}
           icon={<ProjectIcon />}
         >
-          <h3 className="vertical-timeline-element-title">Robber</h3>
+          <h3 className="vertical-timeline-element-title">
+            Robber
+            <Link className="project-link" to="/arda-resume/projects">
+              <Launch />
+            </Link>
+          </h3>
           <h4 className="vertical-timeline-element-subtitle">Group Project</h4>
           <p></p>
         </VerticalTimelineElement>
