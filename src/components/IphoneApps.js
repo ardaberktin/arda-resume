@@ -27,7 +27,7 @@ function IphoneApps() {
 
         <img
           className="iphone-image"
-          src="images/iPhoneApps.png"
+          src="images/IphoneApps.png"
           alt="iPhone"
         />
 
