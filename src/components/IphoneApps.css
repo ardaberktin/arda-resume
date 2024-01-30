@@ -64,6 +64,9 @@
   overflow-wrap: break-word;
 }
 
+.exit-button {
+  cursor: pointer;
+}
 .app-description {
   display: flex;
   justify-content: center;
