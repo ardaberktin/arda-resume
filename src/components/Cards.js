@@ -38,13 +38,13 @@ function Cards() {
             />
             <CardItem
               src="images/MountDougMaps-iOS.jpg"
-              text="Maps of for Mount Douglas Secondary built with Swift"
+              text="Maps App for Mount Douglas Secondary built with Swift"
               label="Mobile App"
               path="/arda-resume/projects"
             />
             <CardItem
               src="images/MountDougMaps-Android.jpg"
-              text="Maps of for Mount Douglas Secondary built with Java"
+              text="Maps App for Mount Douglas Secondary built with Java"
               label="Mobile App"
               path="/arda-resume/projects"
             />

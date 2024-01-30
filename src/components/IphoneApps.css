@@ -1,10 +1,10 @@
 .iphone-container {
   background-color: #181717;
-  height: 100vh;
+  height: 110vh;
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
 }
@@ -21,6 +21,37 @@
   width: 50svh;
   height: auto;
   padding: 20px;
+  border-radius: 20px;
+}
+
+.app-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container {
+  display: block;
+}
+
+.image-and-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-image {
+  width: 26svh;
+  height: auto;
+  padding: 20px;
+}
+
+.scroll-button {
+  cursor: pointer;
+}
+
+.image-title {
+  text-align: center;
 }
 
 .app-info {
@@ -39,6 +70,7 @@
   color: white;
   width: 90%;
   cursor: pointer;
+  padding: 20px;
 }
 
 .invisible-button {
@@ -55,8 +87,8 @@
   /* background-color: red; */
   width: 20px;
   height: 20px;
-  top: 40px;
-  left: 152px;
+  top: 39px;
+  left: 192px;
   z-index: 999;
   padding: 20px;
 }
@@ -66,15 +98,26 @@
   /* background-color: red; */
   width: 20px;
   height: 20px;
-  top: 40px;
-  left: 174px;
+  top: 39px;
+  left: 214px;
+  z-index: 999;
+  padding: 20px;
+}
+
+.button-area-3 {
+  position: relative;
+  /* background-color: red; */
+  width: 20px;
+  height: 20px;
+  top: 39px;
+  left: 238px;
   z-index: 999;
   padding: 20px;
 }
 
 @media screen and (max-width: 960px) {
   .iphone-container {
-    height: 140vh;
+    height: 210vh;
     flex-direction: column;
     justify-content: flex-start;
   }
@@ -83,11 +126,12 @@
   }
 
   .app-description {
-    padding: 10px;
+    padding-top: 10px;
   }
 
   .iphone-image {
-    width: 60svh;
+    width: 57svh;
+    padding-top: 0;
     padding-bottom: 10;
   }
   .app-info {
@@ -113,8 +157,8 @@
     /* background-color: red; */
     width: 50px;
     height: 50px;
-    top: 505px;
-    left: -115px;
+    top: 512px;
+    left: -109px;
     z-index: 999;
     padding: 20px;
   }
@@ -124,8 +168,19 @@
     /* background-color: red; */
     width: 50px;
     height: 50px;
-    top: 455px;
+    top: 462px;
     left: -37px;
+    z-index: 999;
+    padding: 20px;
+  }
+
+  .button-area-3 {
+    position: relative;
+    /* background-color: red; */
+    width: 50px;
+    height: 50px;
+    top: 413px;
+    left: 38px;
     z-index: 999;
     padding: 20px;
   }
