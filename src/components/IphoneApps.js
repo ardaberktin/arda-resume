@@ -82,7 +82,7 @@ function IphoneApps() {
   };
 
   return (
-    <div className="iphone-container">
+    <div className="iphone-container" id="mobile-apps">
       <h1 className="mobile-apps-title">Mobile Apps</h1>
       <h2 className="app-description" onClick={() => handleButtonClick(0)}>
         Please Click On One Of My Apps To Learn More!

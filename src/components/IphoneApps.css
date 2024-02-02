@@ -10,6 +10,7 @@
 
   padding-bottom: 1rem;
   /* border: 1rem solid red; */
+  overflow: scroll;
 }
 
 .iphone-wrapper {

@@ -23,7 +23,6 @@ function HeroSection() {
           className="btns"
           buttonStyle="btn--primary"
           buttonSize="btn--large"
-          onClick={console.log("hey")}
         >
           PROJECTS <i className="fa-solid fa-bolt"></i>
         </Button>

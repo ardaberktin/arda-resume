@@ -8,8 +8,25 @@ function Projects() {
   const location = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 0); // Scroll to the top when the route changes
-  }, [location.pathname]);
+    // Extract the section identifier from the hash
+    //const section = location.hash.substr(1);
+    const section = location.hash.slice(1);
+
+    console.log(section);
+
+    if (section) {
+      // Scroll to the element with the matching id
+      const targetElement = document.getElementById(section);
+      console.log(targetElement);
+
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    } else {
+      // If no section identifier, scroll to the top
+      window.scrollTo(0, 0);
+    }
+  }, [location.pathname, location.hash]);
 
   return (
     <>
