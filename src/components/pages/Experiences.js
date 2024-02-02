@@ -29,13 +29,38 @@ function Experience() {
       <VerticalTimeline lineColor="#3e497a">
         <VerticalTimelineElement
           className="vertical-timeline-element--project"
+          date="Dec 2023 - Present"
+          iconStyle={{ background: "#2444b5", color: "#fff" }}
+          icon={<ProjectIcon />}
+        >
+          <h3 className="vertical-timeline-element-title">
+            Arda's Portfolio
+            <Link
+              className="project-link"
+              to="/arda-resume/projects#desktop-apps"
+            >
+              <Launch />
+            </Link>
+          </h3>
+
+          <h4 className="vertical-timeline-element-subtitle">
+            Personal Project <br />
+            (This Website)
+          </h4>
+        </VerticalTimelineElement>
+
+        <VerticalTimelineElement
+          className="vertical-timeline-element--project"
           date="June 2023"
           iconStyle={{ background: "#2444b5", color: "#fff" }}
           icon={<ProjectIcon />}
         >
           <h3 className="vertical-timeline-element-title">
             Money On Track
-            <Link className="project-link" to="/arda-resume/projects">
+            <Link
+              className="project-link"
+              to="/arda-resume/projects#mobile-apps"
+            >
               <Launch />
             </Link>
           </h3>
@@ -72,7 +97,10 @@ function Experience() {
         >
           <h3 className="vertical-timeline-element-title">
             Mount Doug Maps - iOS{" "}
-            <Link className="project-link" to="/arda-resume/projects">
+            <Link
+              className="project-link"
+              to="/arda-resume/projects#mobile-apps"
+            >
               <Launch />
             </Link>
           </h3>
@@ -136,7 +164,10 @@ function Experience() {
         >
           <h3 className="vertical-timeline-element-title">
             Jastagram{" "}
-            <Link className="project-link" to="/arda-resume/projects">
+            <Link
+              className="project-link"
+              to="/arda-resume/projects#desktop-apps"
+            >
               <Launch />
             </Link>
           </h3>
@@ -152,7 +183,10 @@ function Experience() {
         >
           <h3 className="vertical-timeline-element-title">
             Mount Doug Maps - Android{" "}
-            <Link className="project-link" to="/arda-resume/projects">
+            <Link
+              className="project-link"
+              to="/arda-resume/projects#mobile-apps"
+            >
               <Launch />
             </Link>
           </h3>
@@ -170,7 +204,10 @@ function Experience() {
         >
           <h3 className="vertical-timeline-element-title">
             Robber
-            <Link className="project-link" to="/arda-resume/projects">
+            <Link
+              className="project-link"
+              to="/arda-resume/projects#desktop-apps"
+            >
               <Launch />
             </Link>
           </h3>
