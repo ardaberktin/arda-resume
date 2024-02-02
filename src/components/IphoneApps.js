@@ -4,6 +4,8 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import CloseIcon from "@mui/icons-material/Cancel";
+//import iPhoneImage from "./IphoneApps.png";
+// tried to import the images beforehand but didn't work
 
 function IphoneApps() {
   const [selectedArea, setSelectedArea] = useState(0);
@@ -23,8 +25,14 @@ function IphoneApps() {
 
   const closeMobileMenu = () => setButton(false);
 
+  // Initialize ref with current window width add useRef to react to use!!
+  // const windowWidth = useRef(window.innerWidth);
+
   const showButton = () => {
-    if (window.innerWidth <= 960) {
+    const currentWidth = window.innerWidth;
+
+    // Update the button state only if the width is less than or equal to 960
+    if (currentWidth <= 960) {
       setButton(false);
     } else {
       setButton(true);
@@ -35,11 +43,9 @@ function IphoneApps() {
     showButton();
   }, []);
 
-  // window.addEventListener("resize", showButton);
-
   const handleButtonClick = (area) => {
-    setSelectedArea(area);
     setCurrentImageIndex(0);
+    setSelectedArea(area);
     setButton(true);
   };
 
@@ -77,8 +83,9 @@ function IphoneApps() {
 
   return (
     <div className="iphone-container">
+      <h1 className="mobile-apps-title">Mobile Apps</h1>
       <h2 className="app-description" onClick={() => handleButtonClick(0)}>
-        Please Click On The App You Want To Learn More About!
+        Please Click On One Of My Apps To Learn More!
       </h2>
       <div className="iphone-wrapper">
         <div className="iphone">

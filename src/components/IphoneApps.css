@@ -1,13 +1,15 @@
 .iphone-container {
   background-color: #181717;
-  height: 110vh;
+  height: 120vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
   position: relative;
+
+  padding-bottom: 1rem;
+  /* border: 1rem solid red; */
 }
 
 .iphone-wrapper {
@@ -57,7 +59,7 @@
 .app-info {
   max-width: 90vh;
   height: max-content;
-  padding: 20px;
+  padding: 1rem;
   background-color: white;
   border-radius: 30px;
   word-wrap: break-word;
@@ -76,6 +78,16 @@
   padding: 20px;
 }
 
+.mobile-apps-title {
+  display: flex;
+  justify-content: center;
+  color: black;
+  width: 100%;
+  cursor: pointer;
+  padding: 20px;
+  background-color: white;
+}
+
 .iphone {
   position: relative;
 }
@@ -86,7 +98,7 @@
   border: none;
   width: 13%;
   height: 9%;
-  z-index: 999;
+  z-index: 995;
   padding: 0;
   transform: translate(-50%, -50%);
   cursor: pointer;
@@ -122,10 +134,11 @@
   }
 
   .iphone-image {
-    width: 60svh;
+    width: 57svh;
     padding-top: 0;
     padding-bottom: 10;
   }
+
   /* .app-info {
     width: 50vh;
     word-wrap: break-word;
@@ -144,5 +157,6 @@
     word-wrap: break-word;
     overflow-wrap: break-word;
     padding: 20px;
+    z-index: 999;
   }
 }
