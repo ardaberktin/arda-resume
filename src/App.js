@@ -11,6 +11,9 @@ import Footer from "./components/Footer";
 // source: https://www.youtube.com/watch?v=I2UBjN5ER4s&t=4427s
 // https://github.com/briancodex/react-website-v1
 
+//Useful resources:
+//animations: https://www.youtube.com/watch?v=GOuwOI-WSkE&t=1117s
+
 function App() {
   return (
     <>
