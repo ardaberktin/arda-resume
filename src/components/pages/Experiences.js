@@ -45,8 +45,8 @@ function Experience() {
 
           <h4 className="vertical-timeline-element-subtitle">
             Personal Project <br />
-            (This Website)
           </h4>
+          <p>(This Website)</p>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
