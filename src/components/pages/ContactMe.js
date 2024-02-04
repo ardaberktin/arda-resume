@@ -23,7 +23,7 @@ function ContactMe() {
               rel="noopener noreferrer"
               className="contact-email"
             >
-              <p>+1 (250) 507 1601</p>
+              <p>+1 (250) 507 1691</p>
             </a>
           </div>
         </div>
