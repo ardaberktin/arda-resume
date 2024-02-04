@@ -17,7 +17,14 @@ function ContactMe() {
         <div className="skill-category">
           <h2>Phone Number</h2>
           <div className="skill-list">
-            <p>+1 (250) 507 1601</p>
+            <a
+              href="tel:+12505071691"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="contact-email"
+            >
+              <p>+1 (250) 507 1601</p>
+            </a>
           </div>
         </div>
 
