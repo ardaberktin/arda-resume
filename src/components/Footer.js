@@ -1,12 +1,12 @@
 import React from "react";
 import "./Footer.css";
-import { Button } from "./Button";
+//import { Button } from "./Button";
 import { Link } from "react-router-dom";
 
 function Footer() {
   return (
     <div className="footer-container">
-      <section className="footer-subscription">
+      {/* <section className="footer-subscription">
         <p className="footer-subscription-heading">
           ---- FOOTER IN PROGRESS ----
         </p>
@@ -24,91 +24,141 @@ function Footer() {
             <Button buttonStyle="btn--outline">Subscribe</Button>
           </form>
         </div>
-      </section>
+      </section> */}
       <div class="footer-links">
         <div className="footer-link-wrapper">
           <div class="footer-link-items">
-            <h2>About Us</h2>
-            <Link to="/sign-up">How it works</Link>
-            <Link to="/">Testimonials</Link>
-            <Link to="/">Careers</Link>
-            <Link to="/">Investors</Link>
-            <Link to="/">Terms of Service</Link>
+            <h2>Pages</h2>
+            <Link to="/arda-resume/" className="footer-sublink">
+              Home
+            </Link>
+            <Link to="/arda-resume/experiences" className="footer-sublink">
+              Experiences
+            </Link>
+            <Link to="/arda-resume/projects" className="footer-sublink">
+              Projects
+            </Link>
+            <Link to="/arda-resume/contact-me" className="footer-sublink">
+              Contact Me
+            </Link>
           </div>
           <div class="footer-link-items">
-            <h2>Contact Us</h2>
-            <Link to="/">Contact</Link>
-            <Link to="/">Support</Link>
-            <Link to="/">Destinations</Link>
-            <Link to="/">Sponsorships</Link>
+            <h2>Projects</h2>
+            <Link
+              to="/arda-resume/projects#mobile-apps"
+              className="footer-sublink"
+            >
+              Money On Track
+            </Link>
+            <Link
+              to="/arda-resume/projects#desktop-apps"
+              className="footer-sublink"
+            >
+              Robber
+            </Link>
+            <Link
+              to="/arda-resume/projects#desktop-apps"
+              className="footer-sublink"
+            >
+              Jastagram
+            </Link>
+            <Link
+              to="/arda-resume/projects#mobile-apps"
+              className="footer-sublink"
+            >
+              MountDoug Maps - iOS
+            </Link>
+            <Link
+              to="/arda-resume/projects#mobile-apps"
+              className="footer-sublink"
+            >
+              MountDoug Maps - Android
+            </Link>
           </div>
         </div>
         <div className="footer-link-wrapper">
           <div className="footer-link-items">
-            <h2>Videos</h2>
-            <Link to="/">Submit Video</Link>
-            <Link to="/">Ambassadors</Link>
-            <Link to="/">Agency</Link>
-            <Link to="/">Influencer</Link>
-          </div>
-          <div className="footer-link-items">
             <h2>Social Media</h2>
-            <Link to="/">Instagram</Link>
-            <Link to="/">Facebook</Link>
-            <Link to="/">Youtube</Link>
-            <Link to="/">Twitter</Link>
+            <Link
+              to="https://linkedin.com/in/arda-berktin-861852253"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer-sublink"
+            >
+              LinkedIn <i class="fab fa-linkedin" />
+            </Link>
+            <Link
+              to="https://github.com/ardaberktin"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer-sublink"
+            >
+              GitHub <i class="fab fa-github" />
+            </Link>
+            <Link
+              to="https://instagram.com/ardaberktin"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer-sublink"
+            >
+              Instagram <i class="fab fa-instagram" />
+            </Link>
+            {/* <Link to="/">Email</Link> */}
+            <Link
+              to="mailto:arberktin@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer-sublink"
+            >
+              Email <i class="fa-solid fa-envelope"></i>
+            </Link>
           </div>
         </div>
       </div>
       <section className="social-media">
         <div class="social-media-wrap">
           <div class="footer-logo">
-            {/* <Link to="/" className="social-logo">
-              TRVL
-              <i class="fab fa-typo3" />
-            </Link> */}
+            <Link to="/" className="social-logo">
+              ARDA BERKTIN
+            </Link>
           </div>
           {/* <small class="website-rights">TRVL © 2020</small> */}
           <div class="social-icons">
             <Link
-              class="social-icon-link facebook"
-              to="/"
+              class="social-icon-link linkedin"
+              to="https://linkedin.com/in/arda-berktin-861852253"
               target="_blank"
-              aria-label="Facebook"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
             >
-              <i class="fab fa-facebook-f" />
+              <i class="fab fa-linkedin" />
+            </Link>
+            <Link
+              class="social-icon-link github"
+              to="https://github.com/ardaberktin"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Github"
+            >
+              <i class="fab fa-github" />
             </Link>
             <Link
               class="social-icon-link instagram"
-              to="/"
+              to="https://instagram.com/ardaberktin"
               target="_blank"
+              rel="noopener noreferrer"
               aria-label="Instagram"
             >
               <i class="fab fa-instagram" />
             </Link>
             <Link
-              class="social-icon-link youtube"
-              to="/"
+              class="social-icon-link gmail"
+              to="mailto:arberktin@gmail.com"
               target="_blank"
-              aria-label="Youtube"
+              rel="noopener noreferrer"
+              aria-label="Gmail"
             >
-              <i class="fab fa-youtube" />
-            </Link>
-            <Link
-              class="social-icon-link twitter"
-              to="/"
-              target="_blank"
-              aria-label="Twitter"
-            >
-              <i class="fab fa-twitter" />
-            </Link>
-            <Link
-              class="social-icon-link twitter"
-              to="/"
-              target="_blank"
-              aria-label="LinkedIn"
-            >
-              <i class="fab fa-linkedin" />
+              <i class="fa-solid fa-envelope"></i>
             </Link>
           </div>
         </div>
