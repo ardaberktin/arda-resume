@@ -5,7 +5,7 @@ import Home from "./components/pages/Home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Experiences from "./components/pages/Experiences";
 import Projects from "./components/pages/Projects";
-import ContactMe from "./components/pages/ContactMe";
+import AboutMe from "./components/pages/AboutMe";
 import Footer from "./components/Footer";
 
 // source: https://www.youtube.com/watch?v=I2UBjN5ER4s&t=4427s
@@ -23,7 +23,7 @@ function App() {
           <Route path="/arda-resume/" element={<Home />} />
           <Route path="/arda-resume/experiences" element={<Experiences />} />
           <Route path="/arda-resume/projects" element={<Projects />} />
-          <Route path="/arda-resume/contact-me" element={<ContactMe />} />
+          <Route path="/arda-resume/about-me" element={<AboutMe />} />
         </Routes>
         <Footer />
       </Router>

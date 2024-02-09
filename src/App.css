@@ -8,7 +8,7 @@
 .arda-resume,
 .experiences,
 .projects,
-.contact-me {
+.about-me {
   display: flex;
   height: 90vh;
   align-items: center;
@@ -27,27 +27,4 @@
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
-}
-
-.contact-me {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
-}
-.contact-social-icons {
-  position: relative;
-  justify-content: center;
-  align-items: center;
-}
-.contact-social-icon-link {
-  color: black;
-  font-size: 50px;
-}
-
-.contact-email {
-  padding: 0;
-  margin: 0;
-  color: black;
 }

@@ -1,0 +1,55 @@
+.contact-me {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.contact-me-title {
+  justify-content: center;
+  color: black;
+  width: 100%;
+  padding: 20px;
+  background-color: white;
+}
+.contact-social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+  gap: 50px; /* Add some space between the icons */
+}
+
+.contact-social-icon-link {
+  display: flex; /* Display links as flex items */
+  flex-direction: column; /* Stack icon and text vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text */
+  text-decoration: none; /* Remove default underline */
+  color: black; /* Set icon color */
+  font-size: 80px; /* Adjust icon size */
+}
+
+.contact-social-icon-ind {
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack icon and text vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text */
+}
+
+.contact-social-icon-ind p {
+  margin: 5px 0 0; /* Adjust spacing between icon and text */
+}
+
+.contact-social-icon-link i {
+  margin-bottom: 10px; /* Add margin below the icon */
+}
+
+.contact-social-icon-link p {
+  margin: 0; /* Reset default margin */
+}

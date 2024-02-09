@@ -128,10 +128,12 @@ function DesktopApps() {
                   <p>
                     • 2D (Frogger-like) game where you rob a bank and try to
                     escape from the cops before the train leaves. <br />
-                    • Built the game with 2 of my friends using Java and
+                    • Built the game with my team of 2 friends using Java and
                     object-oriented programming.
                     <br />• Designed the sprites and game mechanics, practicing
                     peer programming.
+                    <br />• Led the team and assigned my group mates their roles
+                    to meet the deadline effectively.
                   </p>
                   {/* Additional content for Area 2 */}
                 </div>
@@ -148,15 +150,15 @@ function DesktopApps() {
                     >
                       <GitHubIcon className="github-icon" />
                     </a>
-                    <br /> (This Website)
                   </h1>
 
                   <p>
-                    • Building a website with React that showcases all my
+                    • Built a website with React that showcases all my
                     professional accomplishments and experiences in a
                     beautifully designed user interface. <br />• Researched and
                     self-taught React to improve my interactive web development
-                    skills.
+                    skills. <br /> <br />
+                    Note: I sincerely hope that you like this website!
                   </p>
                   {/* Additional content for Area 2 */}
                 </div>

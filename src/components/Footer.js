@@ -38,8 +38,8 @@ function Footer() {
             <Link to="/arda-resume/projects" className="footer-sublink">
               Projects
             </Link>
-            <Link to="/arda-resume/contact-me" className="footer-sublink">
-              Contact Me
+            <Link to="/arda-resume/about-me" className="footer-sublink">
+              About Me
             </Link>
           </div>
           <div class="footer-link-items">
@@ -118,7 +118,7 @@ function Footer() {
       <section className="social-media">
         <div class="social-media-wrap">
           <div class="footer-logo">
-            <Link to="/" className="social-logo">
+            <Link to="/arda-resume/" className="social-logo">
               ARDA BERKTIN
             </Link>
           </div>

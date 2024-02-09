@@ -70,17 +70,17 @@ function Navbar() {
 
             <li>
               <Link
-                to="/arda-resume/contact-me"
+                to="/arda-resume/about-me"
                 className="nav-links-mobile"
                 onClick={closeMobileMenu}
               >
-                Contact Me
+                About Me
               </Link>
             </li>
           </ul>
           {button && (
-            <Button buttonStyle="btn--outline" to={"/arda-resume/contact-me"}>
-              Contact Me
+            <Button buttonStyle="btn--outline" to={"/arda-resume/about-me"}>
+              About Me
             </Button>
           )}
         </div>

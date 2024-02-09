@@ -10,9 +10,13 @@ function Skills() {
         <div className="skill-category">
           <h2>Languages</h2>
           <div className="skill-list">
-            <p>
+            {/* <p>
               Java, JavaScript, C, PHP, CSS, HTML, Swift, Swift UI, ROBOTC,
               React, Python
+            </p> */}
+            <p>
+              Java, Swift, SwiftUI, Python, React, JavaScript, C, HTML, PHP,
+              CSS, ROBOTC, Python
             </p>
           </div>
         </div>
@@ -21,7 +25,7 @@ function Skills() {
         <div className="skill-category">
           <h2>Operating Systems</h2>
           <div className="skill-list">
-            <p>Windows 7/8/10/11, MacOS, iOS</p>
+            <p>Windows 7/8/10/11, MacOS, iOS, Android</p>
           </div>
         </div>
 
@@ -48,7 +52,7 @@ function Skills() {
         <div className="skill-category">
           <h2>Other</h2>
           <div className="skill-list">
-            <p>Teamwork, Leadership, Communication, Problem-solving</p>
+            <p>Leadership, Teamwork, Communication, Creative Problem Solving</p>
           </div>
         </div>
       </div>
