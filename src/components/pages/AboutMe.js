@@ -13,8 +13,8 @@ function AboutMe() {
 
   return (
     <>
-      <ContactMe />
       <AboutMeInfo />
+      <ContactMe />
     </>
   );
 }

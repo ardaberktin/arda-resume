@@ -22,6 +22,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 60px;
   font-size: medium;
-  padding-top: 20px;
+  font-stretch: expanded;
+  background-color: white;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+.arda-image {
+  width: 40svh;
+  height: auto;
+  padding-top: 40px;
+}
+
+@media screen and (max-width: 960px) {
+  .about-me-container {
+    height: auto;
+  }
 }

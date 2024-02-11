@@ -3,7 +3,7 @@ import "./ContactMe.css";
 
 function ContactMe() {
   return (
-    <div className="skill-container">
+    <div className="contact-me-container">
       <h1 className="contact-me-title">Contact Me</h1>
       <div className="skill-wrapper">
         {/* Frontend Skills */}
