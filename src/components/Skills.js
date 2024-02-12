@@ -16,7 +16,7 @@ function Skills() {
             </p> */}
             <p>
               Java, Swift, SwiftUI, Python, React, JavaScript, C, HTML, PHP,
-              CSS, ROBOTC, Python
+              CSS, ROBOTC
             </p>
           </div>
         </div>
