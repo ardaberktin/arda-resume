@@ -9,7 +9,7 @@ function AboutMeInfo() {
 
       <img
         className="arda-image"
-        src="images/Ardamoji.png"
+        src="images/ardaface.png"
         alt="Arda Berktin"
       />
 
