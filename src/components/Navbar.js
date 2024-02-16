@@ -33,7 +33,7 @@ function Navbar() {
             className="navbar-logo"
             onClick={closeMobileMenu}
           >
-            <img className="arda-icon" src="images/Ardamoji.png" alt="Arda" />
+            <img className="arda-icon" src="images/ardaface.png" alt="Arda" />
             ARDA BERKTIN
           </Link>
           <div className="menu-icon" onClick={handleClick}>
