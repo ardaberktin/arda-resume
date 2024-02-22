@@ -13,6 +13,7 @@ import ProjectIcon from "@mui/icons-material/Build";
 import Launch from "@mui/icons-material/Launch";
 
 import { Link } from "react-router-dom";
+import ReactGA from "react-ga";
 
 //source: https://www.youtube.com/watch?v=x7mwVn2z3Sk&t=334s
 // https://github.com/machadop1407/react-personal-portfolio-website
@@ -22,7 +23,8 @@ function Experience() {
 
   useEffect(() => {
     window.scrollTo(0, 0); // Scroll to the top when the route changes
-  }, [location.pathname]);
+    ReactGA.pageview(location.pathname + location.search);
+  }, [location.pathname, location.search]); // Include location.pathname and location.search in the dependency array
 
   return (
     <div className="experience">
