@@ -4,21 +4,15 @@ import "../../App.css";
 import Cards from "../Cards";
 import HeroSection from "../HeroSection";
 import Skills from "../Skills";
-import { analytics } from "../../config/firebase";
+import ReactGA from "react-ga";
 
 function Home() {
   const location = useLocation();
 
   useEffect(() => {
     window.scrollTo(0, 0); // Scroll to the top when the route changes
-
-    const pageTitle = "Arda's Portfolio - Home"; // Set the page title
-    document.title = pageTitle; // Update document title
-
-    analytics.logEvent("page_view", {
-      page_path: location.pathname,
-      page_title: pageTitle, // Pass the pageTitle variable
-    });
+    ReactGA.pageview(location.pathname + location.search);
+    document.title = "Arda's Portfolio - Home";
   }, [location.pathname, location.search]);
 
   return (

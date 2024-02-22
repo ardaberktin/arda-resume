@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import "../../App.css";
 import IphoneApps from "../IphoneApps";
 import DesktopApps from "../DesktopApps";
-import { analytics } from "../../config/firebase";
+import ReactGA from "react-ga";
 
 function Projects() {
   const location = useLocation();
@@ -28,13 +28,8 @@ function Projects() {
       window.scrollTo(0, 0);
     }
 
-    const pageTitle = "Arda's Portfolio - Projects"; // Set the page title
-    document.title = pageTitle; // Update document title
-
-    analytics.logEvent("page_view", {
-      page_path: location.pathname,
-      page_title: pageTitle, // Pass the pageTitle variable
-    });
+    ReactGA.pageview(location.pathname + location.search);
+    document.title = "Arda's Portfolio - Projects";
   }, [location.pathname, location.hash, location.search]);
 
   return (
