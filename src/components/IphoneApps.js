@@ -50,9 +50,9 @@ function IphoneApps() {
     setButton(true);
 
     ReactGA.event({
-      category: "User_Interaction",
-      action: "Clicked_Mobile_App_Area",
-      label: `Area_${area}`, // Include the area information in the label
+      category: "user_interaction",
+      action: "clicked_mobile_app_area",
+      label: `area_${area}`, // Include the area information in the label
     });
   };
 
