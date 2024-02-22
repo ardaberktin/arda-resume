@@ -13,7 +13,9 @@ import ProjectIcon from "@mui/icons-material/Build";
 import Launch from "@mui/icons-material/Launch";
 
 import { Link } from "react-router-dom";
-import ReactGA from "react-ga";
+import { getAnalytics } from "firebase/analytics";
+
+const analytics = getAnalytics();
 
 //source: https://www.youtube.com/watch?v=x7mwVn2z3Sk&t=334s
 // https://github.com/machadop1407/react-personal-portfolio-website
@@ -23,8 +25,13 @@ function Experience() {
 
   useEffect(() => {
     window.scrollTo(0, 0); // Scroll to the top when the route changes
-    ReactGA.pageview(location.pathname + location.search);
-    document.title = "Arda's Portfolio - Experiences";
+    const pageTitle = "Arda's Portfolio - Experiences"; // Set the page title
+    document.title = pageTitle; // Update document title
+
+    analytics.logEvent("page_view", {
+      page_path: location.pathname,
+      page_title: pageTitle, // Pass the pageTitle variable
+    });
   }, [location.pathname, location.search]); // Include location.pathname and location.search in the dependency array
 
   return (

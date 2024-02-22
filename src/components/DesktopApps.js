@@ -4,7 +4,9 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import CloseIcon from "@mui/icons-material/Cancel";
-import ReactGA from "react-ga";
+import { getAnalytics } from "firebase/analytics";
+
+const analytics = getAnalytics();
 //import iPhoneImage from "./IphoneApps.png";
 // tried to import the images beforehand but didn't work
 
@@ -32,10 +34,9 @@ function DesktopApps() {
     setSelectedArea(area);
     setButton(true);
 
-    ReactGA.event({
-      category: "User Interaction",
-      action: "Clicked Desktop Area",
-      label: `Area ${area}`, // Include the area information in the label
+    analytics.logEvent("button_click", {
+      button_id: "Desktop_App_Button", // Assuming this is the unique identifier for your button
+      button_text: `Area ${area}`, // Using template literals to interpolate the value of the area variable
     });
   };
 
