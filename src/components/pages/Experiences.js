@@ -24,7 +24,7 @@ function Experience() {
   useEffect(() => {
     window.scrollTo(0, 0); // Scroll to the top when the route changes
     ReactGA.pageview(location.pathname + location.search);
-    document.title = "Experiences";
+    document.title = "Arda's Portfolio - Experiences";
   }, [location.pathname, location.search]); // Include location.pathname and location.search in the dependency array
 
   return (

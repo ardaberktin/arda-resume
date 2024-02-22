@@ -29,7 +29,7 @@ function Projects() {
     }
 
     ReactGA.pageview(location.pathname + location.search);
-    document.title = "Projects";
+    document.title = "Arda's Portfolio - Projects";
   }, [location.pathname, location.hash, location.search]);
 
   return (

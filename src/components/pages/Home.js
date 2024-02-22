@@ -12,7 +12,7 @@ function Home() {
   useEffect(() => {
     window.scrollTo(0, 0); // Scroll to the top when the route changes
     ReactGA.pageview(location.pathname + location.search);
-    document.title = "Home";
+    document.title = "Arda's Portfolio - Home";
   }, [location.pathname, location.search]);
 
   return (
