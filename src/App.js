@@ -7,6 +7,9 @@ import Experiences from "./components/pages/Experiences";
 import Projects from "./components/pages/Projects";
 import AboutMe from "./components/pages/AboutMe";
 import Footer from "./components/Footer";
+import ReactGA from "react-ga";
+
+ReactGA.initialize("G-P7Z398R6GK"); // Replace with your tracking ID
 
 // source: https://www.youtube.com/watch?v=I2UBjN5ER4s&t=4427s
 // https://github.com/briancodex/react-website-v1

@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import "../../App.css";
 import IphoneApps from "../IphoneApps";
 import DesktopApps from "../DesktopApps";
+import ReactGA from "react-ga";
 
 function Projects() {
   const location = useLocation();
@@ -26,7 +27,9 @@ function Projects() {
       // If no section identifier, scroll to the top
       window.scrollTo(0, 0);
     }
-  }, [location.pathname, location.hash]);
+
+    ReactGA.pageview(location.pathname + location.search);
+  }, [location.pathname, location.hash, location.search]);
 
   return (
     <>
