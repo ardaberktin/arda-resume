@@ -4,7 +4,7 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import CloseIcon from "@mui/icons-material/Cancel";
-import { analytics } from "../../config/firebase";
+import { analytics } from "../config/firebase";
 //import iPhoneImage from "./IphoneApps.png";
 // tried to import the images beforehand but didn't work
 
