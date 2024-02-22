@@ -29,6 +29,7 @@ function Projects() {
     }
 
     ReactGA.pageview(location.pathname + location.search);
+    document.title = "Projects";
   }, [location.pathname, location.hash, location.search]);
 
   return (
