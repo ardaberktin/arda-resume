@@ -4,6 +4,7 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import CloseIcon from "@mui/icons-material/Cancel";
+import ReactGA from "react-ga";
 //import iPhoneImage from "./IphoneApps.png";
 // tried to import the images beforehand but didn't work
 
@@ -47,6 +48,12 @@ function IphoneApps() {
     setCurrentImageIndex(0);
     setSelectedArea(area);
     setButton(true);
+
+    ReactGA.event({
+      category: "User Interaction",
+      action: "Clicked Mobile App Area",
+      label: `Area ${area}`, // Include the area information in the label
+    });
   };
 
   const scrollBackward = (area) => {
