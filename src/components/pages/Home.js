@@ -4,9 +4,7 @@ import "../../App.css";
 import Cards from "../Cards";
 import HeroSection from "../HeroSection";
 import Skills from "../Skills";
-import { getAnalytics } from "firebase/analytics";
-
-const analytics = getAnalytics();
+import { analytics } from "../../config/firebase";
 
 function Home() {
   const location = useLocation();

@@ -3,9 +3,7 @@ import { useLocation } from "react-router-dom";
 import "../../App.css";
 import ContactMe from "../ContactMe";
 import AboutMeInfo from "../AboutMeInfo";
-import { getAnalytics } from "firebase/analytics";
-
-const analytics = getAnalytics();
+import { analytics } from "../../config/firebase";
 
 function AboutMe() {
   const location = useLocation();

@@ -13,9 +13,7 @@ import ProjectIcon from "@mui/icons-material/Build";
 import Launch from "@mui/icons-material/Launch";
 
 import { Link } from "react-router-dom";
-import { getAnalytics } from "firebase/analytics";
-
-const analytics = getAnalytics();
+import { analytics } from "../../config/firebase";
 
 //source: https://www.youtube.com/watch?v=x7mwVn2z3Sk&t=334s
 // https://github.com/machadop1407/react-personal-portfolio-website
