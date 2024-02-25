@@ -127,7 +127,7 @@
 @media screen and (max-width: 960px) {
   .desktop-container {
     max-width: 100%;
-    height: 160vh;
+    height: 100vh;
     flex-direction: column;
     justify-content: flex-start;
     overflow-y: hidden;
@@ -159,10 +159,10 @@
 
   .desktop-app-info {
     position: absolute;
-    top: 32%; /* Adjust as needed */
+    top: 50%; /* Adjust as needed */
     left: 50%; /* Adjust as needed */
     transform: translate(-50%, -50%);
-    width: 90%; /* Adjust as needed */
+    width: 100%; /* Adjust as needed */
     height: auto;
     background-color: white;
     border-radius: 30px;
