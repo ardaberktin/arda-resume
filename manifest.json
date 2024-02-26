@@ -8,12 +8,12 @@
       "type": "image/x-icon"
     },
     {
-      "src": "ardamoji.png",
+      "src": "ardaface.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "ardamoji.png",
+      "src": "ardaface.png",
       "type": "image/png",
       "sizes": "512x512"
     }
