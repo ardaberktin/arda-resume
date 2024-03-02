@@ -25,7 +25,7 @@ function Cards() {
             <CardItem
               src="images/Robber.jpg"
               text="2D Video Game Built With Java"
-              label="Game"
+              label="Video Game"
               path="/arda-resume/projects#desktop-apps"
             />
           </ul>
