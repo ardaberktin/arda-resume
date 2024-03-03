@@ -7,60 +7,40 @@ import "./Navbar.css";
 function Navbar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
-  const [scroll, setScroll] = useState(true);
+  const [scroll, setScroll] = useState(false); // Initialize as false
+
   const location = useLocation();
 
   const closeMobileMenu = () => setClick(false);
 
-  const handleClick = () => {
-    setClick(!click);
-    setScroll(!scroll);
-  };
+  const handleClick = () => setClick(!click);
 
-  const showButton = () => {
-    if (window.innerWidth <= 960) {
-      setButton(false);
-    } else {
-      setButton(true);
-    }
-  };
+  const showButton = () => setButton(window.innerWidth > 960);
 
-  const changeBackground = useCallback(() => {
+  const handleScroll = useCallback(() => {
     if (
       location.pathname === "/arda-resume/" &&
-      location.pathname.length === 13
+      location.pathname.length === 13 &&
+      !click
     ) {
-      if (window.scrollY >= 200) {
-        setScroll(true);
-      } else {
-        setScroll(false);
-      }
+      setScroll(window.scrollY > 200); // Set scroll state based on scroll position
     } else {
       setScroll(true);
     }
-  }, [location.pathname]);
+  }, [click, location.pathname]);
 
   useEffect(() => {
     showButton();
+    handleScroll(); // Initialize scroll state
 
-    if (
-      location.pathname === "/arda-resume/" &&
-      location.pathname.length === 13
-    ) {
-      setScroll(false);
-    } else {
-      setScroll(true);
-    }
-    const handleScroll = () => {
-      changeBackground();
-    };
     window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", showButton);
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", showButton);
     };
-  }, [location.pathname, changeBackground]);
-
-  window.addEventListener("resize", showButton);
+  }, [handleScroll]);
 
   return (
     <>

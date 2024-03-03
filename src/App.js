@@ -19,7 +19,7 @@ function App() {
   return (
     <>
       <Router>
-        <Navbar listenToScroll={window.location.pathname === "/arda-resume/"} />
+        <Navbar />
         <Routes>
           <Route path="/arda-resume/" element={<Home />} />
           <Route path="/arda-resume/experiences" element={<Experiences />} />
