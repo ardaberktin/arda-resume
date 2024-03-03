@@ -13,6 +13,10 @@
   overflow: scroll;
 }
 
+.iphone-container h1 {
+  text-align: center;
+}
+
 .iphone-wrapper {
   display: flex;
   align-items: center;

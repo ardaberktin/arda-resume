@@ -13,6 +13,10 @@
   overflow: scroll;
 }
 
+.desktop-container h1 {
+  text-align: center;
+}
+
 .desktop-wrapper {
   display: flex;
   align-items: center;

@@ -10,6 +10,10 @@
   padding-bottom: 100px;
 }
 
+.contact-me-container h1 {
+  text-align: center;
+}
+
 .contact-me-title {
   justify-content: center;
   color: black;

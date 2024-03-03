@@ -1,14 +1,21 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { Button } from "./Button";
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
+  const [scroll, setScroll] = useState(true);
+  const location = useLocation();
 
-  const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
+
+  const handleClick = () => {
+    setClick(!click);
+    setScroll(!scroll);
+  };
 
   const showButton = () => {
     if (window.innerWidth <= 960) {
@@ -18,15 +25,46 @@ function Navbar() {
     }
   };
 
+  const changeBackground = useCallback(() => {
+    if (
+      location.pathname === "/arda-resume/" &&
+      location.pathname.length === 13
+    ) {
+      if (window.scrollY >= 200) {
+        setScroll(true);
+      } else {
+        setScroll(false);
+      }
+    } else {
+      setScroll(true);
+    }
+  }, [location.pathname]);
+
   useEffect(() => {
     showButton();
-  }, []);
+
+    if (
+      location.pathname === "/arda-resume/" &&
+      location.pathname.length === 13
+    ) {
+      setScroll(false);
+    } else {
+      setScroll(true);
+    }
+    const handleScroll = () => {
+      changeBackground();
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [location.pathname, changeBackground]);
 
   window.addEventListener("resize", showButton);
 
   return (
     <>
-      <nav className="navbar">
+      <nav className={scroll ? "navbar" : "navbar trans"}>
         <div className="navbar-container">
           <Link
             to="/arda-resume/"
