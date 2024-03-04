@@ -50,7 +50,7 @@ function IphoneApps() {
     setButton(true);
 
     ReactGA.event({
-      category: "user_interaction",
+      category: "user_engagement",
       action: "clicked_mobile_app_area",
       label: `area_${area}`, // Include the area information in the label
     });
@@ -126,7 +126,6 @@ function IphoneApps() {
                 onClick={() => closeMobileMenu()}
                 fontSize="large"
               />
-
               {selectedArea === 0 && (
                 <>
                   <h1>

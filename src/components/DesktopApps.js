@@ -33,7 +33,7 @@ function DesktopApps() {
     setButton(true);
 
     ReactGA.event({
-      category: "user_interaction",
+      category: "user_engagement",
       action: "clicked_desktop_area",
       label: `area_${area}`, // Include the area information in the label
     });
