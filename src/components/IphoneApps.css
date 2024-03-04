@@ -70,6 +70,7 @@
   border-radius: 30px;
   word-wrap: break-word;
   overflow-wrap: break-word;
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5);
 }
 
 .exit-button {
@@ -155,8 +156,8 @@
     position: absolute;
     top: 48%; /* Adjust as needed */
     left: 50%; /* Adjust as needed */
-    transform: translate(-50%, -50%);
-    width: 90%; /* Adjust as needed */
+    transform: translate(-50%, -45%);
+    width: 100%; /* Adjust as needed */
     background-color: white;
     border-radius: 30px;
     word-wrap: break-word;
