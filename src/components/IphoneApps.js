@@ -148,7 +148,6 @@ function IphoneApps() {
                       <GitHubIcon className="github-icon" />
                     </a>
                   </h1>
-
                   <br />
                   <p>
                     • Personal Finance app built with Swift <br />

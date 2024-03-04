@@ -32,7 +32,7 @@ function Experience() {
       <VerticalTimeline lineColor="#3e497a">
         <VerticalTimelineElement
           className="vertical-timeline-element--project"
-          date="Dec 2023 - Present"
+          date="January 2023 - Present"
           iconStyle={{ background: "#2444b5", color: "#fff" }}
           icon={<ProjectIcon />}
         >
@@ -54,7 +54,7 @@ function Experience() {
 
         <VerticalTimelineElement
           className="vertical-timeline-element--project"
-          date="June 2023"
+          date="December 2023"
           iconStyle={{ background: "#2444b5", color: "#fff" }}
           icon={<ProjectIcon />}
         >
@@ -115,7 +115,7 @@ function Experience() {
 
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
-          date="2022 - Present"
+          date="September 2022 - Present"
           iconStyle={{ background: "#b5701b", color: "#fff" }}
           icon={<SchoolIcon />}
         >
@@ -131,7 +131,7 @@ function Experience() {
             The Bachelor of Software Engineering (BSEng), {"  "}2<sup>nd</sup>{" "}
             Year.
             <br />
-            Expected Graduation: 2027
+            Expected Graduation: Jan, 2027
           </p>
         </VerticalTimelineElement>
 
@@ -201,7 +201,7 @@ function Experience() {
 
         <VerticalTimelineElement
           className="vertical-timeline-element--project"
-          date="Apr - May 2022"
+          date="April - May 2022"
           iconStyle={{ background: "#2444b5", color: "#fff" }}
           icon={<ProjectIcon />}
         >
