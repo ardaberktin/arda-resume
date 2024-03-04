@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/arda-resume/static/css/main.b0b1ff21.css",
+    "main.css": "/arda-resume/static/css/main.629ecc25.css",
     "main.js": "/arda-resume/static/js/main.38fcbc26.js",
     "static/media/img-home.jpg": "/arda-resume/static/media/img-home.c034239ee9a63564602b.jpg",
     "index.html": "/arda-resume/index.html",
-    "main.b0b1ff21.css.map": "/arda-resume/static/css/main.b0b1ff21.css.map",
+    "main.629ecc25.css.map": "/arda-resume/static/css/main.629ecc25.css.map",
     "main.38fcbc26.js.map": "/arda-resume/static/js/main.38fcbc26.js.map"
   },
   "entrypoints": [
-    "static/css/main.b0b1ff21.css",
+    "static/css/main.629ecc25.css",
     "static/js/main.38fcbc26.js"
   ]
 }
