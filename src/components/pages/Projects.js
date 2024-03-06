@@ -11,14 +11,14 @@ function Projects() {
   useEffect(() => {
     // Extract the section identifier from the hash
     //const section = location.hash.substr(1);
-    const section = location.hash.slice(1);
+    const section = location.hash.slice(1).split("&");
 
-    console.log(section);
+    console.log(section[0]);
 
-    if (section) {
+    if (section[0]) {
       // Scroll to the element with the matching id
-      const targetElement = document.getElementById(section);
-      console.log(targetElement);
+      const targetElement = document.getElementById(section[0]);
+      //console.log(targetElement);
 
       if (targetElement) {
         targetElement.scrollIntoView({ behavior: "smooth", block: "start" });

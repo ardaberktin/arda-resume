@@ -5,6 +5,7 @@ import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import CloseIcon from "@mui/icons-material/Cancel";
 import ReactGA from "react-ga";
+import { useLocation } from "react-router-dom";
 //import iPhoneImage from "./IphoneApps.png";
 // tried to import the images beforehand but didn't work
 
@@ -26,6 +27,8 @@ function IphoneApps() {
 
   const closeMobileMenu = () => setButton(false);
 
+  const location = useLocation();
+
   // Initialize ref with current window width add useRef to react to use!!
   // const windowWidth = useRef(window.innerWidth);
 
@@ -42,7 +45,21 @@ function IphoneApps() {
 
   useEffect(() => {
     showButton();
-  }, []);
+
+    const sections = location.hash.slice(1).split("&");
+    const section = sections[1];
+
+    if (section) {
+      // Scroll to the element with the matching id
+      if (section === "mot") {
+        handleButtonClick(1);
+      } else if (section === "mdmi") {
+        handleButtonClick(2);
+      } else if (section === "mdma") {
+        handleButtonClick(3);
+      }
+    }
+  }, [location.hash]);
 
   const handleButtonClick = (area) => {
     setCurrentImageIndex(0);

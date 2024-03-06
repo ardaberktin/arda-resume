@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./DesktopApps.css";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import CloseIcon from "@mui/icons-material/Cancel";
 import ReactGA from "react-ga";
+import { useLocation } from "react-router-dom";
 //import iPhoneImage from "./IphoneApps.png";
 // tried to import the images beforehand but didn't work
 
@@ -23,6 +24,8 @@ function DesktopApps() {
   const [button, setButton] = useState(false);
 
   const closeMobileMenu = () => setButton(false);
+
+  const location = useLocation();
 
   // Initialize ref with current window width add useRef to react to use!!
   // const windowWidth = useRef(window.innerWidth);
@@ -54,6 +57,20 @@ function DesktopApps() {
       );
     }
   };
+
+  useEffect(() => {
+    const sections = location.hash.slice(1).split("&");
+    const section = sections[1];
+
+    if (section) {
+      // Scroll to the element with the matching id
+      if (section === "robber") {
+        handleButtonClick(2);
+      } else if (section === "jastagram") {
+        handleButtonClick(1);
+      }
+    }
+  }, [location.hash]);
 
   return (
     <div className="desktop-container" id="desktop-apps">

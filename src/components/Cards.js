@@ -20,13 +20,13 @@ function Cards() {
               src="images/MoneyOnTrack.jpg"
               text="Personal Finance App Built With Swift"
               label="Mobile App"
-              path="/arda-resume/projects#mobile-apps"
+              path="/arda-resume/projects#mobile-apps&mot"
             />
             <CardItem
               src="images/Robber.jpg"
               text="2D Video Game Built With Java"
               label="Video Game"
-              path="/arda-resume/projects#desktop-apps"
+              path="/arda-resume/projects#desktop-apps&robber"
             />
           </ul>
           <ul className="cards__items">
@@ -34,19 +34,19 @@ function Cards() {
               src="images/Jastagram.jpg"
               text="Social Media Website Built With HTML, CSS, JavaScript And PHP"
               label="Website"
-              path="/arda-resume/projects#desktop-apps"
+              path="/arda-resume/projects#desktop-apps&jastagram"
             />
             <CardItem
               src="images/MountDougMaps-iOS.jpg"
               text="Maps App For Mount Douglas Secondary Built with Swift"
               label="Mobile App"
-              path="/arda-resume/projects#mobile-apps"
+              path="/arda-resume/projects#mobile-apps&mdmi"
             />
             <CardItem
               src="images/MountDougMaps-Android.jpg"
               text="Maps App For Mount Douglas Secondary Built With Java"
               label="Mobile App"
-              path="/arda-resume/projects#mobile-apps"
+              path="/arda-resume/projects#mobile-apps&mdma"
             />
           </ul>
         </div>
