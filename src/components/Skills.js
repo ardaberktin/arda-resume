@@ -34,8 +34,8 @@ function Skills() {
           <h2>Software</h2>
           <div className="skill-list">
             <p>
-              Git, MS Visual Studio Code, Eclipse, XCode, Android Studio, Adobe
-              Photoshop, MS Office (Word, Excel, PowerPoint)
+              Figma, Git, MS Visual Studio Code, Eclipse, XCode, Android Studio,
+              Adobe Photoshop, MS Office (Word, Excel, PowerPoint)
             </p>
           </div>
         </div>
