@@ -4,9 +4,10 @@
   height: auto;
 }
 
-.cards > h1 {
+.cards h1 {
   text-align: center;
-  margin-top: -100px;
+  margin-top: -120px;
+  font-size: 2.5rem;
 }
 
 .cards__container {
@@ -122,6 +123,6 @@
 
 @media screen and (max-width: 960px) {
   .cards > h1 {
-    margin-top: -130px;
+    margin-top: -180px;
   }
 }
