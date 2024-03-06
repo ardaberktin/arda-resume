@@ -64,10 +64,12 @@ function DesktopApps() {
 
     if (section) {
       // Scroll to the element with the matching id
-      if (section === "robber") {
-        handleButtonClick(2);
-      } else if (section === "jastagram") {
+      if (section === "jastagram") {
         handleButtonClick(1);
+      } else if (section === "robber") {
+        handleButtonClick(2);
+      } else if (section === "portfolio") {
+        handleButtonClick(3);
       }
     }
   }, [location.hash]);

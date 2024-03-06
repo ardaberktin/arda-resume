@@ -40,7 +40,7 @@ function Experience() {
             Arda's Portfolio
             <Link
               className="project-link"
-              to="/arda-resume/projects#desktop-apps"
+              to="/arda-resume/projects#desktop-apps&portfolio"
             >
               <Launch />
             </Link>
@@ -62,7 +62,7 @@ function Experience() {
             Money On Track
             <Link
               className="project-link"
-              to="/arda-resume/projects#mobile-apps"
+              to="/arda-resume/projects#mobile-apps&mot"
             >
               <Launch />
             </Link>
@@ -102,7 +102,7 @@ function Experience() {
             Mount Doug Maps - iOS{" "}
             <Link
               className="project-link"
-              to="/arda-resume/projects#mobile-apps"
+              to="/arda-resume/projects#mobile-apps&mdmi"
             >
               <Launch />
             </Link>
@@ -169,7 +169,7 @@ function Experience() {
             Jastagram{" "}
             <Link
               className="project-link"
-              to="/arda-resume/projects#desktop-apps"
+              to="/arda-resume/projects#desktop-apps&jastagram"
             >
               <Launch />
             </Link>
@@ -188,7 +188,7 @@ function Experience() {
             Mount Doug Maps - Android{" "}
             <Link
               className="project-link"
-              to="/arda-resume/projects#mobile-apps"
+              to="/arda-resume/projects#mobile-apps&mdma"
             >
               <Launch />
             </Link>
@@ -209,7 +209,7 @@ function Experience() {
             Robber
             <Link
               className="project-link"
-              to="/arda-resume/projects#desktop-apps"
+              to="/arda-resume/projects#desktop-apps&robber"
             >
               <Launch />
             </Link>
