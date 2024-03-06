@@ -22,12 +22,12 @@ function AboutMeInfo() {
         <br />
         While my journey in software engineering has been exciting, it's the
         projects that truly define my enthusiasm. Take, for instance, the Money
-        on Track application – a brainchild built from scratch using Swift and
-        SwiftUI. This project wasn't just about lines of code; it was about
-        crafting an experience that empowers users to take control of their
-        finances. Integrating Firebase API for seamless data storage and
-        incorporating an AI assistant named Budget Buddy, powered by OpenAI's
-        API, was just the beginning of the adventure. <br />
+        on Track application, built from scratch using Swift and SwiftUI. This
+        project wasn't just about lines of code; it was about crafting an
+        experience that empowers users to take control of their finances.
+        Integrating Firebase API for seamless data storage and incorporating an
+        AI assistant named Budget Buddy, powered by OpenAI's API, was just the
+        beginning of the adventure. <br />
         <br />
         But beyond the projects, what defines me are my values and skills that I
         bring to the table. I thrive in collaborative environments, where
