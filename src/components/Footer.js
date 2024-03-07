@@ -45,31 +45,31 @@ function Footer() {
           <div class="footer-link-items">
             <h2>Projects</h2>
             <Link
-              to="/arda-resume/projects#mobile-apps"
+              to="/arda-resume/projects#mobile-apps&mot"
               className="footer-sublink"
             >
               Money On Track
             </Link>
             <Link
-              to="/arda-resume/projects#desktop-apps"
+              to="/arda-resume/projects#desktop-apps&robber"
               className="footer-sublink"
             >
               Robber
             </Link>
             <Link
-              to="/arda-resume/projects#desktop-apps"
+              to="/arda-resume/projects#desktop-apps&jastagram"
               className="footer-sublink"
             >
               Jastagram
             </Link>
             <Link
-              to="/arda-resume/projects#mobile-apps"
+              to="/arda-resume/projects#mobile-apps&mdmi"
               className="footer-sublink"
             >
               MountDoug Maps - iOS
             </Link>
             <Link
-              to="/arda-resume/projects#mobile-apps"
+              to="/arda-resume/projects#mobile-apps&mdma"
               className="footer-sublink"
             >
               MountDoug Maps - Android
