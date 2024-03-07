@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { Button } from "./Button";
-import { Link } from "react-router-dom";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar() {
@@ -11,11 +10,18 @@ function Navbar() {
 
   const location = useLocation();
 
-  const closeMobileMenu = () => setClick(false);
+  const closeMobileMenu = () => {
+    setClick(false);
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
 
   const handleClick = () => setClick(!click);
 
-  const showButton = () => setButton(window.innerWidth > 960);
+  const showButton = useCallback(() => setButton(window.innerWidth > 960), []);
 
   const handleScroll = useCallback(() => {
     if (
@@ -33,14 +39,19 @@ function Navbar() {
     showButton();
     handleScroll(); // Initialize scroll state
 
+    const handleResize = () => {
+      showButton();
+      handleScroll();
+    };
+
     window.addEventListener("scroll", handleScroll);
-    window.addEventListener("resize", showButton);
+    window.addEventListener("resize", handleResize);
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
-      window.removeEventListener("resize", showButton);
+      window.removeEventListener("resize", handleResize);
     };
-  }, [handleScroll]);
+  }, [handleScroll, showButton]);
 
   return (
     <>
@@ -97,7 +108,11 @@ function Navbar() {
             </li>
           </ul>
           {button && (
-            <Button buttonStyle="btn--outline" to={"/arda-resume/about-me"}>
+            <Button
+              buttonStyle="btn--outline"
+              to={"/arda-resume/about-me"}
+              onClick={closeMobileMenu}
+            >
               About Me
             </Button>
           )}
