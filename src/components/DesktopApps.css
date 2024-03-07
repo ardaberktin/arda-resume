@@ -2,6 +2,7 @@
   background-color: #181717;
   /* height: 120vh; */
   height: auto;
+  min-height: 120vh;
   width: 100%;
   display: flex;
   flex-direction: column;
