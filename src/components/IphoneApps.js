@@ -69,7 +69,7 @@ function IphoneApps() {
     ReactGA.event({
       category: "user_interaction",
       action: "clicked_mobile_app_area",
-      label: area, // Include the area information in the label
+      label: area.toString(), // Include the area information in the label
     });
   };
 
