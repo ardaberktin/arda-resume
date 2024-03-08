@@ -97,6 +97,7 @@ function Experience() {
           date="June 2023"
           iconStyle={{ background: "#2444b5", color: "#fff" }}
           icon={<ProjectIcon />}
+          visible={true}
         >
           <h3 className="vertical-timeline-element-title">
             Mount Doug Maps - iOS{" "}
