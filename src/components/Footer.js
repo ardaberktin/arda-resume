@@ -4,6 +4,14 @@ import "./Footer.css";
 import { Link } from "react-router-dom";
 
 function Footer() {
+  const goToStart = () => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="footer-container">
       {/* <section className="footer-subscription">
@@ -29,16 +37,32 @@ function Footer() {
         <div className="footer-link-wrapper">
           <div class="footer-link-items">
             <h2>Pages</h2>
-            <Link to="/arda-resume/" className="footer-sublink">
+            <Link
+              to="/arda-resume/"
+              className="footer-sublink"
+              onClick={goToStart}
+            >
               Home
             </Link>
-            <Link to="/arda-resume/experiences" className="footer-sublink">
+            <Link
+              to="/arda-resume/experiences"
+              className="footer-sublink"
+              onClick={goToStart}
+            >
               Experiences
             </Link>
-            <Link to="/arda-resume/projects" className="footer-sublink">
+            <Link
+              to="/arda-resume/projects"
+              className="footer-sublink"
+              onClick={goToStart}
+            >
               Projects
             </Link>
-            <Link to="/arda-resume/about-me" className="footer-sublink">
+            <Link
+              to="/arda-resume/about-me"
+              className="footer-sublink"
+              onClick={goToStart}
+            >
               About Me
             </Link>
           </div>
@@ -47,30 +71,35 @@ function Footer() {
             <Link
               to="/arda-resume/projects#mobile-apps&mot"
               className="footer-sublink"
+              onClick={goToStart}
             >
               Money On Track
             </Link>
             <Link
               to="/arda-resume/projects#desktop-apps&robber"
               className="footer-sublink"
+              onClick={goToStart}
             >
               Robber
             </Link>
             <Link
               to="/arda-resume/projects#desktop-apps&jastagram"
               className="footer-sublink"
+              onClick={goToStart}
             >
               Jastagram
             </Link>
             <Link
               to="/arda-resume/projects#mobile-apps&mdmi"
               className="footer-sublink"
+              onClick={goToStart}
             >
               MountDoug Maps - iOS
             </Link>
             <Link
               to="/arda-resume/projects#mobile-apps&mdma"
               className="footer-sublink"
+              onClick={goToStart}
             >
               MountDoug Maps - Android
             </Link>
@@ -118,7 +147,11 @@ function Footer() {
       <section className="social-media">
         <div class="social-media-wrap">
           <div class="footer-logo">
-            <Link to="/arda-resume/" className="social-logo">
+            <Link
+              to="/arda-resume/"
+              className="social-logo"
+              onClick={goToStart}
+            >
               ARDA BERKTIN
             </Link>
           </div>
