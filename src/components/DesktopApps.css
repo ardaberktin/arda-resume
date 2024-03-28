@@ -56,6 +56,11 @@
   padding: 20px;
 }
 
+.desktop-app-image-info > p {
+  display: flex;
+  justify-content: center;
+}
+
 .scroll-button {
   cursor: pointer;
 }
