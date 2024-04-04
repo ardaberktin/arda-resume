@@ -14,13 +14,15 @@
 
 @media screen and (max-width: 800px) {
   .skill-container {
-    height: 200vh;
+    /* height: 200vh; */
+    height: auto;
   }
 }
 
 @media screen and (min-width: 800px) and (max-width: 926px) {
   .skill-container {
-    height: 300vh;
+    /* height: 300vh; */
+    height: auto;
   }
 }
 

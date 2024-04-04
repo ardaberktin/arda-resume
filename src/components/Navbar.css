@@ -20,6 +20,7 @@
   align-items: center;
   height: 80px;
   max-width: 1500px;
+  max-width: 100%;
 }
 
 .navbar-logo {
@@ -85,7 +86,7 @@
   display: none;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 800px) {
   .NavbarItems {
     position: relative;
   }
