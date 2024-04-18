@@ -36,55 +36,55 @@ function ContactMe() {
           </div>
         </div>
         <h2>Connect With Me</h2>
-        <div class="contact-social-icons">
+        <div className="contact-social-icons">
           <div className="contact-social-icon-ind">
             <Link
-              class="contact-social-icon-link linkedin"
+              className="contact-social-icon-link linkedin"
               to="https://linkedin.com/in/arda-berktin-861852253"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
             >
-              <i class="fab fa-linkedin" />
+              <i className="fab fa-linkedin" />
             </Link>
             <h4>LinkedIn</h4>
             <p>in/ardaberktin</p>
           </div>
           <div className="contact-social-icon-ind">
             <Link
-              class="contact-social-icon-link github"
+              className="contact-social-icon-link github"
               to="https://github.com/ardaberktin"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Github"
             >
-              <i class="fab fa-github" />
+              <i className="fab fa-github" />
             </Link>
             <h4>Github</h4>
             <p>/ardaberktin</p>
           </div>
           <div className="contact-social-icon-ind">
             <Link
-              class="contact-social-icon-link instagram"
+              className="contact-social-icon-link instagram"
               to="https://instagram.com/ardaberktin"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
             >
-              <i class="fab fa-instagram" />
+              <i className="fab fa-instagram" />
             </Link>
             <h4>Instagram</h4>
             <p>@ardaberktin</p>
           </div>
           <div className="contact-social-icon-ind">
             <Link
-              class="contact-social-icon-link gmail"
+              className="contact-social-icon-link gmail"
               to="mailto:arberktin@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Gmail"
             >
-              <i class="fa-solid fa-envelope"></i>
+              <i className="fa-solid fa-envelope"></i>
             </Link>
             <h4>E-mail</h4>
             <p>arberktin@gmail.com</p>

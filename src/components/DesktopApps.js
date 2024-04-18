@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import "./DesktopApps.css";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
+import ExpandLessIcon from "@mui/icons-material/ExpandLess";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import CloseIcon from "@mui/icons-material/Cancel";
 import ReactGA from "react-ga";
@@ -11,8 +13,8 @@ import { useLocation } from "react-router-dom";
 
 function DesktopApps() {
   const [selectedArea, setSelectedArea] = useState(0);
-
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [banner, setBanner] = useState(true);
 
   const images1 = ["Robber1.png", "Robber2.png"];
 
@@ -26,6 +28,10 @@ function DesktopApps() {
   const closeMobileMenu = () => setButton(false);
 
   const location = useLocation();
+
+  const handleBanner = () => {
+    setBanner(!banner);
+  };
 
   // Initialize ref with current window width add useRef to react to use!!
   // const windowWidth = useRef(window.innerWidth);
@@ -60,207 +66,254 @@ function DesktopApps() {
 
   useEffect(() => {
     const sections = location.hash.slice(1).split("&");
-    const section = sections[1];
+    const deviceSection = sections[0];
+    const appSection = sections[1];
 
-    if (section) {
+    if (deviceSection === "desktop-apps") {
+      setBanner(false);
+
       // Scroll to the element with the matching id
-      if (section === "jastagram") {
+      const targetElement = document.getElementById("desktop-apps");
+      console.log(targetElement);
+
+      // Scroll to the target
+      if (targetElement) {
+        setTimeout(() => {
+          targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 100); // Adjust the delay as needed
+      }
+    }
+
+    if (appSection) {
+      // Scroll to the element with the matching id
+      if (appSection === "jastagram") {
         handleButtonClick(1);
-      } else if (section === "robber") {
+      } else if (appSection === "robber") {
         handleButtonClick(2);
-      } else if (section === "portfolio") {
+      } else if (appSection === "portfolio") {
         handleButtonClick(3);
       }
     }
   }, [location.hash]);
 
   return (
-    <div className="desktop-container" id="desktop-apps">
-      <h1 className="desktop-apps-title">Desktop Apps & Websites</h1>
-      <h2 className="desktop-app-description">
-        Please Click On One Of My Projects To Learn More!
-      </h2>
-      <div className="desktop-wrapper">
-        <div className="desktop">
-          <button
-            className="desktop-invisible-button desktop-button-area-1"
-            onClick={() => handleButtonClick(1)}
-          />
-
-          {/* Invisible button overlay for Area 2 */}
-          <button
-            className="desktop-invisible-button desktop-button-area-2"
-            onClick={() => handleButtonClick(2)}
-          />
-
-          <button
-            className="desktop-invisible-button desktop-button-area-3"
-            onClick={() => handleButtonClick(3)}
-          />
-
-          <img
-            className="desktop-image"
-            src="images/DesktopApps.png"
-            alt="Desktop Screen"
-          />
+    <div>
+      <h1 className="desktop-apps-title" onClick={handleBanner}>
+        Desktop Apps & Websites
+        <div className="desktop-icon-container">
+          {banner ? (
+            <ExpandMoreIcon
+              className="expend-more icon-size"
+              sx={{ fontSize: 50 }}
+            />
+          ) : (
+            <ExpandLessIcon
+              className="expend-less icon-size"
+              sx={{ fontSize: 50 }}
+            />
+          )}
         </div>
-        {click ||
-          (button && (
-            <div className="desktop-app-info">
-              <CloseIcon
-                className="exit-button"
-                onClick={() => closeMobileMenu()}
-                fontSize="large"
-              />
-              {selectedArea === 1 && (
-                <div>
-                  {/* Content for Area 1 */}
-                  <h1>
-                    JASTAGRAM{" "}
-                    <a
-                      href={githubSocial}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <GitHubIcon className="github-icon" />
-                    </a>
-                  </h1>
+      </h1>
+      <div
+        className={`desktop-container ${banner ? "collapsed" : "expanded"}`}
+        id="desktop-apps"
+      >
+        <h2 className="desktop-app-description">
+          Please Click On One Of My Projects To Learn More!
+        </h2>
+        {/* Apply classes based on banner state */}
+        <div className="desktop-wrapper">
+          <div className="desktop">
+            <button
+              className="desktop-invisible-button desktop-button-area-1"
+              onClick={() => handleButtonClick(1)}
+            />
 
-                  <br />
-                  <p>
-                    • Social Media website where users can log in and post
-                    pictures. <br />
-                    • Created Jastagram using HTML, CSS, Javascript and PHP.
-                    <br />• Utilized my teamwork, communication and
-                    collaboration skills with my teammates to work on the
-                    project at the same time in our designated roles.
-                  </p>
-                  {/* Additional content for Area 1 */}
-                </div>
-              )}
-              {selectedArea === 2 && (
-                <div>
-                  {/* Content for Area 2 */}
-                  <h1>
-                    ROBBER{" "}
-                    <a
-                      href={githubRobber}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <GitHubIcon className="github-icon" />
-                    </a>
-                  </h1>
-                  <p>
-                    • 2D (Frogger-like) game where you rob a bank and try to
-                    escape from the cops before the train leaves. <br />
-                    • Built the game with my team of 2 friends using Java and
-                    object-oriented programming.
-                    <br />• Designed the sprites and game mechanics, practicing
-                    peer programming.
-                    <br />• Led the team and assigned my group mates their roles
-                    to meet the deadline effectively.
-                  </p>
-                  {/* Additional content for Area 2 */}
-                </div>
-              )}
-              {selectedArea === 3 && (
-                <div>
-                  {/* Content for Area 2 */}
-                  <h1>
-                    Arda's Portfolio
-                    <a
-                      href={githubRes}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <GitHubIcon className="github-icon" />
-                    </a>
-                  </h1>
+            {/* Invisible button overlay for Area 2 */}
+            <button
+              className="desktop-invisible-button desktop-button-area-2"
+              onClick={() => handleButtonClick(2)}
+            />
 
-                  <p>
-                    • Built a website with React that showcases all my
-                    professional accomplishments and experiences in a
-                    beautifully designed user interface. <br />• Researched and
-                    self-taught React to improve my interactive web development
-                    skills. <br /> <br />
-                    Note: I sincerely hope that you like this website!
-                  </p>
-                  {/* Additional content for Area 2 */}
-                </div>
-              )}
+            <button
+              className="desktop-invisible-button desktop-button-area-3"
+              onClick={() => handleButtonClick(3)}
+            />
 
-              <div className="desktop-app-details">
-                {selectedArea === 2 && (
-                  <div className="desktop-image-container">
-                    <div className="desktop-image-and-btn">
-                      <ArrowBackIosIcon
-                        fontSize="large"
-                        className="scroll-button"
-                        onClick={() => scrollBackward(selectedArea)}
-                      />
-                      <img
-                        className="desktop-app-image"
-                        src={`images/${images1[currentImageIndex]}`}
-                        alt="My Apps"
-                      />
+            <img
+              className="desktop-image"
+              src="images/DesktopApps.png"
+              alt="Desktop Screen"
+            />
+          </div>
+          {click ||
+            (button && (
+              <div
+                className={`desktop-app-info ${
+                  selectedArea === 1
+                    ? "area-1"
+                    : selectedArea === 2
+                    ? "area-2"
+                    : selectedArea === 3
+                    ? "area-3"
+                    : ""
+                }`}
+              >
+                <CloseIcon
+                  className="exit-button"
+                  onClick={() => closeMobileMenu()}
+                  fontSize="large"
+                />
+                {selectedArea === 1 && (
+                  <div>
+                    {/* Content for Area 1 */}
+                    <h1>
+                      JASTAGRAM{" "}
+                      <a
+                        href={githubSocial}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <GitHubIcon className="github-icon" />
+                      </a>
+                    </h1>
 
-                      <ArrowForwardIosIcon
-                        fontSize="large"
-                        className="scroll-button"
-                        onClick={() => scrollForward(selectedArea)}
-                      />
-                    </div>
-
-                    {currentImageIndex === 0 && (
-                      <div className="desktop-app-image-info">
-                        <h4 className="desktop-image-title">
-                          (1) Robbing the bank
-                        </h4>
-                        <p>
-                          To rob the bank, you must avoid security personnel and
-                          bring the key to the vault.
-                        </p>
-                      </div>
-                    )}
-                    {currentImageIndex === 1 && (
-                      <div className="desktop-app-image-info">
-                        <h4 className="desktop-image-title">
-                          (2) Dodging the bullets
-                        </h4>
-                        <p>
-                          As you are trying to escape, you come across cops who
-                          are trying to shoot you.
-                        </p>
-                      </div>
-                    )}
+                    <br />
+                    <p>
+                      • Social Media website where users can log in and post
+                      pictures. <br />
+                      • Created Jastagram using HTML, CSS, Javascript and PHP.
+                      <br />• Utilized my teamwork, communication and
+                      collaboration skills with my teammates to work on the
+                      project at the same time in our designated roles.
+                    </p>
+                    {/* Additional content for Area 1 */}
                   </div>
                 )}
-                {selectedArea === 1 && (
-                  <div className="desktop-image-container">
-                    <div className="desktop-image-and-btn">
-                      <img
-                        className="desktop-app-image"
-                        src={`images/Jastagram.png`}
-                        alt="My Apps"
-                      />
-                    </div>
+                {selectedArea === 2 && (
+                  <div>
+                    {/* Content for Area 2 */}
+                    <h1>
+                      ROBBER{" "}
+                      <a
+                        href={githubRobber}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <GitHubIcon className="github-icon" />
+                      </a>
+                    </h1>
+                    <p>
+                      • 2D (Frogger-like) game where you rob a bank and try to
+                      escape from the cops before the train leaves. <br />
+                      • Built the game with my team of 2 friends using Java and
+                      object-oriented programming.
+                      <br />• Designed the sprites and game mechanics,
+                      practicing peer programming.
+                      <br />• Led the team and assigned my group mates their
+                      roles to meet the deadline effectively.
+                    </p>
+                    {/* Additional content for Area 2 */}
                   </div>
                 )}
                 {selectedArea === 3 && (
-                  <div className="desktop-image-container">
-                    <div className="desktop-image-and-btn">
-                      <img
-                        className="desktop-app-image"
-                        src={`images/Portfolio.jpeg`}
-                        alt="My Apps"
-                      />
-                    </div>
+                  <div>
+                    {/* Content for Area 2 */}
+                    <h1>
+                      Arda's Portfolio
+                      <a
+                        href={githubRes}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <GitHubIcon className="github-icon" />
+                      </a>
+                    </h1>
+
+                    <p>
+                      • Built a website with React that showcases all my
+                      professional accomplishments and experiences in a
+                      beautifully designed user interface. <br />• Researched
+                      and self-taught React to improve my interactive web
+                      development skills. <br /> <br />
+                      Note: I sincerely hope that you like this website!
+                    </p>
+                    {/* Additional content for Area 2 */}
                   </div>
                 )}
+
+                <div className="desktop-app-details">
+                  {selectedArea === 2 && (
+                    <div className="desktop-image-container">
+                      <div className="desktop-image-and-btn">
+                        <ArrowBackIosIcon
+                          fontSize="large"
+                          className="scroll-button"
+                          onClick={() => scrollBackward(selectedArea)}
+                        />
+                        <img
+                          className="desktop-app-image"
+                          src={`images/${images1[currentImageIndex]}`}
+                          alt="My Apps"
+                        />
+
+                        <ArrowForwardIosIcon
+                          fontSize="large"
+                          className="scroll-button"
+                          onClick={() => scrollForward(selectedArea)}
+                        />
+                      </div>
+
+                      {currentImageIndex === 0 && (
+                        <div className="desktop-app-image-info">
+                          <h4 className="desktop-image-title">
+                            (1/2) Robbing the bank
+                          </h4>
+                          <p>
+                            To rob the bank, you must avoid security personnel
+                            and bring the key to the vault.
+                          </p>
+                        </div>
+                      )}
+                      {currentImageIndex === 1 && (
+                        <div className="desktop-app-image-info">
+                          <h4 className="desktop-image-title">
+                            (2/2) Dodging the bullets
+                          </h4>
+                          <p>
+                            As you are trying to escape, you come across cops
+                            who are trying to shoot you.
+                          </p>
+                        </div>
+                      )}
+                    </div>
+                  )}
+                  {selectedArea === 1 && (
+                    <div className="desktop-image-container">
+                      <div className="desktop-image-and-btn">
+                        <img
+                          className="desktop-app-image"
+                          src={`images/Jastagram.png`}
+                          alt="My Apps"
+                        />
+                      </div>
+                    </div>
+                  )}
+                  {selectedArea === 3 && (
+                    <div className="desktop-image-container">
+                      <div className="desktop-image-and-btn">
+                        <img
+                          className="desktop-app-image"
+                          src={`images/Portfolio.jpeg`}
+                          alt="My Apps"
+                        />
+                      </div>
+                    </div>
+                  )}
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+        </div>
       </div>
     </div>
   );

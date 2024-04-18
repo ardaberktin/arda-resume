@@ -33,9 +33,9 @@ function Footer() {
           </form>
         </div>
       </section> */}
-      <div class="footer-links">
+      <div className="footer-links">
         <div className="footer-link-wrapper">
-          <div class="footer-link-items">
+          <div className="footer-link-items">
             <h2>Pages</h2>
             <Link
               to="/arda-resume/"
@@ -66,7 +66,7 @@ function Footer() {
               About Me
             </Link>
           </div>
-          <div class="footer-link-items">
+          <div className="footer-link-items">
             <h2>Projects</h2>
             <Link
               to="/arda-resume/projects#mobile-apps&mot"
@@ -114,7 +114,7 @@ function Footer() {
               rel="noopener noreferrer"
               className="footer-sublink"
             >
-              LinkedIn <i class="fab fa-linkedin" />
+              LinkedIn <i className="fab fa-linkedin" />
             </Link>
             <Link
               to="https://github.com/ardaberktin"
@@ -122,7 +122,7 @@ function Footer() {
               rel="noopener noreferrer"
               className="footer-sublink"
             >
-              GitHub <i class="fab fa-github" />
+              GitHub <i className="fab fa-github" />
             </Link>
             <Link
               to="https://instagram.com/ardaberktin"
@@ -130,7 +130,7 @@ function Footer() {
               rel="noopener noreferrer"
               className="footer-sublink"
             >
-              Instagram <i class="fab fa-instagram" />
+              Instagram <i className="fab fa-instagram" />
             </Link>
             {/* <Link to="/">Email</Link> */}
             <Link
@@ -139,14 +139,14 @@ function Footer() {
               rel="noopener noreferrer"
               className="footer-sublink"
             >
-              Email <i class="fa-solid fa-envelope"></i>
+              Email <i className="fa-solid fa-envelope"></i>
             </Link>
           </div>
         </div>
       </div>
       <section className="social-media">
-        <div class="social-media-wrap">
-          <div class="footer-logo">
+        <div className="social-media-wrap">
+          <div className="footer-logo">
             <Link
               to="/arda-resume/"
               className="social-logo"
@@ -156,42 +156,42 @@ function Footer() {
             </Link>
           </div>
           {/* <small class="website-rights">TRVL © 2020</small> */}
-          <div class="social-icons">
+          <div className="social-icons">
             <Link
-              class="social-icon-link linkedin"
+              className="social-icon-link linkedin"
               to="https://linkedin.com/in/arda-berktin-861852253"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
             >
-              <i class="fab fa-linkedin" />
+              <i className="fab fa-linkedin" />
             </Link>
             <Link
-              class="social-icon-link github"
+              className="social-icon-link github"
               to="https://github.com/ardaberktin"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Github"
             >
-              <i class="fab fa-github" />
+              <i className="fab fa-github" />
             </Link>
             <Link
-              class="social-icon-link instagram"
+              className="social-icon-link instagram"
               to="https://instagram.com/ardaberktin"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
             >
-              <i class="fab fa-instagram" />
+              <i className="fab fa-instagram" />
             </Link>
             <Link
-              class="social-icon-link gmail"
+              className="social-icon-link gmail"
               to="mailto:arberktin@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Gmail"
             >
-              <i class="fa-solid fa-envelope"></i>
+              <i className="fa-solid fa-envelope"></i>
             </Link>
           </div>
         </div>

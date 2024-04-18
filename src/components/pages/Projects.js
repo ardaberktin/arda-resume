@@ -15,15 +15,7 @@ function Projects() {
 
     console.log(section[0]);
 
-    if (section[0]) {
-      // Scroll to the element with the matching id
-      const targetElement = document.getElementById(section[0]);
-      //console.log(targetElement);
-
-      if (targetElement) {
-        targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
-    } else {
+    if (!section[0]) {
       // If no section identifier, scroll to the top
       window.scrollTo(0, 0);
     }
@@ -33,10 +25,10 @@ function Projects() {
   }, [location.pathname, location.hash, location.search]);
 
   return (
-    <>
+    <div className="projects">
       <IphoneApps />
       <DesktopApps />
-    </>
+    </div>
   );
 }
 

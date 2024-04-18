@@ -28,7 +28,7 @@ function Experience() {
   }, [location.pathname, location.search]); // Include location.pathname and location.search in the dependency array
 
   return (
-    <div className="experience">
+    <div className="experiences">
       <VerticalTimeline lineColor="#3e497a">
         <VerticalTimelineElement
           className="vertical-timeline-element--project"

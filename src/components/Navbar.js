@@ -35,6 +35,10 @@ function Navbar() {
     }
   }, [click, location.pathname]);
 
+  const isActive = (path) => {
+    return location.pathname === path ? "highlight" : "";
+  };
+
   useEffect(() => {
     showButton();
     handleScroll(); // Initialize scroll state
@@ -72,7 +76,7 @@ function Navbar() {
             <li className="nav-item">
               <Link
                 to="/arda-resume/"
-                className="nav-links"
+                className={`nav-links ${isActive("/arda-resume/")}`}
                 onClick={closeMobileMenu}
               >
                 Home
@@ -81,7 +85,7 @@ function Navbar() {
             <li className="nav-item">
               <Link
                 to="/arda-resume/experiences"
-                className="nav-links"
+                className={`nav-links ${isActive("/arda-resume/experiences")}`}
                 onClick={closeMobileMenu}
               >
                 Experiences
@@ -90,7 +94,7 @@ function Navbar() {
             <li className="nav-item">
               <Link
                 to="/arda-resume/projects"
-                className="nav-links"
+                className={`nav-links ${isActive("/arda-resume/projects")}`}
                 onClick={closeMobileMenu}
               >
                 Projects
@@ -100,7 +104,9 @@ function Navbar() {
             <li>
               <Link
                 to="/arda-resume/about-me"
-                className="nav-links-mobile"
+                className={`nav-links-mobile ${isActive(
+                  "/arda-resume/about-me"
+                )}`}
                 onClick={closeMobileMenu}
               >
                 About Me
@@ -109,6 +115,9 @@ function Navbar() {
           </ul>
           {button && (
             <Button
+              className={`nav-links about-me ${isActive(
+                "/arda-resume/about-me"
+              )}`}
               buttonStyle="btn--outline"
               to={"/arda-resume/about-me"}
               onClick={closeMobileMenu}
