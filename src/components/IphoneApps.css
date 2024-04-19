@@ -71,7 +71,7 @@
   text-align: center;
 }
 
-.app-info {
+.iphone-app-info {
   max-width: 90vh;
   height: max-content;
   padding: 1rem;
@@ -182,7 +182,7 @@
     padding: 20px;
   } */
 
-  .app-info {
+  .iphone-app-info {
     position: absolute;
     top: 48%; /* Adjust as needed */
     left: 50%; /* Adjust as needed */

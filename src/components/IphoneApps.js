@@ -179,7 +179,7 @@ function IphoneApps() {
           </div>
           {click ||
             (button && (
-              <div className="app-info" id="iphone-app-info">
+              <div className="iphone-app-info" id="iphone-app-info">
                 <CloseIcon
                   className="exit-button"
                   onClick={() => closeMobileMenu()}
