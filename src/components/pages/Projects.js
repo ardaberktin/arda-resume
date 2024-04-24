@@ -63,7 +63,7 @@ function Projects() {
             className={`desktop-apps-big-title ${desktop ? "active" : ""}`}
             onClick={SetDesktopButton}
           >
-            Desktop Apps & Websites
+            Games & Websites
           </h1>
         </div>
       </div>

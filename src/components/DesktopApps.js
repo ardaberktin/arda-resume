@@ -99,7 +99,7 @@ function DesktopApps() {
   return (
     <div>
       <div className="desktop-apps-title">
-        <h1>Desktop Apps & Websites</h1>
+        <h1>Games & Websites</h1>
         <div className="desktop-icon-container">
           {/* {banner ? (
             <ExpandMoreIcon
