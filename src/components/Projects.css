@@ -47,7 +47,6 @@
   border-top-left-radius: 30px;
 }
 .desktop-apps-big-title:hover {
-  /* font-size: 40px; */
   transform: scale(1.1);
 }
 .desktop-apps-big-title.active {
