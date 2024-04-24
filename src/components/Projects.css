@@ -28,10 +28,16 @@
   cursor: pointer;
   border-top-right-radius: 30px;
 }
+
+.mobile-apps-big-title:hover {
+  transform: scale(1.1);
+}
+
 .mobile-apps-big-title.active {
   background-color: white;
   color: black;
   border-top-right-radius: 30px;
+  transform: none;
 }
 .desktop-apps-big-title {
   flex: 1;
@@ -40,9 +46,13 @@
   cursor: pointer;
   border-top-left-radius: 30px;
 }
-
+.desktop-apps-big-title:hover {
+  /* font-size: 40px; */
+  transform: scale(1.1);
+}
 .desktop-apps-big-title.active {
   background-color: white;
   color: black;
   border-top-left-radius: 30px;
+  transform: none;
 }
