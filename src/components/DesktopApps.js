@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import "./DesktopApps.css";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
-import ExpandLessIcon from "@mui/icons-material/ExpandLess";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+// import ExpandLessIcon from "@mui/icons-material/ExpandLess";
+// import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import CloseIcon from "@mui/icons-material/Cancel";
 import ReactGA from "react-ga";
@@ -14,7 +14,7 @@ import { useLocation } from "react-router-dom";
 function DesktopApps() {
   const [selectedArea, setSelectedArea] = useState(0);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [banner, setBanner] = useState(true);
+  const [banner, setBanner] = useState(false);
 
   const images1 = ["Robber1.png", "Robber2.png"];
 
@@ -29,9 +29,9 @@ function DesktopApps() {
 
   const location = useLocation();
 
-  const handleBanner = () => {
-    setBanner(!banner);
-  };
+  // const handleBanner = () => {
+  //   setBanner(!banner);
+  // };
 
   // Initialize ref with current window width add useRef to react to use!!
   // const windowWidth = useRef(window.innerWidth);
@@ -98,10 +98,10 @@ function DesktopApps() {
 
   return (
     <div>
-      <h1 className="desktop-apps-title" onClick={handleBanner}>
-        Desktop Apps & Websites
+      <div className="desktop-apps-title">
+        <h1>Desktop Apps & Websites</h1>
         <div className="desktop-icon-container">
-          {banner ? (
+          {/* {banner ? (
             <ExpandMoreIcon
               className="expend-more icon-size"
               sx={{ fontSize: 50 }}
@@ -111,9 +111,9 @@ function DesktopApps() {
               className="expend-less icon-size"
               sx={{ fontSize: 50 }}
             />
-          )}
+          )} */}
         </div>
-      </h1>
+      </div>
       <div
         className={`desktop-container ${banner ? "collapsed" : "expanded"}`}
         id="desktop-apps"

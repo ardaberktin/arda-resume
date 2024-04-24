@@ -6,17 +6,17 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import CloseIcon from "@mui/icons-material/Cancel";
 import ReactGA from "react-ga";
 import { useLocation } from "react-router-dom";
-import ExpandLessIcon from "@mui/icons-material/ExpandLess";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+// import ExpandLessIcon from "@mui/icons-material/ExpandLess";
+// import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 //import iPhoneImage from "./IphoneApps.png";
 // tried to import the images beforehand but didn't work
 
-function IphoneApps() {
+function IphoneApps(isActive) {
   const [selectedArea, setSelectedArea] = useState(0);
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const [banner, setBanner] = useState(true);
+  const [banner, setBanner] = useState(false);
 
   const images1 = ["MotHome.png", "MotTrack.png", "MotBudget.png", "MotAI.png"];
   const images2 = ["MDMHome.png", "MDMRoom.png", "MDMFavourites.png"];
@@ -35,9 +35,9 @@ function IphoneApps() {
 
   // Initialize ref with current window width add useRef to react to use!!
   // const windowWidth = useRef(window.innerWidth);
-  const handleBanner = () => {
-    setBanner(!banner);
-  };
+  // const handleBanner = () => {
+  //   setBanner(!banner);
+  // };
 
   const showButton = () => {
     const currentWidth = window.innerWidth;
@@ -130,10 +130,10 @@ function IphoneApps() {
 
   return (
     <div>
-      <h1 className="mobile-apps-title" onClick={handleBanner}>
-        Mobile Apps{" "}
+      <div className="mobile-apps-title">
+        <h1>Mobile Apps</h1>
         <div className="iphone-icon-container">
-          {banner ? (
+          {/* {banner ? (
             <ExpandMoreIcon
               className="expend-more icon-size"
               sx={{ fontSize: 50 }}
@@ -143,9 +143,9 @@ function IphoneApps() {
               className="expend-less icon-size"
               sx={{ fontSize: 50 }}
             />
-          )}
+          )} */}
         </div>
-      </h1>
+      </div>
       <div
         className={`iphone-container ${banner ? "collapsed" : "expanded"}`}
         id="mobile-apps"

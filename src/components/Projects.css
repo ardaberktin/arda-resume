@@ -1,0 +1,48 @@
+.projects {
+  background-color: black;
+}
+
+.projects-title-wrapper {
+  background-color: black;
+}
+
+.projects-title {
+  text-align: center;
+  background-color: #181717;
+  color: white;
+  font-size: 50px;
+  padding: 15px;
+}
+
+.big-title-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+}
+
+.mobile-apps-big-title {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+  border-top-right-radius: 30px;
+}
+.mobile-apps-big-title.active {
+  background-color: white;
+  color: black;
+  border-top-right-radius: 30px;
+}
+.desktop-apps-big-title {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+  border-top-left-radius: 30px;
+}
+
+.desktop-apps-big-title.active {
+  background-color: white;
+  color: black;
+  border-top-left-radius: 30px;
+}
