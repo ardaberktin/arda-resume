@@ -72,7 +72,14 @@
 .app-image {
   width: 26svh;
   height: auto;
-  padding: 20px;
+  border: solid 3px black;
+  border-radius: 30px;
+  margin: 20px;
+}
+
+.app-image.mdma {
+  border: 0;
+  border-radius: 0%;
 }
 
 .scroll-button {
@@ -154,10 +161,11 @@
 @media screen and (max-width: 800px) {
   .iphone-container {
     height: auto;
-    min-height: auto;
+    min-height: 140vh;
     flex-direction: column;
     justify-content: flex-start;
   }
+
   .iphone-wrapper {
     flex-direction: column;
   }
@@ -168,27 +176,19 @@
 
   .iphone-image {
     height: auto;
-    max-height: 165vw;
-    /* width: 90vw; */
+    max-height: 155vw;
     width: auto;
     padding-top: 0;
     padding-left: 0;
     padding-right: 0;
   }
 
-  /* .app-info {
-    width: 50vh;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    padding: 20px;
-  } */
-
   .iphone-app-info {
     position: absolute;
-    top: 48%; /* Adjust as needed */
-    left: 50%; /* Adjust as needed */
-    transform: translate(-50%, -46%);
-    width: 100%; /* Adjust as needed */
+    top: 485px; /* Adjust top percentage as needed */
+    left: 50%; /* Adjust left percentage as needed */
+    transform: translate(-50%, -50%); /* Adjust transform as needed */
+    width: 100%; /* Adjust width as needed */
     background-color: white;
     border-radius: 30px;
     word-wrap: break-word;

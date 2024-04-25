@@ -394,7 +394,7 @@ function IphoneApps(isActive) {
                           onClick={() => scrollBackward(selectedArea)}
                         />
                         <img
-                          className="app-image"
+                          className="app-image mdma"
                           src={`images/${images3[currentImageIndex]}`}
                           alt="My Apps"
                         />

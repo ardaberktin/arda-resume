@@ -38,6 +38,7 @@
   color: black;
   border-top-right-radius: 30px;
   transform: none;
+  cursor: auto;
 }
 .desktop-apps-big-title {
   flex: 1;
@@ -54,4 +55,5 @@
   color: black;
   border-top-left-radius: 30px;
   transform: none;
+  cursor: auto;
 }

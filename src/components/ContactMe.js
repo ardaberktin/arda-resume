@@ -1,5 +1,9 @@
 import { Link } from "react-router-dom";
 import "./ContactMe.css";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import EmailIcon from "@mui/icons-material/Email";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 function ContactMe() {
   return (
@@ -45,7 +49,7 @@ function ContactMe() {
               rel="noopener noreferrer"
               aria-label="LinkedIn"
             >
-              <i className="fab fa-linkedin" />
+              <LinkedInIcon sx={{ fontSize: 80 }} />
             </Link>
             <h4>LinkedIn</h4>
             <p>in/ardaberktin</p>
@@ -58,7 +62,7 @@ function ContactMe() {
               rel="noopener noreferrer"
               aria-label="Github"
             >
-              <i className="fab fa-github" />
+              <GitHubIcon sx={{ fontSize: 80 }} />
             </Link>
             <h4>Github</h4>
             <p>/ardaberktin</p>
@@ -71,7 +75,7 @@ function ContactMe() {
               rel="noopener noreferrer"
               aria-label="Instagram"
             >
-              <i className="fab fa-instagram" />
+              <InstagramIcon sx={{ fontSize: 80 }} />
             </Link>
             <h4>Instagram</h4>
             <p>@ardaberktin</p>
@@ -84,7 +88,7 @@ function ContactMe() {
               rel="noopener noreferrer"
               aria-label="Gmail"
             >
-              <i className="fa-solid fa-envelope"></i>
+              <EmailIcon sx={{ fontSize: 80 }} />
             </Link>
             <h4>E-mail</h4>
             <p>arberktin@gmail.com</p>
