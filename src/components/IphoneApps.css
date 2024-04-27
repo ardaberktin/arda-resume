@@ -77,6 +77,10 @@
   margin: 20px;
 }
 
+.app-image-info {
+  text-align: center;
+}
+
 .app-image.mdma {
   border: 0;
   border-radius: 0%;

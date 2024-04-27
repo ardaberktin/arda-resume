@@ -85,6 +85,7 @@
 .desktop-app-image-info > p {
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 .scroll-button {
