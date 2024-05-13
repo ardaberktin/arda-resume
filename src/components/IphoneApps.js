@@ -285,6 +285,7 @@ function IphoneApps(isActive) {
                           className="scroll-button"
                           onClick={() => scrollBackward(selectedArea)}
                         />
+
                         <img
                           className="app-image"
                           src={`images/${images1[currentImageIndex]}`}

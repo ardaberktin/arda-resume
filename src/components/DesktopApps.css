@@ -119,12 +119,12 @@
 
 .area-2 {
   /* Styles for selectedArea 2 */
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -52%);
 }
 
 .area-3 {
   /* Styles for selectedArea 3 */
-  transform: translate(-50%, -68%);
+  transform: translate(-50%, -70%);
 }
 
 .exit-button {

@@ -179,7 +179,7 @@ function DesktopApps() {
                     </h1>
 
                     <br />
-                    <p>
+                    <p className="desktop-app-points">
                       • Social Media website where users can log in and post
                       pictures. <br />
                       • Created Jastagram using HTML, CSS, Javascript and PHP.
@@ -203,7 +203,7 @@ function DesktopApps() {
                         <GitHubIcon className="github-icon" />
                       </a>
                     </h1>
-                    <p>
+                    <p className="desktop-app-points">
                       • 2D (Frogger-like) game where you rob a bank and try to
                       escape from the cops before the train leaves. <br />
                       • Built the game with my team of 2 friends using Java and
@@ -230,7 +230,7 @@ function DesktopApps() {
                       </a>
                     </h1>
 
-                    <p>
+                    <p className="desktop-app-points">
                       • Built a website with React that showcases all my
                       professional accomplishments and experiences in a
                       beautifully designed user interface. <br />• Researched

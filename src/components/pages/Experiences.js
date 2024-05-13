@@ -31,8 +31,45 @@ function Experience() {
     <div className="experiences">
       <VerticalTimeline lineColor="#3e497a">
         <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="May 2024 - September 2024"
+          iconStyle={{ background: "#d9ba0f", color: "#fff" }}
+          icon={<WorkIcon />}
+        >
+          <h3 className="vertical-timeline-element-title">
+            ARD Group Information Technologies Inc.
+          </h3>
+          <h4 className="vertical-timeline-element-subtitle">
+            Software Engineer Intern
+          </h4>
+          <h4 className="vertical-timeline-element-subtitle">Ankara, Turkey</h4>
+          <p>
+            <a href="https://www.ardgroup.com.tr/" style={{ padding: 0 }}>
+              ARD{" "}
+            </a>
+            is a holding company that is gathered under the main headings of
+            Informatics, Health, Defense, Energy, Construction and Consultancy.
+            <br />
+            <br />
+            • Worked in the MEBIS web development branch to provide technical
+            assistance, oversee system tickets, and resolve issues. <br />
+            • Analyzed and added features to the front end using Angular to
+            achieve customer satisfaction. <br />
+            • Made sure the back end built with C# in .Net Core worked as
+            expected and added functionality based on customer demands. <br />•
+            Finalized tickets and pushed the updated code to test branches to
+            get it tested and approved by the team leader before merging it into
+            the master.
+            <br />
+            <br /> MEBIS system is created by Republic of Turkey, Ministry of
+            Environment Urbanisation and Climate Change (T.C. Çevre Şehircilik
+            ve İklim Değişikliği Bakanlığı).
+          </p>
+        </VerticalTimelineElement>
+
+        <VerticalTimelineElement
           className="vertical-timeline-element--project"
-          date="January 2023 - Present"
+          date="January 2024"
           iconStyle={{ background: "#2444b5", color: "#fff" }}
           icon={<ProjectIcon />}
         >
@@ -76,7 +113,7 @@ function Experience() {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           date="May - August 2023"
-          iconStyle={{ background: "#e9d35b", color: "#fff" }}
+          iconStyle={{ background: "#d9ba0f", color: "#fff" }}
           icon={<WorkIcon />}
         >
           <h3 className="vertical-timeline-element-title">Walmart</h3>
@@ -139,7 +176,7 @@ function Experience() {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           date="January - July 2022"
-          iconStyle={{ background: "#e9d35b", color: "#fff" }}
+          iconStyle={{ background: "#d9ba0f", color: "#fff" }}
           icon={<WorkIcon />}
         >
           <h3 className="vertical-timeline-element-title">PCE Turkey</h3>

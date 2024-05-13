@@ -74,6 +74,7 @@
   height: auto;
   border: solid 3px black;
   border-radius: 30px;
+  /* TODO: box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5); */
   margin: 20px;
 }
 
@@ -148,6 +149,7 @@
   top: 56%;
   left: 59%;
 }
+
 @media screen and (min-width: 800px) and (max-width: 960px) {
   .button-area-1 {
     top: 56%;
