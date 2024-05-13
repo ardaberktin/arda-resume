@@ -169,7 +169,7 @@ function Experience() {
             The Bachelor of Software Engineering (BSEng), {"  "}2<sup>nd</sup>{" "}
             Year.
             <br />
-            Expected Graduation: Jan, 2027
+            Expected Graduation: 2027
           </p>
         </VerticalTimelineElement>
 

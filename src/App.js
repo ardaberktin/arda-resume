@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "./components/Navbar";
 import "./App.css";
 import Home from "./components/pages/Home";
@@ -16,6 +16,18 @@ import Footer from "./components/Footer";
 //animations: https://www.youtube.com/watch?v=GOuwOI-WSkE&t=1117s
 
 function App() {
+  useEffect(() => {
+    const handleBeforeUnload = (event) => {
+      event.preventDefault();
+      event.returnValue = "";
+    };
+
+    window.addEventListener("beforeunload", handleBeforeUnload);
+
+    return () => {
+      window.removeEventListener("beforeunload", handleBeforeUnload);
+    };
+  }, []);
   return (
     <>
       <Router>
