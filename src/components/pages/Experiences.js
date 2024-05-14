@@ -32,7 +32,7 @@ function Experience() {
       <VerticalTimeline lineColor="#3e497a">
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="May 2024 - September 2024"
+          date="May - September 2024"
           iconStyle={{ background: "#d9ba0f", color: "#fff" }}
           icon={<WorkIcon />}
         >
@@ -117,6 +117,9 @@ function Experience() {
           icon={<WorkIcon />}
         >
           <h3 className="vertical-timeline-element-title">Walmart</h3>
+          <h4 className="vertical-timeline-element-subtitle">
+            Produce Stocker
+          </h4>
           <h4 className="vertical-timeline-element-subtitle">
             Victoria, BC, Canada
           </h4>

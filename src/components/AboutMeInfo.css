@@ -34,5 +34,7 @@
 .arda-image {
   width: 40svh;
   height: auto;
-  padding-top: 40px;
+  margin-top: 40px;
+  background-color: grey;
+  border-radius: 100%;
 }

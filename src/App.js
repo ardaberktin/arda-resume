@@ -17,6 +17,7 @@ import Footer from "./components/Footer";
 
 function App() {
   useEffect(() => {
+    //Displays a warning when refreshing the page because refreshing it gives an error on github pages.
     const handleBeforeUnload = (event) => {
       event.preventDefault();
       event.returnValue = "";

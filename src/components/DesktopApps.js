@@ -231,12 +231,14 @@ function DesktopApps() {
                     </h1>
 
                     <p className="desktop-app-points">
-                      • Built a website with React that showcases all my
-                      professional accomplishments and experiences in a
-                      beautifully designed user interface. <br />• Researched
-                      and self-taught React to improve my interactive web
-                      development skills. <br /> <br />
-                      Note: I sincerely hope that you like this website!
+                      • Built a portfolio website that showcases my experiences,
+                      projects, and accomplishments in a visually pleasing way.
+                      <br />• Self-taught React to utilize it for the front end
+                      alongside JavaScript, HTML and CSS. <br />• Integrated
+                      Google Analytics to gather data about user interactions to
+                      detect issues and improve user experience. <br />•
+                      Deployed my React portfolio website on GitHub Pages to
+                      make it live and accessible to everyone.
                     </p>
                     {/* Additional content for Area 2 */}
                   </div>

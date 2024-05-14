@@ -10,14 +10,20 @@ function Skills() {
         <div className="skill-category">
           <h2>Languages</h2>
           <div className="skill-list">
+            <ul className="unordered-list">
+              <li>
+                <h3>Front End</h3>
+                <p>React, Angular, JavaScript, HTML, CSS, SwiftUI</p>
+              </li>
+              <li>
+                <h3>Back End</h3>
+                <p>Java, Python, Swift, C, C#, PHP, ROBOTC</p>
+              </li>
+            </ul>
             {/* <p>
-              Java, JavaScript, C, PHP, CSS, HTML, Swift, Swift UI, ROBOTC,
-              React, Python
-            </p> */}
-            <p>
               Java, Swift, SwiftUI, Python, React, JavaScript, C, C#, Angular,
               HTML, PHP, CSS, ROBOTC
-            </p>
+            </p> */}
           </div>
         </div>
 
