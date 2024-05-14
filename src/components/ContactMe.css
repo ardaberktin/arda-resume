@@ -21,12 +21,13 @@
   padding: 20px;
   background-color: white;
 }
+
 .contact-social-icons {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
-  gap: 50px; /* Add some space between the icons */
+  gap: 50px;
 }
 
 .contact-social-icon-link {
@@ -56,4 +57,53 @@
 
 .contact-social-icon-link p {
   margin: 0; /* Reset default margin */
+}
+
+.contact-wrapper {
+  font-size: 20px;
+  padding-top: 1rem;
+}
+
+.contact-info-container {
+  display: flex;
+  justify-content: space-between; /* Distribute space between items */
+  align-items: flex-start; /* Align items at the start */
+  margin: 20px;
+  background-color: rgba(255, 255, 255, 0.593);
+  border-radius: 20px;
+  box-shadow: inset;
+  box-shadow: 0 0 30px 10px rgba(156, 148, 148, 0.5);
+  text-align: center;
+}
+
+.contact-category {
+  flex: 1; /* Allow items to take up equal space */
+  margin: 10px; /* Add margin for spacing */
+}
+
+.phone-number-container {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.connect-with-me-container {
+  padding: 20px;
+  margin: 1rem;
+  background-color: rgba(255, 255, 255, 0.593);
+  border-radius: 20px;
+  box-shadow: inset;
+  box-shadow: 0 0 30px 10px rgba(156, 148, 148, 0.5);
+  text-align: center;
+}
+
+.connect-with-me-title {
+  padding: 20px 20px;
+  text-align: center;
+}
+
+.phone-number {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }

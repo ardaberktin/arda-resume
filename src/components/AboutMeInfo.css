@@ -26,8 +26,10 @@
   margin: 60px;
   font-size: medium;
   font-stretch: expanded;
-  background-color: white;
-  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.593);
+  border-radius: 20px;
+  box-shadow: inset;
+  box-shadow: 0 0 30px 10px rgba(156, 148, 148, 0.5);
   padding: 20px;
 }
 
@@ -37,4 +39,7 @@
   margin-top: 40px;
   background-color: grey;
   border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0.593);
+  box-shadow: inset;
+  box-shadow: 0 0 20px 20px rgba(156, 148, 148, 0.5);
 }
