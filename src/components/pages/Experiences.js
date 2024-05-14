@@ -57,7 +57,7 @@ function Experience() {
             assistance, oversee system tickets, and resolve issues. <br />
             • Analyzed and added features to the front end using Angular to
             achieve customer satisfaction. <br />
-            • Made sure the back end built with C# in .Net Core worked as
+            • Ensured that the back end built with C# in .Net Core worked as
             expected and added functionality based on customer demands. <br />•
             Finalized tickets and pushed the updated code to test branches to
             get it tested and approved by the team leader before merging it into
@@ -139,7 +139,6 @@ function Experience() {
           date="June 2023"
           iconStyle={{ background: "#2444b5", color: "#fff" }}
           icon={<ProjectIcon />}
-          visible={true}
         >
           <h3 className="vertical-timeline-element-title">
             Mount Doug Maps - iOS{" "}

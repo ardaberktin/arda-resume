@@ -5,6 +5,7 @@
   color: rgb(0, 0, 0);
   /* height: 150vh; */
   height: auto;
+  padding-bottom: 3rem;
   width: 100%;
 }
 
@@ -26,20 +27,6 @@
   border-radius: 20px;
   box-shadow: inset;
   box-shadow: 0 0 30px 10px rgba(156, 148, 148, 0.5);
-}
-
-@media screen and (max-width: 800px) {
-  .skill-container {
-    /* height: 200vh; */
-    height: auto;
-  }
-}
-
-@media screen and (min-width: 800px) and (max-width: 926px) {
-  .skill-container {
-    /* height: 300vh; */
-    height: auto;
-  }
 }
 
 .h1 {
@@ -76,4 +63,24 @@ a {
   padding-top: 1rem;
 }
 
-/* You can add more styling as needed */
+@media screen and (max-width: 800px) {
+  .skill-container {
+    /* height: 200vh; */
+    height: auto;
+  }
+
+  .skill-wrapper .skill-category {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 926px) {
+  .skill-container {
+    /* height: 300vh; */
+    height: auto;
+  }
+
+  .skill-wrapper .skill-category {
+    width: 90%;
+  }
+}
