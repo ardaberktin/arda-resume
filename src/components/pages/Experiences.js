@@ -169,7 +169,7 @@ function Experience() {
           </h4>
 
           <p>
-            The Bachelor of Software Engineering (BSEng), {"  "}2<sup>nd</sup>{" "}
+            The Bachelor of Software Engineering (BSEng), {"  "}3<sup>rd</sup>{" "}
             Year.
             <br />
             Expected Graduation: 2027
