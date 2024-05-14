@@ -42,7 +42,9 @@ function Experience() {
           <h4 className="vertical-timeline-element-subtitle">
             Software Engineer Intern
           </h4>
-          <h4 className="vertical-timeline-element-subtitle">Ankara, Turkey</h4>
+          <h4 className="vertical-timeline-element-subtitle">
+            Ankara, Türkiye
+          </h4>
           <p>
             <a href="https://www.ardgroup.com.tr/" style={{ padding: 0 }}>
               ARD{" "}
@@ -61,7 +63,7 @@ function Experience() {
             get it tested and approved by the team leader before merging it into
             the master.
             <br />
-            <br /> MEBIS system is created by Republic of Turkey, Ministry of
+            <br /> MEBIS system is created by Republic of Türkiye, Ministry of
             Environment Urbanisation and Climate Change (T.C. Çevre Şehircilik
             ve İklim Değişikliği Bakanlığı).
           </p>
@@ -186,7 +188,9 @@ function Experience() {
           <h4 className="vertical-timeline-element-subtitle">
             International Student Agency
           </h4>
-          <h4 className="vertical-timeline-element-subtitle">Ankara, Turkey</h4>
+          <h4 className="vertical-timeline-element-subtitle">
+            Ankara, Türkiye
+          </h4>
           <p>
             • Tutored English to assist students studying abroad in
             English-speaking countries.
