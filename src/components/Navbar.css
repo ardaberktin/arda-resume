@@ -32,6 +32,8 @@
   font-size: 2rem;
   display: flex;
   align-items: center;
+  /* BUUUUUUUUUUU */
+  width: 60vw;
 }
 
 .navbar-logo .arda-icon {
@@ -68,12 +70,6 @@
   /* padding: 0.5rem 1rem; */
   height: 100%;
 }
-
-/* .navbar-container .btn--outline .highlight {
-  background-color: #fff;
-  color: #242424;
-  border-radius: 0;
-} */
 
 .highlight {
   border-bottom: 4px solid #fff;
@@ -147,6 +143,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    width: auto;
     /* transform: translate(25%, 50%); ?? it was working before but now its not*/
   }
 
