@@ -14,11 +14,11 @@ function Skills() {
               <ul className="unordered-list">
                 <li>
                   <h3>Front End</h3>
-                  <p>React, Angular, JavaScript, HTML, CSS, SwiftUI</p>
+                  <p>React • Angular • JavaScript • HTML • CSS • SwiftUI</p>
                 </li>
                 <li>
                   <h3>Back End</h3>
-                  <p>Java, Python, Swift, C, C#, PHP, ROBOTC</p>
+                  <p>Java • Python • Swift • C • C# • PHP • ROBOTC</p>
                 </li>
               </ul>
             </div>
