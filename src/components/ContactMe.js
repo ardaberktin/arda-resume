@@ -30,7 +30,7 @@ function ContactMe() {
                     </a>
                   </div>
                   <div className="phone-number">
-                    <h4 className="phone-country">Turkey:</h4>
+                    <h4 className="phone-country">Türkiye:</h4>
                     <a
                       href="tel:+905313902505"
                       target="_blank"
