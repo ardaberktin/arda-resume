@@ -43,3 +43,9 @@
   box-shadow: inset;
   box-shadow: 0 0 20px 20px rgba(156, 148, 148, 0.5);
 }
+
+@media screen and (max-width: 800px) {
+  .about-me-paragraph {
+    width: 90%;
+  }
+}

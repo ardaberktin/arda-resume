@@ -1,16 +1,28 @@
-.contact-me-container {
+.contact-me-all {
   background-color: rgb(231, 229, 229);
   height: auto;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
   position: relative;
   padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.contact-me-container h1 {
+.contact-me-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* BUuuuuuuuu */
+.contact-info-form {
+  flex: 1;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-me-all h1 {
   text-align: center;
 }
 
@@ -60,8 +72,10 @@
 }
 
 .contact-wrapper {
+  flex: 1;
   font-size: 20px;
-  padding-top: 1rem;
+  padding: 30px;
+  margin: 0 auto;
 }
 
 .contact-info-container {
@@ -87,13 +101,15 @@
 }
 
 .connect-with-me-container {
-  padding: 20px;
-  margin: 1rem;
+  /* padding: 20px; */
+  margin: 20px;
   background-color: rgba(255, 255, 255, 0.593);
   border-radius: 20px;
   box-shadow: inset;
   box-shadow: 0 0 30px 10px rgba(156, 148, 148, 0.5);
   text-align: center;
+  padding-bottom: 40px;
+  padding-top: 20px;
 }
 
 .connect-with-me-title {
@@ -106,4 +122,18 @@
   text-align: center;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (max-width: 865px) {
+  .contact-me-container {
+    display: block;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .contact-wrapper {
+    padding: 0;
+  }
+  .phone-number {
+    display: block;
+  }
 }
