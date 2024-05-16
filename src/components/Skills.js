@@ -6,7 +6,7 @@ function Skills() {
     <div className="skill-container">
       <h1 className="h1">Skills</h1>
       <div className="skill-wrapper">
-        {/* Frontend Skills */}
+        {/* Languages */}
         <div className="skill-category">
           <h2>Languages</h2>
           <div className="list-and-icons">
@@ -132,15 +132,7 @@ function Skills() {
           </div>
         </div>
 
-        {/* Backend Skills */}
-        <div className="skill-category">
-          <h2>Operating Systems</h2>
-          <div className="skill-list">
-            <p>Windows 7/8/10/11, MacOS, iOS, Android</p>
-          </div>
-        </div>
-
-        {/* Database Skills */}
+        {/* Software Skills */}
         <div className="skill-category">
           <h2>Software</h2>
           <div className="skill-list">
@@ -151,7 +143,15 @@ function Skills() {
           </div>
         </div>
 
-        {/* Version Control */}
+        {/* Operating Systems */}
+        <div className="skill-category">
+          <h2>Operating Systems</h2>
+          <div className="skill-list">
+            <p>Windows 7/8/10/11, MacOS, iOS, Android</p>
+          </div>
+        </div>
+
+        {/* Hardware */}
         <div className="skill-category">
           <h2>Hardware</h2>
           <div className="skill-list">
