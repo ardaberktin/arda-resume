@@ -47,8 +47,8 @@ function Experience() {
           </h4>
           <p>
             <a href="https://www.ardgroup.com.tr/" style={{ padding: 0 }}>
-              ARD{" "}
-            </a>
+              ARD
+            </a>{" "}
             is a holding company that is gathered under the main headings of
             Informatics, Health, Defense, Energy, Construction and Consultancy.
             <br />
