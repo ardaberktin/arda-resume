@@ -23,7 +23,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 60px;
+  margin-top: 25px;
+  margin-right: 60px;
+  margin-bottom: 60px;
+  margin-left: 60px;
   font-size: medium;
   font-stretch: expanded;
   background-color: rgba(255, 255, 255, 0.593);
@@ -42,6 +45,17 @@
   background-color: rgba(255, 255, 255, 0.593);
   box-shadow: inset;
   box-shadow: 0 0 20px 20px rgba(156, 148, 148, 0.5);
+}
+
+.download-resume {
+  display: flex;
+  margin-top: 50px;
+  background-color: white;
+  padding: 12px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px 5px rgba(156, 148, 148, 0.5);
+  font-size: medium;
+  color: black;
 }
 
 @media screen and (max-width: 800px) {

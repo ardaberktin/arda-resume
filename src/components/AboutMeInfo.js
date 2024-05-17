@@ -13,6 +13,10 @@ function AboutMeInfo() {
         alt="Arda Berktin"
       />
 
+      <a className="download-resume" href="/ArdaBerktinResume.pdf" download>
+        Download My Resume
+      </a>
+
       <p className="about-me-paragraph">
         Hello there! I'm Arda, a dedicated software engineering student
         currently pursuing my Bachelor's degree at the University of Victoria.

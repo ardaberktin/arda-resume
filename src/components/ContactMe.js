@@ -47,6 +47,7 @@ function ContactMe() {
               <div className="contact-category">
                 <h2>Email</h2>
                 <div className="contact-info">
+                  <p>(Preferred)</p>
                   <a
                     href="mailto:arberktin@gmail.com"
                     target="_blank"

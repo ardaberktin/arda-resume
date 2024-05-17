@@ -11,7 +11,6 @@ import SchoolIcon from "@mui/icons-material/School";
 import WorkIcon from "@mui/icons-material/Work";
 import ProjectIcon from "@mui/icons-material/Build";
 import Launch from "@mui/icons-material/Launch";
-
 import { Link } from "react-router-dom";
 import ReactGA from "react-ga";
 
