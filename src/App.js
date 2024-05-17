@@ -3,7 +3,7 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  useLocation,
+  //useLocation,
 } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import "./App.css";
@@ -23,29 +23,31 @@ function App() {
 }
 
 function MainApp() {
-  const location = useLocation();
+  //const location = useLocation();
 
   useEffect(() => {
-    // Displays a warning when refreshing the page because refreshing it gives an error on github pages.
-    const handleBeforeUnload = (event) => {
-      if (
-        location.pathname === "/arda-resume/" &&
-        location.pathname.length === 13
-      ) {
-      } else {
-        console.log(location.pathname + " pathname");
-        console.log(location.pathname.length + " pathname length");
-        event.preventDefault();
-        event.returnValue = "";
-      }
-    };
+    // const handleBeforeUnload = (event) => {
+    //   if (performance.getEntriesByType("navigation")[0].type === "reload") {
+    //     if (
+    //       location.pathname !== "/arda-resume/" ||
+    //       location.pathname.length !== 13
+    //     ) {
+    //       console.log(location.pathname + " pathname");
+    //       console.log(location.pathname.length + " pathname length");
+    //       event.preventDefault();
+    //       // Modern browsers show a generic message and ignore the custom text
+    //       event.returnValue =
+    //         "Refreshing the page will cause an error due to github pages limitations.";
+    //     }
+    //   }
+    // };
 
-    window.addEventListener("beforeunload", handleBeforeUnload);
+    //window.addEventListener("beforeunload", handleBeforeUnload);
 
     return () => {
-      window.removeEventListener("beforeunload", handleBeforeUnload);
+      // window.removeEventListener("beforeunload", handleBeforeUnload);
     };
-  }, [location.pathname]);
+  }, []);
 
   return (
     <>
