@@ -1,8 +1,8 @@
 # My Website Is Live!
 
-[Arda's Portfolio](https://ardaberktin.github.io/arda-resume/)
+[Arda's Portfolio](https://ardaberktin.com)
 <br/>
-(https://ardaberktin.github.io/arda-resume/)
+(https://ardaberktin.com)
 
 <br/>
 <br/>
