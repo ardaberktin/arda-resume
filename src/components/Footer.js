@@ -14,90 +14,59 @@ function Footer() {
 
   return (
     <div className="footer-container">
-      {/* <section className="footer-subscription">
-        <p className="footer-subscription-heading">
-          ---- FOOTER IN PROGRESS ----
-        </p>
-        <p className="footer-subscription-text">
-          You can unsubscribe at any time.
-        </p>
-        <div className="input-areas">
-          <form>
-            <input
-              className="footer-input"
-              name="email"
-              type="email"
-              placeholder="Your Email"
-            />
-            <Button buttonStyle="btn--outline">Subscribe</Button>
-          </form>
-        </div>
-      </section> */}
       <div className="footer-links">
         <div className="footer-link-wrapper">
           <div className="footer-link-items">
             <h2>Pages</h2>
-            <Link
-              to="/arda-resume/"
-              className="footer-sublink"
-              onClick={goToStart}
-            >
+            <Link to="/" className="footer-sublink" onClick={goToStart}>
               Home
             </Link>
             <Link
-              to="/arda-resume/experiences"
+              to="/experiences"
               className="footer-sublink"
               onClick={goToStart}
             >
               Experiences
             </Link>
-            <Link
-              to="/arda-resume/projects"
-              className="footer-sublink"
-              onClick={goToStart}
-            >
+            <Link to="/projects" className="footer-sublink" onClick={goToStart}>
               Projects
             </Link>
-            <Link
-              to="/arda-resume/about-me"
-              className="footer-sublink"
-              onClick={goToStart}
-            >
+            <Link to="/about-me" className="footer-sublink" onClick={goToStart}>
               About Me
             </Link>
           </div>
           <div className="footer-link-items">
             <h2>Projects</h2>
             <Link
-              to="/arda-resume/projects#mobile-apps&mot"
+              to="/projects#mobile-apps&mot"
               className="footer-sublink"
               onClick={goToStart}
             >
               Money On Track
             </Link>
             <Link
-              to="/arda-resume/projects#desktop-apps&robber"
+              to="/projects#desktop-apps&robber"
               className="footer-sublink"
               onClick={goToStart}
             >
               Robber
             </Link>
             <Link
-              to="/arda-resume/projects#desktop-apps&jastagram"
+              to="/projects#desktop-apps&jastagram"
               className="footer-sublink"
               onClick={goToStart}
             >
               Jastagram
             </Link>
             <Link
-              to="/arda-resume/projects#mobile-apps&mdmi"
+              to="/projects#mobile-apps&mdmi"
               className="footer-sublink"
               onClick={goToStart}
             >
               MountDoug Maps - iOS
             </Link>
             <Link
-              to="/arda-resume/projects#mobile-apps&mdma"
+              to="/projects#mobile-apps&mdma"
               className="footer-sublink"
               onClick={goToStart}
             >

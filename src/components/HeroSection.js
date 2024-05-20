@@ -11,7 +11,7 @@ function HeroSection() {
       <p>Software Engineering Student</p>
       <div className="hero-btns">
         <Button
-          to="/arda-resume/experiences"
+          to="/experiences"
           className="btns"
           buttonStyle="btn--outline"
           buttonSize="btn--large"
@@ -19,7 +19,7 @@ function HeroSection() {
           Experiences
         </Button>
         <Button
-          to="/arda-resume/projects"
+          to="/projects"
           className="btns"
           buttonStyle="btn--primary"
           buttonSize="btn--large"

@@ -26,11 +26,7 @@ function Navbar() {
   const showButton = useCallback(() => setButton(window.innerWidth > 800), []);
 
   const handleScroll = useCallback(() => {
-    if (
-      location.pathname === "/arda-resume/" &&
-      location.pathname.length === 13 &&
-      !click
-    ) {
+    if (location.pathname === "/" && location.pathname.length === 1 && !click) {
       setScroll(window.scrollY > 200); // Set scroll state based on scroll position
     } else {
       setScroll(true);
