@@ -22,10 +22,10 @@ function MainApp() {
     <>
       <Navbar />
       <Routes>
-        <Route path="/arda-resume/" element={<Home />} />
-        <Route path="/arda-resume/experiences" element={<Experiences />} />
-        <Route path="/arda-resume/projects" element={<Projects />} />
-        <Route path="/arda-resume/about-me" element={<AboutMe />} />
+        <Route path="/ardaberktin.com/" element={<Home />} />
+        <Route path="/ardaberktin.com/experiences" element={<Experiences />} />
+        <Route path="/ardaberktin.com/projects" element={<Projects />} />
+        <Route path="/ardaberktin.com/about-me" element={<AboutMe />} />
       </Routes>
       <Footer />
     </>
