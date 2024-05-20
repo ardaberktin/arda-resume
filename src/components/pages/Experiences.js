@@ -78,7 +78,7 @@ function Experience() {
             Arda's Portfolio
             <Link
               className="project-link"
-              to="/arda-resume/projects#desktop-apps&portfolio"
+              to="/projects#desktop-apps&portfolio"
             >
               <Launch />
             </Link>
@@ -98,10 +98,7 @@ function Experience() {
         >
           <h3 className="vertical-timeline-element-title">
             Money On Track
-            <Link
-              className="project-link"
-              to="/arda-resume/projects#mobile-apps&mot"
-            >
+            <Link className="project-link" to="/projects#mobile-apps&mot">
               <Launch />
             </Link>
           </h3>
@@ -141,10 +138,7 @@ function Experience() {
         >
           <h3 className="vertical-timeline-element-title">
             Mount Doug Maps - iOS{" "}
-            <Link
-              className="project-link"
-              to="/arda-resume/projects#mobile-apps&mdmi"
-            >
+            <Link className="project-link" to="/projects#mobile-apps&mdmi">
               <Launch />
             </Link>
           </h3>
@@ -212,7 +206,7 @@ function Experience() {
             Jastagram{" "}
             <Link
               className="project-link"
-              to="/arda-resume/projects#desktop-apps&jastagram"
+              to="/projects#desktop-apps&jastagram"
             >
               <Launch />
             </Link>
@@ -229,10 +223,7 @@ function Experience() {
         >
           <h3 className="vertical-timeline-element-title">
             Mount Doug Maps - Android{" "}
-            <Link
-              className="project-link"
-              to="/arda-resume/projects#mobile-apps&mdma"
-            >
+            <Link className="project-link" to="/projects#mobile-apps&mdma">
               <Launch />
             </Link>
           </h3>
@@ -250,10 +241,7 @@ function Experience() {
         >
           <h3 className="vertical-timeline-element-title">
             Robber
-            <Link
-              className="project-link"
-              to="/arda-resume/projects#desktop-apps&robber"
-            >
+            <Link className="project-link" to="/projects#desktop-apps&robber">
               <Launch />
             </Link>
           </h3>
