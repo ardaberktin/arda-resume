@@ -116,11 +116,7 @@ function Footer() {
       <section className="social-media">
         <div className="social-media-wrap">
           <div className="footer-logo">
-            <Link
-              to="/arda-resume/"
-              className="social-logo"
-              onClick={goToStart}
-            >
+            <Link to="/" className="social-logo" onClick={goToStart}>
               ARDA BERKTIN
             </Link>
           </div>
