@@ -64,7 +64,7 @@ function Navbar() {
       <nav className={scroll ? "navbar" : "navbar trans"}>
         <div className="navbar-container">
           <Link
-            to="/arda-resume/"
+            to="/ardaberktin.com/"
             className="navbar-logo"
             onClick={closeMobileMenu}
           >
@@ -82,7 +82,7 @@ function Navbar() {
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
               <Link
-                to="/arda-resume/"
+                to="/ardaberktin.com/"
                 className={`nav-links ${isActive("/arda-resume/")}`}
                 onClick={closeMobileMenu}
               >
@@ -91,7 +91,7 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <Link
-                to="/arda-resume/experiences"
+                to="/ardaberktin.com/experiences"
                 className={`nav-links ${isActive("/arda-resume/experiences")}`}
                 onClick={closeMobileMenu}
               >
@@ -100,7 +100,7 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <Link
-                to="/arda-resume/projects"
+                to="/ardaberktin.com/projects"
                 className={`nav-links ${isActive("/arda-resume/projects")}`}
                 onClick={closeMobileMenu}
               >
@@ -110,7 +110,7 @@ function Navbar() {
 
             <li>
               <Link
-                to="/arda-resume/about-me"
+                to="/ardaberktin.com/about-me"
                 className={`nav-links-mobile ${isActive(
                   "/arda-resume/about-me"
                 )}`}
@@ -123,10 +123,10 @@ function Navbar() {
           {button && (
             <Button
               className={`nav-links about-me ${isActive(
-                "/arda-resume/about-me"
+                "/ardaberktin.com/about-me"
               )}`}
               buttonStyle="btn--outline"
-              to={"/arda-resume/about-me"}
+              to={"/ardaberktin.com/about-me"}
               onClick={closeMobileMenu}
             >
               About Me
