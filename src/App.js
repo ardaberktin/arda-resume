@@ -1,10 +1,5 @@
-import React, { useEffect } from "react";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  //useLocation,
-} from "react-router-dom";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import "./App.css";
 import Home from "./components/pages/Home";
@@ -23,32 +18,6 @@ function App() {
 }
 
 function MainApp() {
-  //const location = useLocation();
-
-  useEffect(() => {
-    // const handleBeforeUnload = (event) => {
-    //   if (performance.getEntriesByType("navigation")[0].type === "reload") {
-    //     if (
-    //       location.pathname !== "/arda-resume/" ||
-    //       location.pathname.length !== 13
-    //     ) {
-    //       console.log(location.pathname + " pathname");
-    //       console.log(location.pathname.length + " pathname length");
-    //       event.preventDefault();
-    //       // Modern browsers show a generic message and ignore the custom text
-    //       event.returnValue =
-    //         "Refreshing the page will cause an error due to github pages limitations.";
-    //     }
-    //   }
-    // };
-
-    //window.addEventListener("beforeunload", handleBeforeUnload);
-
-    return () => {
-      // window.removeEventListener("beforeunload", handleBeforeUnload);
-    };
-  }, []);
-
   return (
     <>
       <Navbar />
