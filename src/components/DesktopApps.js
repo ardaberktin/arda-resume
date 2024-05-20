@@ -119,7 +119,7 @@ function DesktopApps() {
         id="desktop-apps"
       >
         <h2 className="desktop-app-description">
-          Please Click On One Of My Projects To Learn More!
+          Please Click On My Projects To Learn More!
         </h2>
         {/* Apply classes based on banner state */}
         <div className="desktop-wrapper">

@@ -151,7 +151,7 @@ function IphoneApps(isActive) {
         id="mobile-apps"
       >
         <h2 className="app-description" onClick={() => handleButtonClick(0)}>
-          Please Click On One Of My Apps To Learn More!
+          Please Click On My Apps To Learn More!
         </h2>
         <div className="iphone-wrapper">
           <div className="iphone">
