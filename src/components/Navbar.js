@@ -63,11 +63,7 @@ function Navbar() {
     <>
       <nav className={scroll ? "navbar" : "navbar trans"}>
         <div className="navbar-container">
-          <Link
-            to="/ardaberktin.com/"
-            className="navbar-logo"
-            onClick={closeMobileMenu}
-          >
+          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
             <img className="arda-icon" src="images/ardaface.png" alt="Arda" />
             ARDA BERKTIN
           </Link>
@@ -82,7 +78,7 @@ function Navbar() {
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
               <Link
-                to="/ardaberktin.com/"
+                to="/"
                 className={`nav-links ${isActive("/arda-resume/")}`}
                 onClick={closeMobileMenu}
               >
@@ -91,7 +87,7 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <Link
-                to="/ardaberktin.com/experiences"
+                to="/experiences"
                 className={`nav-links ${isActive("/arda-resume/experiences")}`}
                 onClick={closeMobileMenu}
               >
@@ -100,7 +96,7 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <Link
-                to="/ardaberktin.com/projects"
+                to="/projects"
                 className={`nav-links ${isActive("/arda-resume/projects")}`}
                 onClick={closeMobileMenu}
               >
@@ -110,7 +106,7 @@ function Navbar() {
 
             <li>
               <Link
-                to="/ardaberktin.com/about-me"
+                to="/about-me"
                 className={`nav-links-mobile ${isActive(
                   "/arda-resume/about-me"
                 )}`}
@@ -123,10 +119,10 @@ function Navbar() {
           {button && (
             <Button
               className={`nav-links about-me ${isActive(
-                "/ardaberktin.com/about-me"
+                "/arda-resume/about-me"
               )}`}
               buttonStyle="btn--outline"
-              to={"/ardaberktin.com/about-me"}
+              to={"/about-me"}
               onClick={closeMobileMenu}
             >
               About Me
