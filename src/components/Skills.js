@@ -166,11 +166,11 @@ function Skills() {
             <ul className="unordered-list">
               <li>
                 <h3>English</h3>
-                <p>Native or bilingual proficiency</p>
+                <p>Native / bilingual proficiency</p>
               </li>
               <li>
                 <h3>Turkish</h3>
-                <p>Native or bilingual proficiency</p>
+                <p>Native / bilingual proficiency</p>
               </li>
             </ul>
           </div>
