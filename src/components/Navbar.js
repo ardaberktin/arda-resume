@@ -34,6 +34,8 @@ function Navbar() {
   }, [click, location.pathname]);
 
   const isActive = (path) => {
+    console.log("pathname:" + location.pathname);
+    console.log("path:" + path);
     return location.pathname === path ? "highlight" : "";
   };
 
@@ -75,7 +77,7 @@ function Navbar() {
             <li className="nav-item">
               <Link
                 to="/"
-                className={`nav-links ${isActive("/arda-resume/")}`}
+                className={`nav-links ${isActive("/")}`}
                 onClick={closeMobileMenu}
               >
                 Home
@@ -84,7 +86,7 @@ function Navbar() {
             <li className="nav-item">
               <Link
                 to="/experiences"
-                className={`nav-links ${isActive("/arda-resume/experiences")}`}
+                className={`nav-links ${isActive("/experiences")}`}
                 onClick={closeMobileMenu}
               >
                 Experiences
@@ -93,7 +95,7 @@ function Navbar() {
             <li className="nav-item">
               <Link
                 to="/projects"
-                className={`nav-links ${isActive("/arda-resume/projects")}`}
+                className={`nav-links ${isActive("/projects")}`}
                 onClick={closeMobileMenu}
               >
                 Projects
@@ -103,9 +105,7 @@ function Navbar() {
             <li>
               <Link
                 to="/about-me"
-                className={`nav-links-mobile ${isActive(
-                  "/arda-resume/about-me"
-                )}`}
+                className={`nav-links-mobile ${isActive("/about-me")}`}
                 onClick={closeMobileMenu}
               >
                 About Me
@@ -114,9 +114,7 @@ function Navbar() {
           </ul>
           {button && (
             <Button
-              className={`nav-links about-me ${isActive(
-                "/arda-resume/about-me"
-              )}`}
+              className={`nav-links about-me ${isActive("/about-me")}`}
               buttonStyle="btn--outline"
               to={"/about-me"}
               onClick={closeMobileMenu}
