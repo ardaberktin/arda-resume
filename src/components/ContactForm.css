@@ -1,5 +1,6 @@
 .contact-form-container {
   /* flex: 1; */
+  /* width: 100%; */
   padding-top: 50px;
   min-width: 400px;
   padding-right: 50px;
@@ -12,7 +13,7 @@
 }
 
 .email-form {
-  max-width: 500px;
+  width: 100%;
   margin: 0 auto;
   padding: 2rem;
   background: white;
@@ -38,7 +39,7 @@ input[type="email"],
 }
 
 .form-textarea {
-  height: 150px;
+  height: 120px;
   resize: vertical;
 }
 
@@ -73,19 +74,21 @@ input[type="submit"]:disabled {
 .form-error {
   color: red;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (min-width: 801px) and (max-width: 1000px) {
   .contact-form-container {
     padding-top: 20px;
     padding-right: 20px;
+    min-width: 0px;
   }
 }
 @media screen and (max-width: 800px) {
   .contact-form-container {
-    width: 90%; /* adjust the width as needed */
+    width: 90%;
     align-items: center;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
     padding: 0;
+    min-width: 0px;
   }
 }

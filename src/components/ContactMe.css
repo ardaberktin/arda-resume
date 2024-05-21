@@ -124,10 +124,6 @@
   justify-content: center;
 }
 
-.contact-info > p {
-  /* margin-top: -15px; */
-}
-
 @media screen and (max-width: 865px) {
   .contact-me-container {
     display: block;
