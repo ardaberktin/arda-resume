@@ -34,7 +34,7 @@
   align-items: center;
 
   /* BUUUUUUUUUUU */
-  width: 60vw;
+  width: 80vw;
 }
 
 .navbar-logo .arda-icon {
@@ -97,6 +97,27 @@
   display: none;
 }
 
+@media screen and (max-width: 385px) {
+  .navbar {
+    height: 100px;
+  }
+
+  /* .navbar-logo {
+    width: 80vw;
+  }
+
+  .navbar-logo > p {
+    font-size: 8vw;
+  } */
+}
+
+/*
+@media screen and (min-width: 400px) and (max-width: 800px) {
+  .navbar-logo {
+    width: auto;
+  }
+} */
+
 @media screen and (max-width: 800px) {
   .NavbarItems {
     position: relative;
@@ -144,7 +165,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: auto;
+    /* width: auto; */
     /* transform: translate(25%, 50%); ?? it was working before but now its not*/
   }
 
