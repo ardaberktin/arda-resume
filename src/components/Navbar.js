@@ -34,8 +34,6 @@ function Navbar() {
   }, [click, location.pathname]);
 
   const isActive = (path) => {
-    console.log("pathname:" + location.pathname);
-    console.log("path:" + path);
     return location.pathname === path ? "highlight" : "";
   };
 

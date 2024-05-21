@@ -35,7 +35,6 @@
 
   /* BUUUUUUUUUUU */
   width: 60vw;
-  text-align: start;
 }
 
 .navbar-logo .arda-icon {
@@ -146,7 +145,6 @@
     top: 0;
     left: 0;
     width: auto;
-
     /* transform: translate(25%, 50%); ?? it was working before but now its not*/
   }
 

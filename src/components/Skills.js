@@ -6,9 +6,9 @@ function Skills() {
     <div className="skill-container">
       <h1 className="h1">Skills</h1>
       <div className="skill-wrapper">
-        {/* Languages */}
+        {/* Programming Languages */}
         <div className="skill-category">
-          <h2>Languages</h2>
+          <h2> Programming Languages</h2>
           <div className="list-and-icons">
             <div className="skill-list">
               <ul className="unordered-list">
@@ -18,7 +18,7 @@ function Skills() {
                 </li>
                 <li>
                   <h3>Back End</h3>
-                  <p>Java • Python • Swift • C • C# • PHP • ROBOTC</p>
+                  <p>Java • Python • C • C# • Swift • PHP • ROBOTC</p>
                 </li>
               </ul>
             </div>
@@ -156,6 +156,23 @@ function Skills() {
           <h2>Hardware</h2>
           <div className="skill-list">
             <p>PCs, ARM Processors, VEX Kit</p>
+          </div>
+        </div>
+
+        {/* Languages */}
+        <div className="skill-category">
+          <h2>Languages</h2>
+          <div className="skill-list">
+            <ul className="unordered-list">
+              <li>
+                <h3>English</h3>
+                <p>Native or bilingual proficiency</p>
+              </li>
+              <li>
+                <h3>Turkish</h3>
+                <p>Native or bilingual proficiency</p>
+              </li>
+            </ul>
           </div>
         </div>
 
