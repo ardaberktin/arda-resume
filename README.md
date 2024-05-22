@@ -2,7 +2,7 @@
 
 [Arda's Portfolio](https://ardaberktin.com)
 <br/>
-(https://ardaberktin.com)
+(www.ardaberktin.com)
 
 <br/>
 <br/>
