@@ -19,19 +19,19 @@ function AboutMeInfo() {
 
       <p className="about-me-paragraph">
         Hello there! I'm Arda, a dedicated software engineering student
-        currently pursuing my Bachelor's degree at the University of Victoria.
-        Beyond the code, I'm fueled by a passion for leveraging technology to
-        bring innovative solutions to life, ones that resonate and make a real
-        difference in people's lives. <br />
+        currently pursuing my Bachelor's degree at the University of Victoria. I
+        believe that software systems are not just tools but crucial in serving
+        and shaping our society.
+        <br />
         <br />
         While my journey in software engineering has been exciting, it's the
         projects that truly define my enthusiasm. Take, for instance, the Money
         on Track application, built from scratch using Swift and SwiftUI. This
-        project wasn't just about lines of code; it was about crafting an
+        project wasn't just about lines of code; it was about creating an
         experience that empowers users to take control of their finances.
         Integrating Firebase API for seamless data storage and incorporating an
         AI assistant named Budget Buddy, powered by OpenAI's API, was just the
-        beginning of the adventure. <br />
+        beginning. <br />
         <br />
         But beyond the projects, what defines me are my values and skills that I
         bring to the table. I thrive in collaborative environments, where
