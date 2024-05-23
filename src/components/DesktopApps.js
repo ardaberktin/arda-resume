@@ -306,7 +306,7 @@ function DesktopApps() {
                       <div className="desktop-image-and-btn">
                         <img
                           className="desktop-app-image"
-                          src={`images/Portfolio.jpeg`}
+                          src={`images/Portfolio.png`}
                           alt="My Apps"
                         />
                       </div>
