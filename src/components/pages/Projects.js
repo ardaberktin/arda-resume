@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-import "../Projects.css";
+import "./Projects.css";
 import "../../App.css";
 import IphoneApps from "../IphoneApps";
 import DesktopApps from "../DesktopApps";
