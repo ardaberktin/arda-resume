@@ -88,11 +88,11 @@
   display: flex;
   justify-content: center;
   text-align: center;
-  font-size: 1.2vw;
+  /* font-size: 1.2vw; */
 }
 
 .desktop-app-points {
-  font-size: 1.2vw;
+  /* font-size: 1.2vw; */
 }
 
 .scroll-button {
@@ -105,11 +105,11 @@
 
 .desktop-app-info {
   position: absolute;
-  width: 90%;
+  width: 92%;
   transform: translate(-50%, -50%);
   height: auto;
   background-color: white;
-  border-radius: 30px;
+  border-radius: 10px;
   box-shadow: inset;
   word-wrap: break-word;
   overflow-wrap: break-word;
@@ -144,7 +144,7 @@
 
 .area-3 {
   /* Styles for selectedArea 3 */
-  top: 35%;
+  top: 36%;
   left: 50%;
 }
 
@@ -188,6 +188,24 @@
 .desktop-button-area-3 {
   top: 36%;
   left: 75%;
+}
+
+@media screen and (max-width: 600px) {
+  .desktop-app-image-info > p {
+    font-size: 2vw;
+  }
+
+  .desktop-app-points {
+    font-size: 2vw;
+  }
+
+  .desktop-image-title {
+    font-size: 2vw;
+  }
+
+  .desktop-container h1 {
+    font-size: 5vw;
+  }
 }
 
 /* @media screen and (orientation: portrait) {
