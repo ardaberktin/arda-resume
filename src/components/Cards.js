@@ -17,6 +17,12 @@ function Cards() {
         <div className="cards__wrapper">
           <ul className="cards__items">
             <CardItem
+              src="images/Arda'sPortfolio.jpg"
+              text="My portfolio website built with React"
+              label="Website"
+              path="/projects#desktop-apps&portfolio"
+            />
+            <CardItem
               src="images/MoneyOnTrack.jpg"
               text="Personal Finance App Built With Swift"
               label="Mobile App"

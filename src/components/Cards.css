@@ -20,6 +20,10 @@
   padding-bottom: 2rem;
 }
 
+.cards__container a {
+  padding: 0rem;
+}
+
 .cards__wrapper {
   position: relative;
   margin: 50px 0 45px;
