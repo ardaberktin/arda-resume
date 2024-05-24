@@ -73,8 +73,6 @@ function Footer() {
               MountDoug Maps - Android
             </Link>
           </div>
-        </div>
-        <div className="footer-link-wrapper">
           <div className="footer-link-items">
             <h2>Social Media</h2>
             <Link
@@ -112,6 +110,7 @@ function Footer() {
             </Link>
           </div>
         </div>
+        {/* <div className="footer-link-wrapper"></div> */}
       </div>
       <section className="social-media">
         <div className="social-media-wrap">
