@@ -26,7 +26,6 @@
   position: relative;
 
   padding-bottom: 1rem;
-  /* border: 1rem solid red; */
   overflow: scroll;
   transition: height 0.3s ease-in-out;
 }

@@ -74,7 +74,6 @@ function DesktopApps() {
 
       // Scroll to the element with the matching id
       const targetElement = document.getElementById("desktop-apps");
-      console.log(targetElement);
 
       // Scroll to the target
       if (targetElement) {

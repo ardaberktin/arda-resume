@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import "./Projects.css";
 import "../../App.css";
 import IphoneApps from "../IphoneApps";
@@ -53,18 +53,18 @@ function Projects() {
           <h1 className="projects-title">My Projects</h1>
         </div>
         <div className="big-title-container">
-          <h1
+          <Link
             className={`mobile-apps-big-title ${mobile ? "active" : ""}`}
             onClick={SetMobileButton}
           >
             Mobile Apps
-          </h1>
-          <h1
+          </Link>
+          <Link
             className={`desktop-apps-big-title ${desktop ? "active" : ""}`}
             onClick={SetDesktopButton}
           >
             Games & Websites
-          </h1>
+          </Link>
         </div>
       </div>
       {mobile && <IphoneApps />}

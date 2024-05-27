@@ -24,51 +24,58 @@ function Footer() {
             <Link
               to="/experiences"
               className="footer-sublink"
-              onClick={goToStart}
+              // onClick={goToStart}
             >
               Experiences
             </Link>
-            <Link to="/projects" className="footer-sublink" onClick={goToStart}>
+            <Link to="/projects" className="footer-sublink">
               Projects
             </Link>
-            <Link to="/about-me" className="footer-sublink" onClick={goToStart}>
+            <Link to="/about-me" className="footer-sublink">
               About Me
             </Link>
           </div>
           <div className="footer-link-items">
             <h2>Projects</h2>
             <Link
+              to="/projects#desktop-apps&portfolio"
+              className="footer-sublink"
+              // onClick={goToStart}
+            >
+              Arda's Portfolio
+            </Link>
+            <Link
               to="/projects#mobile-apps&mot"
               className="footer-sublink"
-              onClick={goToStart}
+              // onClick={goToStart}
             >
               Money On Track
             </Link>
             <Link
               to="/projects#desktop-apps&robber"
               className="footer-sublink"
-              onClick={goToStart}
+              // onClick={goToStart}
             >
               Robber
             </Link>
             <Link
               to="/projects#desktop-apps&jastagram"
               className="footer-sublink"
-              onClick={goToStart}
+              // onClick={goToStart}
             >
               Jastagram
             </Link>
             <Link
               to="/projects#mobile-apps&mdmi"
               className="footer-sublink"
-              onClick={goToStart}
+              // onClick={goToStart}
             >
               MountDoug Maps - iOS
             </Link>
             <Link
               to="/projects#mobile-apps&mdma"
               className="footer-sublink"
-              onClick={goToStart}
+              // onClick={goToStart}
             >
               MountDoug Maps - Android
             </Link>

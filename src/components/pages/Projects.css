@@ -24,9 +24,13 @@
 .mobile-apps-big-title {
   flex: 1;
   text-align: center;
-  padding: 20px;
+  padding: 32px;
   cursor: pointer;
   border-top-right-radius: 30px;
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .mobile-apps-big-title:hover {
@@ -34,11 +38,13 @@
 }
 
 .mobile-apps-big-title.active {
+  text-decoration: none;
   background-color: white;
   color: black;
   border-top-right-radius: 30px;
   transform: none;
   cursor: auto;
+  font-weight: bold;
 }
 .desktop-apps-big-title {
   flex: 1;
@@ -46,6 +52,10 @@
   padding: 20px;
   cursor: pointer;
   border-top-left-radius: 30px;
+  font-size: 32px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 .desktop-apps-big-title:hover {
   transform: scale(1.1);
@@ -56,4 +66,5 @@
   border-top-left-radius: 30px;
   transform: none;
   cursor: auto;
+  font-weight: bold;
 }
