@@ -39,7 +39,7 @@ function Experience() {
             ARD Group Information Technologies Inc.
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
-            Software Engineer Intern
+            Software Engineer Intern - Full Stack
           </h4>
           <h4 className="vertical-timeline-element-subtitle">
             Ankara, Türkiye
