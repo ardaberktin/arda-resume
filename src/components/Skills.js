@@ -136,10 +136,36 @@ function Skills() {
         <div className="skill-category">
           <h2>Software</h2>
           <div className="skill-list">
-            <p>
+            {/* <p>
               Figma, Miro, Git, MS Visual Studio Code, Eclipse, XCode, Android
               Studio, Adobe Photoshop, MS Office (Word, Excel, PowerPoint)
-            </p>
+            </p> */}
+          </div>
+          <div className="skill-list">
+            <ul className="unordered-list">
+              <li>
+                <h3>Version Control</h3>
+                <p>Git • GitHub • BitBucket</p>
+              </li>
+              <li>
+                <h3>IDE</h3>
+                <p>
+                  MS Visual Studio Code • MS Visual Studio • Eclipse • XCode •
+                  Jupyter • Android Studio
+                </p>
+              </li>
+              <li>
+                <h3>Design</h3>
+                <p>Figma • Miro • Adobe Photoshop</p>
+              </li>
+              <li>
+                <h3>Office Suites</h3>
+                <p>
+                  MS Office • Word • Excel • PowerPoint • Google Docs • Google
+                  Sheets • Google Slides
+                </p>
+              </li>
+            </ul>
           </div>
         </div>
 
@@ -166,11 +192,11 @@ function Skills() {
             <ul className="unordered-list">
               <li>
                 <h3>English</h3>
-                <p>Native / bilingual proficiency</p>
+                <p>Native / Bilingual proficiency</p>
               </li>
               <li>
                 <h3>Turkish</h3>
-                <p>Native / bilingual proficiency</p>
+                <p>Native / Bilingual proficiency</p>
               </li>
             </ul>
           </div>
@@ -180,7 +206,10 @@ function Skills() {
         <div className="skill-category">
           <h2>Other</h2>
           <div className="skill-list">
-            <p>Leadership, Teamwork, Communication, Creative Problem Solving</p>
+            <p>
+              Growth Mindset, Leadership, Teamwork, Communication, Creative
+              Problem Solving
+            </p>
           </div>
         </div>
       </div>
