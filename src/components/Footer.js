@@ -4,6 +4,15 @@ import "./Footer.css";
 import { Link } from "react-router-dom";
 
 function Footer() {
+  const deploymentTime = process.env.REACT_APP_DEPLOYMENT_TIME;
+  // Format the date to "May 31, 2024"
+  const formattedDeploymentTime = deploymentTime
+    ? new Date(deploymentTime).toLocaleDateString("en-US", {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      })
+    : null;
   const goToStart = () => {
     window.scrollTo({
       top: 0,
@@ -125,6 +134,11 @@ function Footer() {
             <Link to="/" className="social-logo" onClick={goToStart}>
               ARDA BERKTIN
             </Link>
+            {formattedDeploymentTime && (
+              <p className="last-updated">
+                Last Updated: {formattedDeploymentTime}
+              </p>
+            )}
           </div>
           {/* <small class="website-rights">TRVL © 2020</small> */}
           <div className="social-icons">
