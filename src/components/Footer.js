@@ -130,8 +130,8 @@ function Footer() {
       </div>
       <section className="social-media">
         <div className="social-media-wrap">
-          <div className="footer-logo">
-            <Link to="/" className="social-logo" onClick={goToStart}>
+          <div className="footer-logo" onClick={goToStart}>
+            <Link to="/" className="social-logo">
               ARDA BERKTIN
             </Link>
             {formattedDeploymentTime && (
