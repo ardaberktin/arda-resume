@@ -11,6 +11,8 @@ import Footer from "./components/Footer";
 //source: https://youtu.be/I2UBjN5ER4s?si=Y5Z8KxagVCyQ2XDK
 //https://github.com/briancodex/react-website-v1
 
+// // "deploy": "gh-pages -d build",
+
 //MainApp
 function App() {
   return (
