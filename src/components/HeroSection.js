@@ -7,7 +7,7 @@ function HeroSection() {
   return (
     <div className="hero-container">
       {/*<video src="/videos/video-2.mp4" autoPlay loop muted />*/}
-      <h1>ARDA BERKTIN.</h1>
+      <h1>ARDA BERKTIN</h1>
       <p>Software Engineering Student</p>
       <p style={{ opacity: 0.6 }}>@ University of Victoria</p>
       <div className="hero-btns">
