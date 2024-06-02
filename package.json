@@ -25,7 +25,6 @@
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
-    // "deploy": "gh-pages -d build",
     "deploy": "npm run build && git add . && git commit -m 'Deploying build' && git push origin build",
     "build": "REACT_APP_DEPLOYMENT_TIME=$(date +%Y-%m-%dT%H:%M:%S%z) react-scripts build",
     "test": "react-scripts test",
