@@ -31,6 +31,32 @@ function Experience() {
       <VerticalTimeline lineColor="#3e497a">
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
+          date="September - December 2024"
+          iconStyle={{ background: "#d9ba0f", color: "#fff" }}
+          icon={<WorkIcon />}
+        >
+          <h3 className="vertical-timeline-element-title">
+            INSPIRE: STEM for Social Impact
+          </h3>
+          <h4 className="vertical-timeline-element-subtitle">
+            Software Engineer Intern
+          </h4>
+          <h4 className="vertical-timeline-element-subtitle">
+            UVIC, Victoria, BC, Canada
+          </h4>
+          <p>
+            I will be working on the Brightspace for Neurodiverse Education
+            project this fall. <br /> <br />
+            INSPIRE : STEM for Social Impact is a program at the University of
+            Victoria (UVic) led through the Faculty of Engineering and Computer
+            Science in collaboration with the Faculty of Science and Centre for
+            Asia-Pacific Initiatives (CAPI). They work closely with the
+            community, industry, and research partners, to solve real-world
+            problems within the local communities.
+          </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
           date="May - September 2024"
           iconStyle={{ background: "#d9ba0f", color: "#fff" }}
           icon={<WorkIcon />}
