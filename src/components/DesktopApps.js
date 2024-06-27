@@ -184,12 +184,13 @@ function DesktopApps() {
                 {selectedArea === 2 && (
                   <div>
                     {/* Content for Area 2 */}
-
-                    <a href="/robbergame.jar" download>
-                      <div className="download-robber">
-                        <h4>Play Game!</h4>
-                        <h5>Download . JAR File</h5>
-                      </div>
+                    <a
+                      className="download-robber"
+                      href="/robbergame.jar"
+                      download
+                    >
+                      <h4>Play Game!</h4>
+                      <h5>Download . JAR File</h5>
                     </a>
                     <div className="desktop-app-title">
                       <h1>
