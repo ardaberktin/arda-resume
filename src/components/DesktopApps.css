@@ -143,19 +143,16 @@
 }
 
 .area-1 {
-  /* Styles for selectedArea 1 */
   top: 37%;
   left: 50%;
 }
 
 .area-2 {
-  /* Styles for selectedArea 2 */
   top: 45%;
   left: 50%;
 }
 
 .area-3 {
-  /* Styles for selectedArea 3 */
   top: 38%;
   left: 50%;
 }
@@ -206,7 +203,17 @@
   left: 65.5%;
 }
 
+@media screen and (max-width: 1200px) {
+  .desktop-app-info {
+    margin-top: 10vw;
+  }
+}
+
 @media screen and (max-width: 800px) {
+  .desktop-app-info {
+    margin-top: 20vw;
+  }
+
   .desktop-app-image-info > p {
     font-size: 2vw;
   }
@@ -229,6 +236,12 @@
 
   .download-robber h5 {
     font-size: 1.5vw;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .desktop-app-info {
+    margin-top: 35vw;
   }
 }
 
