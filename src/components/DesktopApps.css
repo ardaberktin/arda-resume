@@ -211,7 +211,11 @@
 
 @media screen and (max-width: 800px) {
   .desktop-app-info {
-    margin-top: 20vw;
+    margin-top: 30vw;
+  }
+
+  .desktop-app-image {
+    width: 70%;
   }
 
   .desktop-app-image-info > p {
@@ -239,9 +243,13 @@
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .desktop-app-info {
-    margin-top: 35vw;
+    margin-top: 55vw;
+  }
+
+  .desktop-image {
+    width: 100%;
   }
 }
 
