@@ -99,19 +99,7 @@ function DesktopApps() {
     <div>
       <div className="desktop-apps-title">
         <h1>Games & Websites</h1>
-        <div className="desktop-icon-container">
-          {/* {banner ? (
-            <ExpandMoreIcon
-              className="expend-more icon-size"
-              sx={{ fontSize: 50 }}
-            />
-          ) : (
-            <ExpandLessIcon
-              className="expend-less icon-size"
-              sx={{ fontSize: 50 }}
-            />
-          )} */}
-        </div>
+        <div className="desktop-icon-container"></div>
       </div>
       <div
         className={`desktop-container ${banner ? "collapsed" : "expanded"}`}
@@ -166,80 +154,101 @@ function DesktopApps() {
                 {selectedArea === 1 && (
                   <div>
                     {/* Content for Area 1 */}
-                    <h1>
-                      JASTAGRAM{" "}
-                      <a
-                        href={githubSocial}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <GitHubIcon className="github-icon" />
-                      </a>
-                    </h1>
+                    <div className="desktop-app-title">
+                      <h1>
+                        JASTAGRAM{" "}
+                        <a
+                          href={githubSocial}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <GitHubIcon className="github-icon" />
+                        </a>
+                      </h1>
+                    </div>
 
                     <br />
-                    <p className="desktop-app-points">
-                      • Social Media website where users can log in and post
-                      pictures. <br />
-                      • Created Jastagram using HTML, CSS, Javascript and PHP.
-                      <br />• Utilized my teamwork, communication and
-                      collaboration skills with my teammates to work on the
-                      project at the same time in our designated roles.
-                    </p>
-                    {/* Additional content for Area 1 */}
+                    <div className="skill-category">
+                      <p className="desktop-app-points">
+                        • Social Media website where users can log in and post
+                        pictures. <br />
+                        • Created Jastagram using HTML, CSS, Javascript and PHP.
+                        <br />• Utilized my teamwork, communication and
+                        collaboration skills with my teammates to work on the
+                        project at the same time in our designated roles.
+                      </p>
+                      {/* Additional content for Area 1 */}
+                    </div>
                   </div>
                 )}
                 {selectedArea === 2 && (
                   <div>
                     {/* Content for Area 2 */}
-                    <h1>
-                      ROBBER{" "}
-                      <a
-                        href={githubRobber}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <GitHubIcon className="github-icon" />
-                      </a>
-                    </h1>
-                    <p className="desktop-app-points">
-                      • 2D (Frogger-like) game where you rob a bank and try to
-                      escape from the cops before the train leaves. <br />
-                      • Built the game with my team of 2 friends using Java and
-                      object-oriented programming.
-                      <br />• Designed the sprites and game mechanics,
-                      practicing peer programming.
-                      <br />• Led the team and assigned my group mates their
-                      roles to meet the deadline effectively.
-                    </p>
+
+                    <a href="/robbergame.jar" download>
+                      <div className="download-robber">
+                        <h4>Play Game!</h4>
+                        <h5>Download . JAR File</h5>
+                      </div>
+                    </a>
+                    <div className="desktop-app-title">
+                      <h1>
+                        ROBBER
+                        <a
+                          href={githubRobber}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <GitHubIcon className="github-icon" />
+                        </a>
+                      </h1>
+                    </div>
+                    <div className="skill-category">
+                      <p className="desktop-app-points">
+                        • 2D (Frogger-like) game where you rob a bank and try to
+                        escape from the cops before the train leaves. <br />
+                        • Built the game with my team of 2 friends using Java
+                        and object-oriented programming.
+                        <br />• Designed the sprites and game mechanics,
+                        practicing peer programming.
+                        <br />• Led the team and assigned my group mates their
+                        roles to meet the deadline effectively.
+                      </p>
+                    </div>
+
                     {/* Additional content for Area 2 */}
                   </div>
                 )}
                 {selectedArea === 3 && (
                   <div>
                     {/* Content for Area 2 */}
-                    <h1>
-                      Arda's Portfolio
-                      <a
-                        href={githubRes}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <GitHubIcon className="github-icon" />
-                      </a>
-                    </h1>
-
-                    <p className="desktop-app-points">
-                      • Built a portfolio website that showcases my experiences,
-                      projects, and accomplishments in a visually pleasing way.
-                      <br />• Self-taught React to utilize it for the front end
-                      alongside JavaScript, HTML and CSS. <br />• Integrated
-                      Google Analytics to gather data about user interactions to
-                      detect issues and improve user experience. <br />•
-                      Deployed my React portfolio website on GitHub Pages to
-                      make it live and accessible to everyone.
-                    </p>
-                    {/* Additional content for Area 2 */}
+                    <div className="desktop-app-title">
+                      <h1>
+                        Arda's Portfolio
+                        <a
+                          href={githubRes}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <GitHubIcon className="github-icon" />
+                        </a>
+                      </h1>
+                    </div>
+                    <div className="skill-category">
+                      <p className="desktop-app-points">
+                        • Built a portfolio website that showcases my
+                        experiences, projects, and accomplishments in a visually
+                        pleasing way.
+                        <br />• Self-taught React to utilize it for the front
+                        end alongside JavaScript, HTML and CSS. <br />•
+                        Integrated Google Analytics to gather data about user
+                        interactions to detect issues and improve user
+                        experience. <br />• Deployed my React portfolio website
+                        on GitHub Pages to make it live and accessible to
+                        everyone.
+                      </p>
+                      {/* Additional content for Area 2 */}
+                    </div>
                   </div>
                 )}
 
