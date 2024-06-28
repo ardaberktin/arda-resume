@@ -9,6 +9,13 @@
   justify-content: space-between;
 }
 
+.contact-me-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .contact-me-container {
   display: flex;
   justify-content: space-between;
@@ -110,6 +117,8 @@
   text-align: center;
   padding-bottom: 40px;
   padding-top: 20px;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
 .connect-with-me-title {

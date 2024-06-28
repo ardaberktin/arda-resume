@@ -210,20 +210,22 @@ function IphoneApps(isActive) {
                       </a>
                     </h1>
                     <br />
-                    <p>
-                      • Personal Finance app built with Swift <br />
-                      • Explored user and functional needs, resulting in a
-                      detailed software requirements document, and followed an
-                      incremental development process.
-                      <br />
-                      • Utilized Firebase API, for authentication, database, and
-                      Open AI API, for financial education, to satisfy the user
-                      requirements.
-                      <br />• Applied object-oriented programming in Swift and
-                      designed the UI with Swift UI, adopting a human-centered
-                      design process.
-                    </p>
-                    {/* Additional content for Area 1 */}
+                    <div className="skill-category">
+                      <p className="iphone-app-points">
+                        • Personal Finance app built with Swift <br />
+                        • Explored user and functional needs, resulting in a
+                        detailed software requirements document, and followed an
+                        incremental development process.
+                        <br />
+                        • Utilized Firebase API, for authentication, database,
+                        and Open AI API, for financial education, to satisfy the
+                        user requirements.
+                        <br />• Applied object-oriented programming in Swift and
+                        designed the UI with Swift UI, adopting a human-centered
+                        design process.
+                      </p>
+                      {/* Additional content for Area 1 */}
+                    </div>
                   </div>
                 )}
                 {selectedArea === 2 && (
@@ -239,16 +241,18 @@ function IphoneApps(isActive) {
                         <GitHubIcon className="github-icon" />
                       </a>
                     </h1>
-                    <p>
-                      • Created a Maps application for Mount Douglas Secondary
-                      that displays classroom locations. <br />
-                      • Self-taught Swift and XCode to develop the iOS app,
-                      improving upon the Android version developed in Java in
-                      2022.
-                      <br />• Efficiently tested and debugged the application to
-                      ensure quality before deployment.
-                    </p>
-                    {/* Additional content for Area 2 */}
+                    <div className="skill-category">
+                      <p className="iphone-app-points">
+                        • Created a Maps application for Mount Douglas Secondary
+                        that displays classroom locations. <br />
+                        • Self-taught Swift and XCode to develop the iOS app,
+                        improving upon the Android version developed in Java in
+                        2022.
+                        <br />• Efficiently tested and debugged the application
+                        to ensure quality before deployment.
+                      </p>
+                      {/* Additional content for Area 2 */}
+                    </div>
                   </div>
                 )}
                 {selectedArea === 3 && (
@@ -264,15 +268,17 @@ function IphoneApps(isActive) {
                         <GitHubIcon className="github-icon" />
                       </a>
                     </h1>
-                    <p>
-                      • Created an app that shows each classroom on the map in
-                      my high school to help newcomers. <br />
-                      • Learned Android Studio independently and used my Java
-                      knowledge to code the product.
-                      <br />• Presented my application to a large group using my
-                      communication and presentation skills.
-                    </p>
-                    {/* Additional content for Area 2 */}
+                    <div className="skill-category">
+                      <p className="iphone-app-points">
+                        • Created an app that shows each classroom on the map in
+                        my high school to help newcomers. <br />
+                        • Learned Android Studio independently and used my Java
+                        knowledge to code the product.
+                        <br />• Presented my application to a large group using
+                        my communication and presentation skills.
+                      </p>
+                      {/* Additional content for Area 2 */}
+                    </div>
                   </div>
                 )}
 

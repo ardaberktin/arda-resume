@@ -77,6 +77,8 @@
   /* box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5); */
   margin: 20px;
   background-color: grey;
+  box-shadow: inset;
+  box-shadow: 0 0 30px 10px rgba(156, 148, 148, 0.5);
 }
 
 .app-image-info {
@@ -106,6 +108,10 @@
   word-wrap: break-word;
   overflow-wrap: break-word;
   box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5);
+}
+
+.iphone-app-points {
+  line-height: 25px;
 }
 
 .exit-button {

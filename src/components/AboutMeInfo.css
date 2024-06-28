@@ -34,6 +34,7 @@
   box-shadow: inset;
   box-shadow: 0 0 30px 10px rgba(156, 148, 148, 0.5);
   padding: 20px;
+  line-height: 25px;
 }
 
 .arda-image {
