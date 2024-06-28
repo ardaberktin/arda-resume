@@ -109,6 +109,14 @@
   overflow-wrap: break-word;
   box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5);
 }
+.iphone-skill-category {
+  margin: 15px;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.593);
+  border-radius: 20px;
+  box-shadow: inset;
+  box-shadow: 0 0 30px 10px rgba(156, 148, 148, 0.5);
+}
 
 .iphone-app-points {
   line-height: 25px;
@@ -175,7 +183,7 @@
 @media screen and (max-width: 800px) {
   .iphone-container {
     height: auto;
-    min-height: 140vh;
+    min-height: 200vh;
     flex-direction: column;
     justify-content: flex-start;
   }
@@ -201,13 +209,19 @@
     position: absolute;
     top: 485px; /* Adjust top percentage as needed */
     left: 50%; /* Adjust left percentage as needed */
-    transform: translate(-50%, -50%); /* Adjust transform as needed */
+    transform: translate(-50%, -40%); /* Adjust transform as needed */
     width: 100%; /* Adjust width as needed */
     background-color: white;
     border-radius: 30px;
     word-wrap: break-word;
     overflow-wrap: break-word;
     padding: 20px;
-    z-index: 999;
+    z-index: 998;
+  }
+
+  @media screen and (max-width: 400px) {
+    .iphone-app-info {
+      transform: translate(-50%, -35%);
+    }
   }
 }

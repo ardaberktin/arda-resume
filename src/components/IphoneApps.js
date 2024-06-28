@@ -210,7 +210,7 @@ function IphoneApps(isActive) {
                       </a>
                     </h1>
                     <br />
-                    <div className="skill-category">
+                    <div className="iphone-skill-category">
                       <p className="iphone-app-points">
                         • Personal Finance app built with Swift <br />
                         • Explored user and functional needs, resulting in a
@@ -241,7 +241,7 @@ function IphoneApps(isActive) {
                         <GitHubIcon className="github-icon" />
                       </a>
                     </h1>
-                    <div className="skill-category">
+                    <div className="iphone-skill-category">
                       <p className="iphone-app-points">
                         • Created a Maps application for Mount Douglas Secondary
                         that displays classroom locations. <br />
@@ -268,7 +268,7 @@ function IphoneApps(isActive) {
                         <GitHubIcon className="github-icon" />
                       </a>
                     </h1>
-                    <div className="skill-category">
+                    <div className="iphone-skill-category">
                       <p className="iphone-app-points">
                         • Created an app that shows each classroom on the map in
                         my high school to help newcomers. <br />

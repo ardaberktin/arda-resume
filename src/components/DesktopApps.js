@@ -168,7 +168,7 @@ function DesktopApps() {
                     </div>
 
                     <br />
-                    <div className="skill-category">
+                    <div className="desktop-skill-category">
                       <p className="desktop-app-points">
                         • Social Media website where users can log in and post
                         pictures. <br />
@@ -204,7 +204,7 @@ function DesktopApps() {
                         </a>
                       </h1>
                     </div>
-                    <div className="skill-category">
+                    <div className="desktop-skill-category">
                       <p className="desktop-app-points">
                         • 2D (Frogger-like) game where you rob a bank and try to
                         escape from the cops before the train leaves. <br />
@@ -235,7 +235,7 @@ function DesktopApps() {
                         </a>
                       </h1>
                     </div>
-                    <div className="skill-category">
+                    <div className="desktop-skill-category">
                       <p className="desktop-app-points">
                         • Built a portfolio website that showcases my
                         experiences, projects, and accomplishments in a visually

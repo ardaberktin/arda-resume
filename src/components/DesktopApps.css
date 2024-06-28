@@ -170,6 +170,15 @@
   padding: 20px;
 }
 
+.desktop-skill-category {
+  margin: 15px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.593);
+  border-radius: 20px;
+  box-shadow: inset;
+  box-shadow: 0 0 30px 10px rgba(156, 148, 148, 0.5);
+}
+
 .desktop-app-points {
   line-height: 25px;
 }
