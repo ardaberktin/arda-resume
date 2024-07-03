@@ -113,7 +113,7 @@ function Navbar() {
           {button && (
             <Button
               className={`nav-links about-me ${isActive("/about-me")}`}
-              buttonStyle="btn--outline"
+              buttonStyle="btn--outline about-me"
               to={"/about-me"}
               onClick={closeMobileMenu}
             >
