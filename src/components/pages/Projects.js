@@ -47,28 +47,30 @@ function Projects() {
   }, [location.pathname, location.hash, location.search]);
 
   return (
-    <div className="projects">
-      <div className="projects-title-wrapper">
-        <div className="projects-title">
-          <h1>My Projects</h1>
+    <div className="projects-wrapper">
+      <div className="projects">
+        <div className="projects-title-wrapper">
+          <div className="projects-title">
+            <h1>My Projects</h1>
+          </div>
+          <div className="big-title-container">
+            <Link
+              className={`mobile-apps-big-title ${mobile ? "active" : ""}`}
+              onClick={SetMobileButton}
+            >
+              Mobile Apps
+            </Link>
+            <Link
+              className={`desktop-apps-big-title ${desktop ? "active" : ""}`}
+              onClick={SetDesktopButton}
+            >
+              Games & Websites
+            </Link>
+          </div>
         </div>
-        <div className="big-title-container">
-          <Link
-            className={`mobile-apps-big-title ${mobile ? "active" : ""}`}
-            onClick={SetMobileButton}
-          >
-            Mobile Apps
-          </Link>
-          <Link
-            className={`desktop-apps-big-title ${desktop ? "active" : ""}`}
-            onClick={SetDesktopButton}
-          >
-            Games & Websites
-          </Link>
-        </div>
+        {mobile && <IphoneApps />}
+        {desktop && <DesktopApps />}
       </div>
-      {mobile && <IphoneApps />}
-      {desktop && <DesktopApps />}
     </div>
   );
 }

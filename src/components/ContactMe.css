@@ -34,11 +34,12 @@
 }
 
 .contact-me-title {
-  justify-content: center;
-  color: black;
   width: 100%;
-  padding: 20px;
-  background-color: white;
+  text-align: center;
+  background-color: #f2f2f2;
+  color: black;
+  font-size: 50px;
+  padding: 15px;
 }
 
 .contact-social-icons {

@@ -1,3 +1,7 @@
+.projects-wrapper {
+  background-color: #181717;
+}
+
 .projects {
   background-color: black;
   transform: translateY(-100px);

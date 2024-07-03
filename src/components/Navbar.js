@@ -112,7 +112,7 @@ function Navbar() {
           </ul>
           {button && (
             <Button
-              className={`nav-links about-me ${isActive("/about-me")}`}
+              className={`nav-links ${isActive("/about-me")}`}
               buttonStyle="btn--outline about-me"
               to={"/about-me"}
               onClick={closeMobileMenu}
