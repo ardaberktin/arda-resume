@@ -6,6 +6,7 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import "./Experiences.css";
 
 import SchoolIcon from "@mui/icons-material/School";
 import WorkIcon from "@mui/icons-material/Work";
@@ -28,7 +29,10 @@ function Experience() {
 
   return (
     <div className="experiences">
-      <VerticalTimeline lineColor="#3e497a">
+      <div>
+        <h1 className="experiences-title">My Experiences</h1>
+      </div>
+      <VerticalTimeline lineColor="#3e497a" background="#f2f2f2">
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           date="September - December 2024"

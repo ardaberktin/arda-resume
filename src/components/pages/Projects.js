@@ -49,8 +49,8 @@ function Projects() {
   return (
     <div className="projects">
       <div className="projects-title-wrapper">
-        <div>
-          <h1 className="projects-title">My Projects</h1>
+        <div className="projects-title">
+          <h1>My Projects</h1>
         </div>
         <div className="big-title-container">
           <Link

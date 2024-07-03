@@ -3,20 +3,23 @@
   background-color: rgba(255, 255, 255, 0.706);
   backdrop-filter: blur(10px); /* Blur effect */
   -webkit-backdrop-filter: blur(10px); /* Safari support */
-  height: 80px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
   position: sticky;
-  top: 10px;
+  top: 15px;
   margin-bottom: 20px;
   margin-left: 20px;
   margin-right: 20px;
   z-index: 999;
-  border-radius: 15px;
+  border-radius: 20px;
   box-shadow: inset;
-  box-shadow: 0px 0px 10px 10px rgba(156, 148, 148, 0.5);
+  /* box-shadow: 0px 0px 10px 10px rgba(156, 148, 148, 0.5); */
+  box-shadow: 0 0 0 1px #0000000f, 0 1px 1px -0.5px #0000000f,
+    0 3px 3px -1.5px #0000000f, 0 6px 6px -3px #0000000f,
+    0 12px 12px -6px #0000000f, 0 24px 24px -12px #0000000f;
 }
 
 .trans {
@@ -34,20 +37,20 @@
   color: white;
 }
 
-.btn--primary .about-me {
-  color: white;
-  background-color: red;
-}
-
 .trans .highlight {
   border-bottom: 4px solid white;
+}
+
+.trans .nav-links:hover {
+  border-bottom: 4px solid white;
+  transition: all 0.2s ease-out;
 }
 
 .navbar-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80px;
+  height: 70px;
   max-width: 1500px;
   max-width: 100%;
 }
@@ -102,7 +105,7 @@
 }
 
 .highlight {
-  border-bottom: 4px solid black;
+  border-bottom: 5px solid black;
   transition: all 0.2s ease-out;
 }
 
@@ -180,8 +183,8 @@
   }
 
   .nav-menu.active {
-    /* background: #242222; */
-    background-color: rgb(255, 255, 255);
+    background: #242222;
+    /* background-color: rgb(255, 255, 255); */
     backdrop-filter: blur(10px); /* Blur effect */
     -webkit-backdrop-filter: blur(10px); /* Safari support */
 
@@ -197,10 +200,11 @@
     padding: 2rem;
     width: 100%;
     display: table;
+    color: white;
   }
 
   .nav-menu.active .highlight {
-    border: 2px solid black;
+    border: 2px solid white;
   }
 
   .highlight {
@@ -212,7 +216,7 @@
   }
 
   .nav-links:hover {
-    background-color: black;
+    background-color: white;
     color: #242424;
     border-radius: 0;
   }
@@ -249,14 +253,14 @@
     text-decoration: none;
     font-size: 1.5rem;
     background-color: transparent;
-    color: black;
+    color: white;
     padding: 14px 20px;
-    border: 1px solid black;
+    border: 1px solid white;
     transition: all 0.3s ease-out;
   }
 
   .nav-links-mobile:hover {
-    background: black;
+    background: white;
     color: #242424;
     transition: 250ms;
   }

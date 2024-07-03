@@ -1,17 +1,22 @@
 .projects {
   background-color: black;
+  transform: translateY(-100px);
 }
 
 .projects-title-wrapper {
   background-color: black;
+  padding-top: 90px;
 }
 
 .projects-title {
+  background-color: black;
   text-align: center;
-  background-color: #181717;
+  /* background-color: #181717; */
   color: white;
-  font-size: 50px;
+  font-size: 30px;
   padding: 15px;
+
+  /* border-bottom: 50px solid black; */
 }
 
 .big-title-container {
@@ -46,6 +51,7 @@
   cursor: auto;
   font-weight: bold;
 }
+
 .desktop-apps-big-title {
   flex: 1;
   text-align: center;
@@ -67,4 +73,14 @@
   transform: none;
   cursor: auto;
   font-weight: bold;
+}
+
+@media screen and (max-width: 420px) {
+  .projects {
+    transform: translateY(-120px);
+  }
+
+  .projects-title-wrapper {
+    padding-top: 110px;
+  }
 }
