@@ -1,7 +1,6 @@
 .experiences {
   background-color: rgb(231, 229, 229);
-  width: 100%;
-  /* border: 5px solid red; */
+  overflow: hidden;
 }
 
 .experiences-title {
