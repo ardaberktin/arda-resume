@@ -1,6 +1,7 @@
 .experiences {
   background-color: rgb(231, 229, 229);
-  /* padding-top: 5px; */
+  width: 100%;
+  /* border: 5px solid red; */
 }
 
 .experiences-title {

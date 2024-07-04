@@ -32,7 +32,7 @@ function Experience() {
       <div>
         <h1 className="experiences-title">My Experiences</h1>
       </div>
-      <VerticalTimeline lineColor="#3e497a" background="#f2f2f2">
+      <VerticalTimeline lineColor="#3e497a">
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           date="September - December 2024"

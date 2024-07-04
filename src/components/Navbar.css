@@ -1,6 +1,6 @@
 .navbar {
   /* background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%); */
-  background-color: rgba(255, 255, 255, 0.706);
+  background-color: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(10px); /* Blur effect */
   -webkit-backdrop-filter: blur(10px); /* Safari support */
   height: 70px;
@@ -10,13 +10,13 @@
   font-size: 1.2rem;
   position: sticky;
   top: 15px;
-  margin-bottom: 20px;
+  left: 0;
+  right: 0;
   margin-left: 20px;
   margin-right: 20px;
   z-index: 999;
   border-radius: 20px;
   box-shadow: inset;
-  /* box-shadow: 0px 0px 10px 10px rgba(156, 148, 148, 0.5); */
   box-shadow: 0 0 0 1px #0000000f, 0 1px 1px -0.5px #0000000f,
     0 3px 3px -1.5px #0000000f, 0 6px 6px -3px #0000000f,
     0 12px 12px -6px #0000000f, 0 24px 24px -12px #0000000f;
@@ -167,14 +167,10 @@
   }
 } */
 
-@media screen and (max-width: 800px) {
-  .NavbarItems {
-    position: relative;
-  }
-
+@media screen and (max-width: 850px) {
   .navbar {
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 
   .nav-menu {
@@ -193,9 +189,8 @@
   .nav-menu.active {
     background: #242222;
     /* background-color: rgb(255, 255, 255); */
-    backdrop-filter: blur(10px); /* Blur effect */
-    -webkit-backdrop-filter: blur(10px); /* Safari support */
-
+    /* backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); */
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;

@@ -16,8 +16,10 @@ function AboutMe() {
 
   return (
     <>
-      <AboutMeInfo />
-      <ContactMe />
+      <div className="about-me-main">
+        <AboutMeInfo />
+        <ContactMe />
+      </div>
     </>
   );
 }

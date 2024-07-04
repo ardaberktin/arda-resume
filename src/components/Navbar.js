@@ -23,7 +23,7 @@ function Navbar() {
 
   const handleClick = () => setClick(!click);
 
-  const showButton = useCallback(() => setButton(window.innerWidth > 800), []);
+  const showButton = useCallback(() => setButton(window.innerWidth > 850), []);
 
   const handleScroll = useCallback(() => {
     if (location.pathname === "/" && location.pathname.length === 1 && !click) {
