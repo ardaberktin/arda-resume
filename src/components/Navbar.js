@@ -2,8 +2,8 @@ import React, { useState, useEffect, useCallback } from "react";
 import { Button } from "./Button";
 import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
-// import MenuIcon from "@mui/icons-material/Menu";
-// import CloseIcon from "@mui/icons-material/Close";
+import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -64,12 +64,14 @@ function Navbar() {
             <p>ARDA BERKTIN</p>
           </Link>
           <div className="menu-icon" onClick={handleClick}>
-            <i className={click ? "fas fa-times" : "fas fa-bars"} />
-            {/* {click ? (
-              <CloseIcon style={{ color: "white" }} sx={{ fontSize: 30 }} />
+            {/* <i className={click ? "fas fa-times" : "fas fa-bars"} /> */}
+            {click ? (
+              <CloseIcon style={{ color: "black" }} sx={{ fontSize: 40 }} />
+            ) : scroll ? (
+              <MenuIcon style={{ color: "black" }} sx={{ fontSize: 40 }} />
             ) : (
-              <MenuIcon style={{ color: "white" }} sx={{ fontSize: 30 }} />
-            )} */}
+              <MenuIcon style={{ color: "white" }} sx={{ fontSize: 40 }} />
+            )}
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
