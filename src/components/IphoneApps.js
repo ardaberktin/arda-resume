@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import "./IphoneApps.css";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
@@ -18,9 +18,15 @@ function IphoneApps(isActive) {
 
   const [banner, setBanner] = useState(false);
 
-  const images1 = ["MotHome.png", "MotTrack.png", "MotBudget.png", "MotAI.png"];
-  const images2 = ["MDMHome.png", "MDMRoom.png", "MDMFavourites.png"];
-  const images3 = ["Pixel1.png", "Pixel2.png"];
+  const images1 = useMemo(
+    () => ["MotHome.png", "MotTrack.png", "MotBudget.png", "MotAI.png"],
+    []
+  );
+  const images2 = useMemo(
+    () => ["MDMHome.png", "MDMRoom.png", "MDMFavourites.png"],
+    []
+  );
+  const images3 = useMemo(() => ["Pixel1.png", "Pixel2.png"], []);
 
   const githubMOT = "https://github.com/ardaberktin/MoneyOnTrack";
   const githubMDM = "https://github.com/ardaberktin/MountDougMapsiOS-main";
@@ -50,7 +56,17 @@ function IphoneApps(isActive) {
     }
   };
 
+  function preloadImages(imageArray) {
+    imageArray.forEach((image) => {
+      const img = new Image();
+      img.src = `images/${image}`;
+    });
+  }
+
   useEffect(() => {
+    preloadImages(images1);
+    preloadImages(images2);
+    preloadImages(images3);
     showButton();
 
     const sections = location.hash.slice(1).split("&");
@@ -82,7 +98,7 @@ function IphoneApps(isActive) {
         handleButtonClick(3);
       }
     }
-  }, [location.hash]);
+  }, [images1, images2, images3, location.hash]);
 
   const handleButtonClick = (area) => {
     setCurrentImageIndex(0);

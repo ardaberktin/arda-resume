@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import "./DesktopApps.css";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
@@ -16,7 +16,7 @@ function DesktopApps() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [banner, setBanner] = useState(false);
 
-  const images1 = ["Robber1.png", "Robber2.png"];
+  const images1 = useMemo(() => ["Robber1.png", "Robber2.png"], []);
 
   const githubRobber = "https://github.com/ardaberktin/robber";
   const githubSocial = "https://github.com/ardaberktin/SocialMediaWebsite";
@@ -48,6 +48,13 @@ function DesktopApps() {
     });
   };
 
+  function preloadImages(imageArray) {
+    imageArray.forEach((image) => {
+      const img = new Image();
+      img.src = `images/${image}`;
+    });
+  }
+
   const scrollBackward = (area) => {
     if (area === 2) {
       setCurrentImageIndex((prevIndex) =>
@@ -65,6 +72,8 @@ function DesktopApps() {
   };
 
   useEffect(() => {
+    preloadImages(images1);
+
     const sections = location.hash.slice(1).split("&");
     const deviceSection = sections[0];
     const appSection = sections[1];
@@ -93,7 +102,7 @@ function DesktopApps() {
         handleButtonClick(3);
       }
     }
-  }, [location.hash]);
+  }, [images1, location.hash]);
 
   return (
     <div>
