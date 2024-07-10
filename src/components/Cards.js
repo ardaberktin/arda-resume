@@ -18,7 +18,7 @@ function Cards() {
           <ul className="cards__items">
             <CardItem
               src="images/Arda'sPortfolio.jpg"
-              text="My portfolio website built with React"
+              text="My Portfolio Website Built With React"
               label="Website"
               path="/projects#desktop-apps&portfolio"
             />
@@ -44,7 +44,7 @@ function Cards() {
             />
             <CardItem
               src="images/MountDougMaps-iOS.jpg"
-              text="Maps App For Mount Douglas Secondary Built with Swift"
+              text="Maps App For Mount Douglas Secondary Built With Swift"
               label="Mobile App"
               path="/projects#mobile-apps&mdmi"
             />
