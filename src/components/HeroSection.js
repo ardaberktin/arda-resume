@@ -16,6 +16,7 @@ function HeroSection() {
           className="btns"
           buttonStyle="btn--outline"
           buttonSize="btn--large"
+          buttonName="experiencesBigButton"
         >
           Experiences
         </Button>
@@ -24,6 +25,7 @@ function HeroSection() {
           className="btns"
           buttonStyle="btn--primary"
           buttonSize="btn--large"
+          buttonName="projectsBigButton"
         >
           PROJECTS <i className="fa-solid fa-bolt"></i>
         </Button>

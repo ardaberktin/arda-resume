@@ -118,6 +118,7 @@ function Navbar() {
               buttonStyle="btn--outline about-me"
               to={"/about-me"}
               onClick={closeMobileMenu}
+              buttonName="aboutMeBigButton"
             >
               About Me
             </Button>
