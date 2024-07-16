@@ -64,7 +64,13 @@
 
 .download-robber:active {
   transform: translateY(4px);
+  transition: all 2 ease-in-out;
 }
+
+.download-robber:hover {
+  background-color: rgb(0, 32, 211);
+}
+
 .download-robber h4 {
   text-decoration: underline;
 }
