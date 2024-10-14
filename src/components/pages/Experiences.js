@@ -49,14 +49,20 @@ function Experience() {
             UVIC, Victoria, BC, Canada
           </h4>
           <p>
-            I will be working on the Brightspace for Neurodiverse Education
-            project this fall. <br /> <br />
-            INSPIRE : STEM for Social Impact is a program at the University of
-            Victoria (UVic) led through the Faculty of Engineering and Computer
-            Science in collaboration with the Faculty of Science and Centre for
-            Asia-Pacific Initiatives (CAPI). They work closely with the
-            community, industry, and research partners, to solve real-world
-            problems within the local communities.
+            • Spearheaded the development of an AI-powered platform integrated
+            with D2L, supporting <b>22,000+ students</b>, with a focus on{" "}
+            <b>neurodiverse learners</b>. <br />• Led interviews with 180+
+            students and faculty, using <b>design thinking</b> and{" "}
+            <b>requirements engineering</b> to shape the product’s core
+            strategy. <br />• Developed AI-driven study tools, task management,
+            and progress tracking using <b>React.js</b>, <b>Node.js</b>, and{" "}
+            <b>REST APIs</b>, improving task efficiency by 20%. <br />•
+            Engineered secure authentication and real-time data management with{" "}
+            <b>Firebase</b>, enhancing platform performance and data security.{" "}
+            <br />• Collaborated with global teams, including those in Nepal,
+            using {"  "}
+            <b>agile techniques</b> like sprint planning, stand-ups, and
+            retrospectives to ensure smooth project delivery.
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -81,16 +87,20 @@ function Experience() {
             is a holding company that is gathered under the main headings of
             Informatics, Health, Defense, Energy, Construction and Consultancy.
             <br />
-            <br />
-            • Worked in the MEBIS web development branch to provide technical
-            assistance, oversee system tickets, and resolve issues. <br />
-            • Analyzed and added features to the front end using Angular to
-            achieve customer satisfaction. <br />
-            • Ensured that the back end built with C# in .Net Core worked as
-            expected and added functionality based on customer demands. <br />•
-            Finalized tickets and pushed the updated code to test branches to
-            get it tested and approved by the team leader before merging it into
-            the master.
+            <br />• Developed two new high-traffic pages for a government
+            website with millions of daily interactions, using <b>
+              Angular
+            </b>{" "}
+            for the frontend and <b>C# (.NET Core)</b> for the backend. <br />•
+            Designed and implemented new <b>RESTful API</b> endpoints and
+            backend functionality to support the website's expansion, ensuring
+            seamless integration with the existing architecture. <br />•
+            Enhanced the Angular frontend by building and optimizing{" "}
+            <b>reusable components</b>, improving user experience and increasing
+            feature delivery efficiency. <br />• Managed end-to-end development
+            workflows, including code reviews, <b>testing</b>, and deployment,
+            ensuring smooth delivery by pushing updates to testing branches and
+            securing approval before merging to the main repository.
             <br />
             <br /> MEBIS system is created by Republic of Türkiye, Ministry of
             Environment Urbanisation and Climate Change (T.C. Çevre Şehircilik
