@@ -4,19 +4,19 @@
 
 .projects {
   background-color: black;
-  transform: translateY(-100px);
+  transform: translateY(-90px);
 }
 
 .projects-title-wrapper {
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   padding-top: 90px;
 }
 
 .projects-title {
-  background-color: black;
+  background-color: white;
   text-align: center;
   /* background-color: #181717; */
-  color: white;
+  color: black;
   font-size: 30px;
   padding: 15px;
 
@@ -26,7 +26,10 @@
 .big-title-container {
   display: flex;
   justify-content: space-between;
-  background-color: black;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgb(255, 255, 255) 50%, rgb(0, 0, 0) 50%);
+  border-top: rgb(255, 255, 255) 5px solid;
+  padding-top: 10px;
   color: white;
 }
 
@@ -36,15 +39,18 @@
   padding: 32px;
   cursor: pointer;
   border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
   font-size: 30px;
   color: white;
   text-decoration: none;
   font-weight: bold;
+  background-color: black;
+  transition: font-size 0.3s ease-in-out; /* Smooth transition for font-size */
 }
-
+/* 
 .mobile-apps-big-title:hover {
   transform: scale(1.1);
-}
+} */
 
 .mobile-apps-big-title.active {
   text-decoration: none;
@@ -54,22 +60,28 @@
   transform: none;
   cursor: auto;
   font-weight: bold;
+  transition: font-size 0.3s ease-in-out; /* Smooth transition for font-size */
 }
 
 .desktop-apps-big-title {
   flex: 1;
   text-align: center;
-  padding: 20px;
+  padding: 32px;
   cursor: pointer;
   border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
   font-size: 32px;
   color: white;
+  background-color: black;
   text-decoration: none;
   font-weight: bold;
+  transition: font-size 0.3s ease-in-out; /* Smooth transition for font-size */
 }
-.desktop-apps-big-title:hover {
+
+/* .desktop-apps-big-title:hover {
   transform: scale(1.1);
-}
+} */
+
 .desktop-apps-big-title.active {
   background-color: white;
   color: black;
@@ -77,6 +89,17 @@
   transform: none;
   cursor: auto;
   font-weight: bold;
+  transition: font-size 0.3s ease-in-out; /* Smooth transition for font-size */
+}
+
+.mobile-apps-big-title:not(.active) .projects-title-text,
+.desktop-apps-big-title:not(.active) .projects-title-text {
+  transition: font-size 0.3s ease-in-out;
+}
+
+.mobile-apps-big-title:not(.active):hover .projects-title-text,
+.desktop-apps-big-title:not(.active):hover .projects-title-text {
+  font-size: 36px; /* Increase font size on hover */
 }
 
 @media screen and (max-width: 420px) {

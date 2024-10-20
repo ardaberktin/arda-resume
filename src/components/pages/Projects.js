@@ -58,13 +58,13 @@ function Projects() {
               className={`mobile-apps-big-title ${mobile ? "active" : ""}`}
               onClick={SetMobileButton}
             >
-              Mobile Apps
+              <span className="projects-title-text">Mobile Apps</span>
             </Link>
             <Link
               className={`desktop-apps-big-title ${desktop ? "active" : ""}`}
               onClick={SetDesktopButton}
             >
-              Games & Websites
+              <span className="projects-title-text">Games & Websites</span>
             </Link>
           </div>
         </div>
