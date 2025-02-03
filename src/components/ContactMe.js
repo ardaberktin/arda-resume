@@ -60,12 +60,6 @@ function ContactMe() {
                     number="+1 (250) 507 1691"
                     link="tel:+12505071691"
                   />
-                  {/* TODO: CHANGE THIS WHEN IN CANADA */}
-                  <PhoneNumber
-                    country="Türkiye"
-                    number="+90 531 390 2505"
-                    link="tel:+905313902505"
-                  />
                 </ContactInfo>
                 <ContactInfo title="Email">
                   <p>(Preferred)</p>
