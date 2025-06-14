@@ -176,7 +176,7 @@ function Skills() {
         <div className="skill-category">
           <h2>Operating Systems</h2>
           <div className="skill-list">
-            <p>Windows 7/8/10/11 • MacOS • Lunix • iOS • Android</p>
+            <p>Windows 7/8/10/11 • MacOS • Linux • iOS • Android</p>
           </div>
         </div>
 
