@@ -40,14 +40,14 @@ function AboutMeInfo() {
         students at PCE Turkey, I've learned the invaluable art of leadership,
         teamwork, and adaptability.
         <br />
-        <br /> What truly drives me is the constant pursuit of growth. Every
-        challenge is an opportunity to learn, and every setback is a chance to
-        evolve. I'm eager to absorb new skills and apply them to real-world
-        problems, innovate, and make a meaningful impact through software
-        engineering. <br />
+        <br /> What drives me is the constant pursuit of growth. Every challenge
+        is an opportunity to learn, and every setback is a chance to evolve. I'm
+        eager to absorb new skills and apply them to real-world problems,
+        innovate, and make a meaningful impact through software engineering.{" "}
         <br />
-        In essence, I'm not just a coder; I'm a leader, a team player, a problem
-        solver, and an advocate for positive change. I believe in the power of
+        <br />
+        I'm not just a coder; I'm a leader, a team player, a problem solver, and
+        an advocate for positive change. I believe in the power of
         collaboration, the value of feedback, and the endless possibilities of
         innovation. As I continue my journey, I'm excited about the challenges
         of developing scalable software solutions, opportunities to learn new

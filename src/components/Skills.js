@@ -14,7 +14,10 @@ function Skills() {
               <ul className="unordered-list">
                 <li>
                   <h3>Front End</h3>
-                  <p>React • Angular • JavaScript • HTML • CSS • SwiftUI</p>
+                  <p>
+                    React • Angular • React Native • JavaScript • HTML • CSS •
+                    SwiftUI
+                  </p>
                 </li>
                 <li>
                   <h3>Back End</h3>
@@ -145,7 +148,7 @@ function Skills() {
             <ul className="unordered-list">
               <li>
                 <h3>Version Control</h3>
-                <p>Git • GitHub • BitBucket</p>
+                <p>Git • GitHub • GitLab • BitBucket </p>
               </li>
               <li>
                 <h3>IDE</h3>
@@ -173,7 +176,7 @@ function Skills() {
         <div className="skill-category">
           <h2>Operating Systems</h2>
           <div className="skill-list">
-            <p>Windows 7/8/10/11, MacOS, iOS, Android</p>
+            <p>Windows 7/8/10/11 • MacOS • Lunix • iOS • Android</p>
           </div>
         </div>
 
@@ -181,7 +184,7 @@ function Skills() {
         <div className="skill-category">
           <h2>Hardware</h2>
           <div className="skill-list">
-            <p>PCs, ARM Processors, VEX Kit</p>
+            <p>PCs • ARM Processors • VEX Kit</p>
           </div>
         </div>
 
@@ -192,11 +195,11 @@ function Skills() {
             <ul className="unordered-list">
               <li>
                 <h3>English</h3>
-                <p>Native / Bilingual proficiency</p>
+                <p>Bilingual proficiency</p>
               </li>
               <li>
                 <h3>Turkish</h3>
-                <p>Native / Bilingual proficiency</p>
+                <p>Bilingual proficiency</p>
               </li>
             </ul>
           </div>
@@ -204,7 +207,7 @@ function Skills() {
 
         {/* Other Skills */}
         <div className="skill-category">
-          <h2>Other</h2>
+          <h2>My Strengths</h2>
           <div className="skill-list">
             <p>
               Growth Mindset, Leadership, Teamwork, Communication, Creative
