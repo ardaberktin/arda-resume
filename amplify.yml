@@ -1,0 +1,4 @@
+artifacts:
+  baseDirectory: build # ⬅️  dist, .next, out … whatever your framework outputs
+  files:
+    - "**/*"
