@@ -1,4 +1,34 @@
-artifacts:
-  baseDirectory: build # ⬅️  dist, .next, out … whatever your framework outputs
-  files:
-    - "**/*"
+# amplify.yml ― build & deploy spec for AWS Amplify Hosting
+# ---------------------------------------------------------
+version: 1
+
+frontend:
+  phases:
+    # 1️⃣  Install dependencies (cached between builds)
+    preBuild:
+      commands:
+        # Lock Node.js version so you get the same runtime locally & in CI
+        # (Uncomment the nvm line if you need a specific version)
+        # - nvm use 18 || . ~/.nvm/nvm.sh && nvm install 18
+        - npm ci # or: yarn install --frozen-lockfile
+    # 2️⃣  Compile the site
+    build:
+      commands:
+        # If you’re on Create-React-App:     npm run build
+        # If you’re on Vite:                 npm run build
+        # If your site is pure HTML/CSS/JS:  echo "No build step"
+        - npm run build
+
+  # 3️⃣  Tell Amplify where the compiled files end up
+  #    • Create-React-App ➜ build/
+  #    • Vite            ➜ dist/
+  #    • Plain HTML      ➜ .
+  artifacts:
+    baseDirectory: build # <-- CHANGE to dist/ or . if your framework wants it
+    files:
+      - "**/*"
+
+  # 4️⃣  Cache node_modules so subsequent builds are faster
+  cache:
+    paths:
+      - node_modules/**/*
