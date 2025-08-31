@@ -35,6 +35,66 @@ function Experience() {
       <VerticalTimeline lineColor="#3e497a">
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
+          date="June - August 2025"
+          iconStyle={{ background: "#d9ba0f", color: "#fff" }}
+          icon={<WorkIcon />}
+        >
+          <h3 className="vertical-timeline-element-title">Dell Technologies</h3>
+          <h4 className="vertical-timeline-element-subtitle">
+            Software Engineer Intern
+          </h4>
+          <h4 className="vertical-timeline-element-subtitle">
+            Austin, TX, USA
+          </h4>
+          <p>
+            • Analyzed the performance difference of an NVMe SSD with and
+            without Flexible Data Placement (FDP), measuring Write Amplification
+            Factor (WAF) to determine deployment viability. <br /> • Ported an
+            NVMe SSD with FDP simulation code in C++ to <b>Python</b> for better
+            compatibility with testing tools and environments. <br /> •
+            Integrated <b>Excel</b> for inputs and outputs, enabling multiple
+            tests with different parameters to be run in sequence without
+            requiring an engineer’s intervention. <br /> • Used{" "}
+            <b>NumPy memory-mapped arrays</b> to simulate up to 512 TB SSDs with
+            constrained RAM, enabling larger-scale tests on more hosts.
+          </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="January 2025 - Present"
+          iconStyle={{ background: "#d9ba0f", color: "#fff" }}
+          icon={<WorkIcon />}
+        >
+          <h3 className="vertical-timeline-element-title">
+            Budgeting Platform
+          </h3>
+          <h4 className="vertical-timeline-element-subtitle">
+            Entrepreneurship co-op at UVic
+          </h4>
+          {/* <h4 className="vertical-timeline-element-subtitle">
+            Austin, TX, USA
+          </h4> */}
+          <p>
+            • Developed a Dockerized C# backend using onion architecture,
+            PostgreSQL, Redis, and RabbitMQ, along with a React Native frontend
+            with Redux from scratch. Gained experience in creating a product
+            independently and tackling all associated challenges, including
+            project budget, management, competitors, and pitching the idea.{" "}
+            <br />• Implemented secure authentication using JWT for{" "}
+            <b>access and refresh tokens</b>, along with an Axios response
+            <b>interceptor</b> on the frontend for a smooth user experience.{" "}
+            <br />• Implemented Plaid API (Link + Auth/Transactions with banks),
+            ingested data asynchronously via <b>RabbitMQ</b> and stored it in{" "}
+            <b>PostgreSQL</b>, handling 500+ transactions.
+            <br /> • Created and prototyped in <b>Figma</b> to ensure greater
+            consistency in development. <br />• Researched and tested suitable
+            libraries for API stability, licensing, bundle impact, and security
+            before integrating them into the project to ensure{" "}
+            <b>long-term compatibility</b>.
+          </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
           date="September - December 2024"
           iconStyle={{ background: "#d9ba0f", color: "#fff" }}
           icon={<WorkIcon />}

@@ -135,9 +135,43 @@ function Skills() {
           </div>
         </div>
 
-        {/* Software Skills */}
+        {/* Frameworks */}
         <div className="skill-category">
-          <h2>Software</h2>
+          <h2>Frameworks</h2>
+          <div className="skill-list">
+            <p>.NET • Angular • React • React Native • Node.js</p>
+          </div>
+        </div>
+
+        {/* Data/Infrastructure */}
+        <div className="skill-category">
+          <h2>Data/Infrastructure</h2>
+          <div className="skill-list">
+            <p>PostgreSQL • Docker • NumPy • Redis • RabbitMQ</p>
+          </div>
+        </div>
+
+        {/* Cloud/Services */}
+        <div className="skill-category">
+          <h2>Cloud/Services</h2>
+          <div className="skill-list">
+            <p>AWS • Firebase • Google Analytics • Plaid</p>
+          </div>
+        </div>
+
+        {/* Practices */}
+        <div className="skill-category">
+          <h2>Practices</h2>
+          <div className="skill-list">
+            <p>
+              REST APIs • JWT (refresh rotation) • CI/CD • Agile/Scrum • Linux
+            </p>
+          </div>
+        </div>
+
+        {/* Software Tools */}
+        <div className="skill-category">
+          <h2>Software Tools</h2>
           <div className="skill-list">
             {/* <p>
               Figma, Miro, Git, MS Visual Studio Code, Eclipse, XCode, Android
@@ -172,19 +206,19 @@ function Skills() {
           </div>
         </div>
 
-        {/* Operating Systems */}
-        <div className="skill-category">
-          <h2>Operating Systems</h2>
-          <div className="skill-list">
-            <p>Windows 7/8/10/11 • MacOS • Linux • iOS • Android</p>
-          </div>
-        </div>
-
         {/* Hardware */}
         <div className="skill-category">
           <h2>Hardware</h2>
           <div className="skill-list">
             <p>PCs • ARM Processors • VEX Kit</p>
+          </div>
+        </div>
+
+        {/* Operating Systems */}
+        <div className="skill-category">
+          <h2>Operating Systems</h2>
+          <div className="skill-list">
+            <p>Windows 7/8/10/11 • MacOS • Linux • iOS • Android</p>
           </div>
         </div>
 
