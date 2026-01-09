@@ -7,10 +7,11 @@ video {
 }
 
 .hero-container {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
     url("../../../public/images/img-home.jpg") center center/cover no-repeat;
-  height: 115vh;
-  min-height: 1000px;
+  height: 90vh;
+  min-height: 90px;
   /*No idea why, but it works. Stops the pic from adjusting to snapchat or instagram's changing viewport therefore eliminates lag */
   transform: translate(0%, -10%);
   width: 100%;
@@ -34,8 +35,9 @@ video {
   margin-top: 8px;
   color: #fff;
   font-size: 32px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
 }
 
 .hero-btns {

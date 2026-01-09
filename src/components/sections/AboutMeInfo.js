@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 //import { Link } from "react-router-dom";
 import "./AboutMeInfo.css";
 
 function AboutMeInfo() {
+  const [isPdfVisible, setIsPdfVisible] = useState(false);
+
   return (
     <div className="about-me-container">
       <h1 className="about-me-title">About Me</h1>
@@ -13,9 +15,31 @@ function AboutMeInfo() {
         alt="Arda Berktin"
       />
 
-      <a className="download-resume" href="/ArdaBerktinResume.pdf" download>
-        Download My Resume
-      </a>
+      <div className="resume-options">
+        {/* <a
+          className="download-resume"
+          href="/images/ArdaBerktinResume.pdf"
+          download
+        >
+          Download My Resume
+        </a> */}
+        <button
+          className="download-resume view-resume-btn"
+          onClick={() => setIsPdfVisible(!isPdfVisible)}
+        >
+          {isPdfVisible ? "Hide Resume" : "View My Resume"}
+        </button>
+      </div>
+
+      {isPdfVisible && (
+        <div className="pdf-viewer-container">
+          <iframe
+            src="/images/ArdaBerktinResume.pdf"
+            title="Resume PDF"
+            className="pdf-iframe"
+          />
+        </div>
+      )}
 
       <p className="about-me-paragraph">
         Hello! I'm Arda. I believe that technology isn't just about lines of
