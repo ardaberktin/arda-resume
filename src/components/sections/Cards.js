@@ -17,19 +17,19 @@ function Cards() {
         <div className="cards__wrapper">
           <ul className="cards__items">
             <CardItem
-              src="images/Arda'sPortfolio.jpg"
+              src="/images/Arda'sPortfolio.jpg"
               text="My Portfolio Website Built With React"
               label="Website"
               path="/projects#desktop-apps&portfolio"
             />
             <CardItem
-              src="images/MoneyOnTrack.jpg"
+              src="/images/MoneyOnTrack.jpg"
               text="Personal Finance App Built With Swift"
               label="Mobile App"
               path="/projects#mobile-apps&mot"
             />
             <CardItem
-              src="images/Robber.jpg"
+              src="/images/Robber.jpg"
               text="2D Video Game Built With Java"
               label="Video Game"
               path="/projects#desktop-apps&robber"
@@ -37,19 +37,19 @@ function Cards() {
           </ul>
           <ul className="cards__items">
             <CardItem
-              src="images/Jastagram.jpg"
+              src="/images/Jastagram.jpg"
               text="Social Media Website Built With HTML, CSS, JavaScript And PHP"
               label="Website"
               path="/projects#desktop-apps&jastagram"
             />
             <CardItem
-              src="images/MountDougMaps-iOS.jpg"
+              src="/images/MountDougMaps-iOS.jpg"
               text="Maps App For Mount Douglas Secondary Built With Swift"
               label="Mobile App"
               path="/projects#mobile-apps&mdmi"
             />
             <CardItem
-              src="images/MountDougMaps-Android.jpg"
+              src="/images/MountDougMaps-Android.jpg"
               text="Maps App For Mount Douglas Secondary Built With Java"
               label="Mobile App"
               path="/projects#mobile-apps&mdma"

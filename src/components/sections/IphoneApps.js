@@ -59,7 +59,7 @@ function IphoneApps(isActive) {
   function preloadImages(imageArray) {
     imageArray.forEach((image) => {
       const img = new Image();
-      img.src = `images/${image}`;
+      img.src = `/images/${image}`;
     });
   }
 
@@ -189,7 +189,7 @@ function IphoneApps(isActive) {
 
             <img
               className="iphone-image"
-              src="images/IphoneApps.png"
+              src="/images/IphoneApps.png"
               alt="iPhone"
             />
           </div>
@@ -310,7 +310,7 @@ function IphoneApps(isActive) {
 
                         <img
                           className="app-image"
-                          src={`images/${images1[currentImageIndex]}`}
+                          src={`/images/${images1[currentImageIndex]}`}
                           alt="My Apps"
                         />
 
@@ -368,7 +368,7 @@ function IphoneApps(isActive) {
                         />
                         <img
                           className="app-image"
-                          src={`images/${images2[currentImageIndex]}`}
+                          src={`/images/${images2[currentImageIndex]}`}
                           alt="My Apps"
                         />
 
@@ -418,7 +418,7 @@ function IphoneApps(isActive) {
                         />
                         <img
                           className="app-image mdma"
-                          src={`images/${images3[currentImageIndex]}`}
+                          src={`/images/${images3[currentImageIndex]}`}
                           alt="My Apps"
                         />
 

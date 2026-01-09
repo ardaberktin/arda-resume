@@ -51,7 +51,7 @@ function DesktopApps() {
   function preloadImages(imageArray) {
     imageArray.forEach((image) => {
       const img = new Image();
-      img.src = `images/${image}`;
+      img.src = `/images/${image}`;
     });
   }
 
@@ -138,7 +138,7 @@ function DesktopApps() {
 
             <img
               className="desktop-image"
-              src="images/DesktopApps.png"
+              src="/images/DesktopApps.png"
               alt="Desktop Screen"
             />
           </div>
@@ -149,10 +149,10 @@ function DesktopApps() {
                   selectedArea === 1
                     ? "area-1"
                     : selectedArea === 2
-                    ? "area-2"
-                    : selectedArea === 3
-                    ? "area-3"
-                    : ""
+                      ? "area-2"
+                      : selectedArea === 3
+                        ? "area-3"
+                        : ""
                 }`}
               >
                 <CloseIcon
@@ -273,7 +273,7 @@ function DesktopApps() {
                         />
                         <img
                           className="desktop-app-image"
-                          src={`images/${images1[currentImageIndex]}`}
+                          src={`/images/${images1[currentImageIndex]}`}
                           alt="My Apps"
                         />
 
@@ -313,7 +313,7 @@ function DesktopApps() {
                       <div className="desktop-image-and-btn">
                         <img
                           className="desktop-app-image"
-                          src={`images/Jastagram.png`}
+                          src={`/images/Jastagram.png`}
                           alt="My Apps"
                         />
                       </div>
@@ -324,7 +324,7 @@ function DesktopApps() {
                       <div className="desktop-image-and-btn">
                         <img
                           className="desktop-app-image"
-                          src={`images/Portfolio.png`}
+                          src={`/images/Portfolio.png`}
                           alt="My Apps"
                         />
                       </div>
