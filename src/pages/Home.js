@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import "../../App.css";
-import Cards from "../Cards";
-import HeroSection from "../HeroSection";
-import Skills from "../Skills";
+import "../App.css";
+import Cards from "../components/sections/Cards";
+import HeroSection from "../components/sections/HeroSection";
+import Skills from "../components/sections/Skills";
 import ReactGA from "react-ga";
 
 function Home() {

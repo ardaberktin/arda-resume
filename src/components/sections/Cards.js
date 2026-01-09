@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import "./Cards.css";
-import CardItem from "./CardItem";
+import CardItem from "../common/CardItem";
 
 function Cards() {
   const location = useLocation();

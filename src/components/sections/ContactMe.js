@@ -6,7 +6,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import EmailIcon from "@mui/icons-material/Email";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import ContactForm from "./ContactForm";
+import ContactForm from "../forms/ContactForm";
 
 const ContactInfo = ({ title, children }) => (
   <div className="contact-category">

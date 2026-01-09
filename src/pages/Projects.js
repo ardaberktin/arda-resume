@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useLocation, Link } from "react-router-dom";
 import "./Projects.css";
-import "../../App.css";
-import IphoneApps from "../IphoneApps";
-import DesktopApps from "../DesktopApps";
+import "../App.css";
+import IphoneApps from "../components/sections/IphoneApps";
+import DesktopApps from "../components/sections/DesktopApps";
 import ReactGA from "react-ga";
 
 function Projects() {

@@ -5,13 +5,13 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/layout/Navbar";
 import "./App.css";
-import Home from "./components/pages/Home";
-import Experiences from "./components/pages/Experiences";
-import Projects from "./components/pages/Projects";
-import AboutMe from "./components/pages/AboutMe";
-import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import Experiences from "./pages/Experiences";
+import Projects from "./pages/Projects";
+import AboutMe from "./pages/AboutMe";
+import Footer from "./components/layout/Footer";
 
 //source: https://youtu.be/I2UBjN5ER4s?si=Y5Z8KxagVCyQ2XDK
 //https://github.com/briancodex/react-website-v1

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
-import { Button } from "./Button";
+import { Button } from "../common/Button";
 import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
 import MenuIcon from "@mui/icons-material/Menu";

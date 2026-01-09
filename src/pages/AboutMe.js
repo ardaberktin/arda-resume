@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import "../../App.css";
-import ContactMe from "../ContactMe";
-import AboutMeInfo from "../AboutMeInfo";
+import "../App.css";
+import ContactMe from "../components/sections/ContactMe";
+import AboutMeInfo from "../components/sections/AboutMeInfo";
 import ReactGA from "react-ga";
 
 function AboutMe() {

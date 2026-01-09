@@ -8,7 +8,7 @@ video {
 
 .hero-container {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
-    url("../../public/images/img-home.jpg") center center/cover no-repeat;
+    url("../../../public/images/img-home.jpg") center center/cover no-repeat;
   height: 115vh;
   min-height: 1000px;
   /*No idea why, but it works. Stops the pic from adjusting to snapchat or instagram's changing viewport therefore eliminates lag */
