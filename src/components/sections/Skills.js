@@ -21,7 +21,7 @@ function Skills() {
                 </li>
                 <li>
                   <h3>Back End</h3>
-                  <p>Java • Python • C • C# • Swift • PHP • ROBOTC</p>
+                  <p>Java • Python • C • C# • C++ • Swift • PHP • ROBOTC</p>
                 </li>
               </ul>
             </div>

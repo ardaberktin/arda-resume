@@ -60,7 +60,7 @@ function Navbar() {
       <nav className={scroll ? "navbar" : "navbar trans"}>
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-            <img className="arda-icon" src="images/ardaface.png" alt="Arda" />
+            <img className="arda-icon" src="images/ardaface.jpeg" alt="Arda" />
             <p>ARDA BERKTIN</p>
           </Link>
           <div className="menu-icon" onClick={handleClick}>

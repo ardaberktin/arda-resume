@@ -77,6 +77,7 @@
   height: auto;
   /* width: auto; */
   margin-right: 20px;
+  border-radius: 50%;
 }
 
 .fa-typo3 {
